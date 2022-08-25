@@ -12,10 +12,11 @@ h2 {
 }
 
 p {
-    font-size: 10px;
+    font-size: 10px; 
 }
 
 span {
     font-size: 2em;
     /* equal to 2x the containing element with is 10px  */
+    /* rem would be 2rem ak 2x bigger than root element which would be <html> */
 }
