@@ -1,0 +1,36 @@
+/* selector {
+    property: value;
+} */
+
+* {
+    text-align: right;
+}
+body {
+    background-image: url(background_image.webp);
+    background-size: cover;
+}
+
+h2 {
+    color: #0A4600;
+    /* text-align: center; */
+    border: 5px dashed 1E6912;
+    cursor: pointer;
+}
+
+
+p {
+    color: #97D38D;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext {
+    border: 5px solid green;
+}
+
+#div1 {
+    background: rgba(0, 0, 255, .5)
+}
