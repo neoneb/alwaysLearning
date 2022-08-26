@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+h2 {
+    font-family: fantasy;
+    font-size: 3em;
+    border-bottom: 2px solid pink;
+    width: 400px;
+    text-align: center;
+    border-right: 2px solid pink;
+    -moz-box-shadow: 4px 4px 5px #888888;    /*mozzilla browser*/
+    -ms-box-shadow: 4px 4px 5px #888888;     /*internet explorer browser*/
+    -webkit-box-shadow: 4px 4px 5px #888888; /*chrome & safari browser*/
+    -o-box-shadow: 4px 4px 5px #888888;      /*opera browser*/ 
+    /* above 4 lines are examples of how the below line looks if browser does not fully 
+    support yet, regular line still needs to follow as below without prefixes*/
+    box-shadow: 4px 4px 5px #888888;
+    margin-top: 10px;
+}
+img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    transition: all 1s;
+}
+
+img:hover {
+   transform: scale(1.1);
+}
