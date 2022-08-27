@@ -1,0 +1,53 @@
+/* selector {
+    property: value;
+} */
+
+* {
+    text-align: right;
+}
+body {
+    background-image: url(background_image.webp);
+    background-size: cover;
+}
+
+img {
+    float: left;
+}
+
+footer {
+    clear:both;
+    text-align: center;
+}
+
+h2 {
+    color: #0A4600;
+    /* text-align: center; */
+    border: 5px dashed 1E6912;
+    cursor: pointer;
+    font-family: 'Silkscreen', cursive;
+}
+
+
+p {
+    color: #97D38D;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 80%;
+    font-family: "Times New Roman" , "Georgia";
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext {
+    border: 5px solid green;
+}
+
+#div1 {
+    background: rgba(0, 0, 255, .5)
+}
