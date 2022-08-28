@@ -1,0 +1,28 @@
+CSS Cheat Sheet
+
+Reference:
+*https://www.w3schools.com/cssref/css_selectors.asp
+*https://css-tricks.com/almanac/
+
+Cascading Style Sheets at the most basic level it indicates that the order of CSS rules matter. 
+
+
+.class (select a group of elements by giving them class attribute)
+#id (select individual elements by giving them id attribute, same id can only be used once)
+* (sybolizes all elements)
+element (idivudual element with no special added attribute)
+element, element (two elments, giving them the same properties)
+element element (example: h2 p // I want you to select all p elements inside of h2)
+element > element (example: h2 > P // I want to select all p that have a direct parent element of h2)
+element + element (select any element that is exactly after specified element 
+ex. <h2>hi</h2><p>you</p>)
+:hover  (changes style on hover ex. p:hover { )
+:last-child (select last child of element grouping)
+:first-child (select first child of element grouping)
+!important (not recommended) ( ex. color: pink !important; ) (superceeds cascading style sheet rule of top to bottom reading)
+
+
+What seletors win out in the cascade depends on:
+-Specificity (more specific elements will take precident over others)
+-Importance (!important tag)
+-Source Order (when importing style sheets into css, the order decides which takes preference, the last style that loads in will win out.
