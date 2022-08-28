@@ -5,7 +5,7 @@ html, body {
 
 .navbar {
     background-color: #D8F3DC;
-    border-bottom: 1px solid #B7E4C7;
+    border-bottom: 1px solid #52B788;
 }
 
 .navbar-toggler {
@@ -14,6 +14,7 @@ html, body {
 
 .nav-link {
     color: #081C15;
+    font-size: 1.2em;
 }
     
 .textoverlay {
@@ -43,9 +44,8 @@ img {
       0 0 45px #52B788,
       0 0 50px #52B788,
       0 0 75px #52B788;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: .5px black;
     white-space: normal;
-
 }
 
 h2 {
@@ -55,3 +55,86 @@ h2 {
     padding-top: 27.2em;
 }
 
+.joinmail {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:3vh;
+    margin-left: 10vw;
+    padding: 1em 1em 0.5em 1em;
+    width: 80%;
+    height: auto;
+    border: 2px solid rgba(149, 213, 178, .7);
+    border-radius: 25px;
+}
+
+.btn {
+    width: 22vw;
+    height: 6.2vh;
+    align-self: center;
+    background-color: #2D6A4F;
+    font-size: 3vw;
+}
+
+.btn:hover {
+    width: 22vw;
+    height: 6.2vh;
+    align-self: center;
+    background-color: #74C69D;
+    font-size: 3vw;
+}
+
+#joinnow {
+    color: #D8F3DC;
+}
+
+#joinnow:hover {
+    color: #1B4332;
+}
+
+#mailtext {
+    text-align: center;
+    margin: .8vh 7vw .8vh 7vw;
+    padding: .5em .5em;
+    font-size: 1.6vw;
+    color: #40916C;
+    background-color: rgba(149, 213, 178, .4);
+    border-radius: 5px;
+    box-shadow: 5px 1px 1px 1px #52B788;
+
+}
+
+@media (min-width:1000px) {
+    .btn {
+        width: 25vw;
+        height: 11.5vh;
+        font-size: 3.5vw;
+        padding-top: 1vh;
+    }
+
+    .btn:hover {
+        width: 25vw;
+        height: 12vh;
+        font-size: 3.5vw;
+        padding-top: 1vh;
+    }  
+}
+
+@media (max-width: 550px) {
+    .btn {
+        Height: 4vh;
+    }
+    .btn:hover {
+        Height: 4vh;
+    }
+}
+
+@media (max-height: 450px) {
+    .btn {
+        Height: 14vh;
+    }
+    .btn:hover {
+        Height: 14vh;
+    }
+}
