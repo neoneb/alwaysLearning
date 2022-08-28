@@ -1,5 +1,5 @@
 html, body {
-    font-family: 'Sen:wght@400';
+    font-family: 'Sawarabi Gothic';
     background-color: #B7E4C7;
 }
 
@@ -51,6 +51,6 @@ h2 {
       0 0 45px #52B788,
       0 0 50px #52B788,
       0 0 75px #52B788;
-    -webkit-text-stroke: .8px black;
+    -webkit-text-stroke: 1px black;
 
 }
