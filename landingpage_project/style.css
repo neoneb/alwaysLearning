@@ -78,6 +78,7 @@ h2 {
     align-self: center;
     background-color: #2D6A4F;
     font-size: 3vw;
+    border-color: rgba(149, 213, 178, .7);
 }
 
 .btn:hover {
@@ -86,26 +87,7 @@ h2 {
     align-self: center;
     background-color: #74C69D;
     font-size: 3vw;
-}
-
-#joinnow {
-    color: #D8F3DC;
-}
-
-#joinnow:hover {
-    color: #1B4332;
-}
-
-#mailtext {
-    text-align: center;
-    margin: .8vh 7vw .8vh 7vw;
-    padding: .5em .5em;
-    font-size: 1.6vw;
-    color: #40916C;
-    background-color: rgba(149, 213, 178, .4);
-    border-radius: 5px;
-    box-shadow: 5px 1px 1px 1px #52B788;
-
+    border-color: rgba(149, 213, 178, .7);
 }
 
 @media (min-width:1000px) {
@@ -133,11 +115,38 @@ h2 {
     }
 }
 
-@media (max-height: 450px) {
+@media (max-height: 650px) {
     .btn {
-        Height: 14vh;
+        Height: 12vh;
     }
     .btn:hover {
-        Height: 14vh;
+        Height: 12vh;
     }
+}
+
+#joinnow {
+    color: #D8F3DC;
+}
+
+#joinnow:hover {
+    color: #1B4332;
+}
+
+#mailtext {
+    text-align: center;
+    margin: .8vh 7vw .8vh 7vw;
+    padding: .5em .5em;
+    font-size: 1.6vw;
+    color: #40916C;
+    background-color: rgba(149, 213, 178, .4);
+    border-radius: 5px;
+    box-shadow: 5px 1px 1px 1px #52B788;
+}
+
+@media (max-width: 550px) {
+    
+    #mailtext {
+        font-size: 3.5vw;
+    }
+    
 }
