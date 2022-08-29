@@ -105,6 +105,7 @@ h2 {
         padding-top: 1vh;
     }
 }
+@media (min-width:1000px) {
     .btn:hover {
         width: 25vw;
         height: 11.5vh;
@@ -125,6 +126,7 @@ and (orientation: landscape) {
         height: 15vh;
     }
 }
+
 @media (max-width: 550px) {
     .btn {
         Height: 4vh;
@@ -172,7 +174,7 @@ and (orientation: landscape) {
 @media (max-width: 550px) {
     
     #mailtext {
-        font-size: 3.5vw;
+        font-size: 3.2vw;
     }
     
 }
