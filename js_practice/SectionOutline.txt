@@ -3,7 +3,7 @@ JAVASCRIPT TYPES
 1. Number  
 2. String
 3. Boolean
-4. Undefined
+4. Undefined        (var undefined)
 5. Null
 <!-- 6. Symbol (new in ECMAScript 6) -->
 7. Object
@@ -13,31 +13,49 @@ JAVASCRIPT COMPARISONS
 
 !==        (doesn't equal)
 ===        (equals)
->=
-<=
->
-<
+>=         (greater than or equal to)
+<=         (less than or equal to)
+>          (greater than)
+<          (less than)
 
 JAVASCRIPT VARIABLES
 -----------------
-var
+var          (firstName = Chris)
 <!-- let (new in ECMAScript 6)-->  
 <!-- const (new in ECMAScript 6)-->
 
 JAVASCRIPT CONDITIONALS
 -----------------
 if
+ex. if (name === "billy") {
+    alert("hi Billy");
+}
+
 else
+ex. if (name === "billy) {
+    alert("hi Billy!");
+} else {
+    alert("hmm i dont know you");
+}
+
 else if
+ex. if (name === "billy") {
+    alert("hi Billy!");
+} else if (name === "susy") {
+    alert("hi susy");
+} else {
+    alert("I don't know you");
+}
+
 <!-- ternary operator -->
 <!-- switch -->
 
 
 JAVASCRIPT LOGICAL OPERATORS
 -----------------
-&&
-||
-!
+&&              (and)
+||              (or)
+!               (!(varible)) gives opposite !true = false
 
 JAVASCRIPT FUNCTIONS
 -----------------
