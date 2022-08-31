@@ -1,8 +1,8 @@
 JAVASCRIPT TYPES
 -----------------
-1. Number  
-2. String
-3. Boolean
+1. Number           
+2. String           (words)
+3. Boolean          (true/false)
 4. Undefined        (var undefined)
 5. Null
 <!-- 6. Symbol (new in ECMAScript 6) -->
