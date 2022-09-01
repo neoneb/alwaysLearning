@@ -29,7 +29,7 @@ var newsfeed = [
 ];
 
 function isUserValid(username, password) {
-for (var i=0; i < database.Length; i++) {
+for (var i=0; i < database.length; i++) {
     if(database[i].username === username && database[i].password === password) {
         return true;	
         }
