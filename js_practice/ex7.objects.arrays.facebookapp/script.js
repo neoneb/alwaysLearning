@@ -1,30 +1,46 @@
-var dataBase = [
-    {
-        username: "Chris",
-        password: "admin1",
-    }
+var database = [
+	{
+		username: "andrei",
+		password: "supersecret"
+	},
+	{
+		username: "sally",
+		password: "123"
+	},
+	{
+		username: "ingrid",
+		password: "777"
+	}
 ];
 
-var newsFeed = [
-    {
-        username: "Bobby",
-        timeline: "So Tired from all that learning"
-    },
-    {
-        username: "Sally",
-        timeline: "JavaScript is soooo cool!"
-    }
+var newsfeed = [
+	{
+		username: "Bobby",
+		timeline: "So tired from all that learning!"
+	},
+	{
+		username: "Sally",
+		timeline: "Javascript is sooooo cool!"
+	},
+	{
+		username: "Mitch",
+		timeline: "Javascript is preeetyy cool!"
+	}
 ];
 
-var userNamePrompt = prompt("What's your username?");
-var passwordPrompt = prompt("What's your password?");
+function isUserValid(username, password) {
+for (var i=0; i < database.Length; i++) {
+    if(database[i].username === username && database[i].password === password) {
+        return true;	
+        }
+    }
+    return false;
+}
 
 function signIn(username, password) {
-    if (username === dataBase[0].username && password === dataBase[0].password) {
-    console.log(newsFeed);
-    } else {
-        alert("sorry the password is incorrect");
-    }
+    console.log(isUserValid(username, password));
 }
+var userNamePrompt = prompt("what\'s your username?");
+var passwordPrompt = prompt("what'\s your password?");
 
 signIn(userNamePrompt, passwordPrompt);
