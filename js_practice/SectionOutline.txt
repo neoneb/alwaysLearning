@@ -20,7 +20,7 @@ JAVASCRIPT COMPARISONS
 
 JAVASCRIPT VARIABLES
 -----------------
-var          (firstName = Chris)
+var          (var firstName = Chris)
 <!-- let (new in ECMAScript 6)-->  
 <!-- const (new in ECMAScript 6)-->
 
@@ -55,7 +55,7 @@ JAVASCRIPT LOGICAL OPERATORS
 -----------------
 &&              (and)
 ||              (or)
-!               (!(varible)) gives opposite !true = false
+!               (!(varible)) gives opposite !true = false (not operator)
 
 JAVASCRIPT FUNCTIONS
 -----------------

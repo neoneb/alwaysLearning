@@ -1,0 +1,50 @@
+
+
+body {
+  /* display: flex; */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0rem 20rem 0rem 20rem;
+  background-color: aliceblue;
+  border: 1px solid green;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  box-shadow: 0.1rem 0.1rem 0.4rem black;
+  position: relative;
+  /* width: 100vh;
+  height: 60vh; */
+}
+
+.userInput {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+input {
+  margin-right: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: burlywood;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+ul {
+  display: block;
+}
+
+.delClass {
+  display: flex;
+  color: green;
+}
