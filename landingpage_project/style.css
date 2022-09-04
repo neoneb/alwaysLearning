@@ -145,7 +145,7 @@ and (orientation: landscape) {
     }
 }
 
-@media (min-height: 477px) and
+@media (max-height: 477px) and
 (min-width: 800px) {
     #joinnow {
         height: 15vh;
