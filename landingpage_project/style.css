@@ -100,7 +100,7 @@ h2 {
 @media (min-width:1000px) {
     .btn {
         width: 25vw;
-        height: 11.5vh;
+        height: 8vh;
         font-size: 3.5vw;
         padding-top: 1vh;
     }
@@ -108,11 +108,29 @@ h2 {
 @media (min-width:1000px) {
     .btn:hover {
         width: 25vw;
+        height: 8vh;
+        font-size: 3.5vw;
+        padding-top: 1vh;
+    }  
+}
+
+@media (min-width:1750px) {
+    .btn {
+        width: 25vw;
+        height: 11.5vh;
+        font-size: 3.5vw;
+        padding-top: 1vh;
+    }
+}
+@media (min-width:1750px) {
+    .btn:hover {
+        width: 25vw;
         height: 11.5vh;
         font-size: 3.5vw;
         padding-top: 1vh;
     }  
 }
+
 
 #center {
     align-self: center;
