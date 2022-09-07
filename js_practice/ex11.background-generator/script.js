@@ -25,7 +25,7 @@ function randomize () {
    let red2 = Math.floor(Math.random() * 256);
    let green2 = Math.floor(Math.random() * 256);
    let blue2 = Math.floor(Math.random() * 256);
-
+   ////DRY--- add separate function for math randomized
    const random1 = 'rgb(' + red1 + ', ' + green1 + ', ' + blue1 + ')';
    const random2 = 'rgb(' + red2 + ', ' + green2 + ', ' + blue2 + ')';
    body.style.background = 'linear-gradient(to right, ' 
