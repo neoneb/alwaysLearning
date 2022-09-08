@@ -34,6 +34,7 @@ function randomize () {
    + random2 
    + ')'; 
    css.textContent = body.style.background + ";";
+   // + stuff can be done with ES6 `${}`
 
 function ColorToHex(color) {
    var hexadecimal = color.toString(16);
