@@ -15,10 +15,8 @@ const setGradient = (e) =>{
 
 const randomize = () => {
    const colorArray = [0, 1 ,2 ,3 ,4 ,5];
-   const mapColorArray = colorArray.map((color) => {
-         return Math.floor(Math.random() * 256); 
-      });
-
+   const mapColorArray = colorArray.map(color => Math.floor(Math.random() * 256)); 
+     
    const random1 = `rgb(${mapColorArray[0]}, ${mapColorArray[1]}, ${mapColorArray[2]})`;
    const random2 = `rgb(${mapColorArray[3]}, ${mapColorArray[4]}, ${mapColorArray[5]})`;
 
