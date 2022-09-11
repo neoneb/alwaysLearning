@@ -26,23 +26,46 @@ for (item of basket) {
 // Question #1:
 // create a function called biggestNumberInArray() that takes
 // an array as a parameter and returns the biggest number.
+
 // biggestNumberInArray([-1,0,3,100, 99, 2, 99]) should return 100;
 // Use at least 3 different types of javascript loops to write this:
 const array = [-1,0,3,100, 99, 2, 99] // should return 100
-const array2 = ['a', 3, 4, 2] // should return 4
-const array3 = [] // should return 0
 
 function biggestNumberInArray(arr) {
-
+  let highest = 0;
+  for (i = 0; i < arr.length; i++) {
+    if (highest < arr[i]) {
+      highest = arr[i];
+    }
+  }
+  return highest
 }
+
+const array2 = ['a', 3, 4, 2] // should return 4
 
 function biggestNumberInArray2(arr) {
-
+  let highest = 0;
+  arr.forEach(item => {
+    if (highest < item) {
+      highest = item;
+    }
+  })
+  return highest;
 }
+const array3 = [] // should return 0
 
 function biggestNumberInArray3(arr) {
-
+  let highest = 0;
+  for (item of arr) {
+    if (highest < item) {
+      highest = item;
+    }
+  }
+  return highest;
 }
+
+
+
 
 
 // Question #2:
@@ -54,5 +77,10 @@ amazonBasket = {
 }
 
 function checkBasket(basket, lookingFor) {
-
+  for (item in basket) {
+    if (item === lookingFor) {
+      return `${lookingFor} is in your basket`
+    }
+  }
+  return 'that does not exist in your basket'
 }
