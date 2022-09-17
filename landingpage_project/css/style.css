@@ -41,7 +41,6 @@ html, body {
     justify-content: center;
 }
 
-
 #head-img {
     width: 100%;
     height: auto;
@@ -52,7 +51,6 @@ html, body {
     height: auto;
     position: absolute;
     left: 0;
-    top: 3.85em;
     opacity: 0;
     transition: all 0.7s ease;
 }
@@ -61,18 +59,17 @@ html, body {
     margin-top: 10.9em;
 }
 
-/* @media (max-width: 991px) { */
-.touch-toggle {
+@media (max-width: 991px) {
+#head-img-alt.touch-toggle {
     opacity: 1;
 }
-/* } */
+}
 
 @media (min-width: 991px) {
 #head-img-alt:hover {
     opacity: 1;
 }
 }
-
 
 .title {
     font-size: 8vw;
@@ -93,7 +90,6 @@ html, body {
     z-index: 1;
 }
 
-
 h2 {
     position: absolute;
     font-size: 2.5vw;
@@ -101,7 +97,6 @@ h2 {
     padding-top: 27.2em;
     z-index: 1;
 }
-
 
 @media (min-width: 991px) {
     h2:hover ~ #head-img-alt {

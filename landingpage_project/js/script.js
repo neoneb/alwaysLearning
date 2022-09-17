@@ -11,10 +11,6 @@ const toggleOnTouch = () => {
    altHead.classList.toggle('touch-toggle');
 }
 
-
-
-
-
 document.addEventListener('touchstart', toggleOnTouch);
 document.addEventListener('touchend', toggleOnTouch);
 
