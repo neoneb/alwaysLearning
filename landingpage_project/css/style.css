@@ -10,12 +10,25 @@ html, body {
 }
 
 .navbar-toggler {
+
+    background-color: #95D5B2;
+    }
+
+.navbar-toggler:hover {
     background-color: #B7E4C7;
     }
 
 .nav-link {
     color: #081C15;
     font-size: 1.2em;
+}
+
+.nav-link:hover {
+    color: #74C69D;
+}
+
+#homebtn:hover {
+    color: #74C69D;
 }
     
 .textoverlay {
@@ -56,8 +69,6 @@ h2 {
     padding-top: 27.2em;
 }
 
-
-
 .joinmail {
     position: relative;
     display: flex;
@@ -72,21 +83,19 @@ h2 {
     border-radius: 25px;
 }
 
-
 .btn {
-    width: 22vw;
-    height: 6.2vh;
+    display: inline-flex;
+    width: fit-content;
+    height: fit-content;
     align-self: center;
     justify-content: center;
     background-color: #2D6A4F;
     font-size: 3vw;
     border-color: rgba(149, 213, 178, .7);
+    box-shadow: 2px 2px 15px -5px hsla(0, 0%, 0%, 1);
 }
 
 .btn:hover {
-    width: 22vw;
-    height: 6.2vh;
-    align-self: center;
     background-color: #74C69D;
     font-size: 3vw;
     border-color: rgba(149, 213, 178, .7);
@@ -97,94 +106,11 @@ h2 {
     align-self: center;
     justify-content: center;
 }
-@media (min-width:1000px) {
-    .btn {
-        width: 25vw;
-        height: 8vh;
-        font-size: 3.5vw;
-        padding-top: 1vh;
-    }
-}
-@media (min-width:1000px) {
-    .btn:hover {
-        width: 25vw;
-        height: 8vh;
-        font-size: 3.5vw;
-        padding-top: 1vh;
-    }  
-}
-
-@media (min-width:1500px) {
-    .btn {
-        width: 25vw;
-        height: 11.5vh;
-        font-size: 3.5vw;
-        padding-top: 1vh;
-    }
-}
-@media (min-width:1500px) {
-    .btn:hover {
-        width: 25vw;
-        height: 11.5vh;
-        font-size: 3.5vw;
-        padding-top: 1vh;
-    }  
-}
-
-@media (min-height:1375px) {
-    .btn {
-        width: 25vw;
-        height: 100px;
-        font-size: 3.5vw;
-        padding-top: 1vh;
-    }
-}
-@media (min-height:1375px) {
-    .btn:hover {
-        width: 25vw;
-        height: 100px;
-        font-size: 3.5vw;
-        padding-top: 1vh;
-    }  
-}
 #center {
     align-self: center;
     align-items: baseline;
     
 }
-
-@media (max-height: 430px) 
-and (orientation: landscape) {
-    #joinnow {
-        height: 15vh;
-    }
-}
-
-@media (max-width: 800px) {
-    .btn {
-        Height: 4vh;
-    }
-    .btn:hover {
-        Height: 4vh;
-    }
-}
-
-@media (max-height: 650px) {
-    .btn {
-        Height: 8vh;
-    }
-    .btn:hover {
-        Height: 8vh;
-    }
-}
-
-@media (max-height: 477px) and
-(min-width: 800px) {
-    #joinnow {
-        height: 15vh;
-    }
-}
-
 #joinnow {
     color: #D8F3DC;
 }
@@ -209,5 +135,13 @@ and (orientation: landscape) {
     #mailtext {
         font-size: 3.2vw;
     }
-    
+
+    .joinmail { 
+        padding: .2em .2em .2em .2em;
+    }
+
+    .btn {
+        font-size: 5vw;
+        padding-top: 1vh;
+    }
 }
