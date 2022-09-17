@@ -59,7 +59,7 @@ html, body {
     margin-top: 10.9em;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px) { 
 #head-img-alt.touch-toggle {
     opacity: 1;
 }
@@ -110,9 +110,9 @@ h2 {
     justify-content: center;
     flex-direction: column;
     margin-top:3vh;
-    margin-left: 10vw;
+    margin-left: 5vw;
     padding: 1em 1em 0.5em 1em;
-    width: 80%;
+    width: 90%;
     height: auto;
     border: 2px solid rgba(149, 213, 178, .7);
     border-radius: 25px;
