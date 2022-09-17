@@ -7,6 +7,7 @@ html, body {
 .navbar {
     background-color: #D8F3DC;
     border-bottom: 1px solid #52B788;
+    margin-bottom: 0;;
 }
 
 .navbar-toggler {
@@ -21,29 +22,58 @@ html, body {
 .nav-link {
     color: #081C15;
     font-size: 1.2em;
+    z-index: 1
 }
 
 .nav-link:hover {
     color: #74C69D;
+    z-index: 1;
 }
 
 #homebtn:hover {
     color: #74C69D;
 }
     
-.textoverlay {
-    position: relative;
+.page-header {
+    display: flex;
     width: 100%;
     height: auto;
-    display: flex;
     justify-content: center;
 }
 
 
-img {
+#head-img {
     width: 100%;
     height: auto;
 }
+
+#head-img-alt {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 3.85em;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.move-img {
+    margin-top: 10.9em;
+}
+
+/* @media (max-width: 991px) { */
+.touch-toggle {
+    opacity: 1;
+}
+/* } */
+
+@media (min-width: 991px) {
+#head-img-alt:hover {
+    opacity: 1;
+}
+}
+
+
 .title {
     font-size: 8vw;
     position: absolute;
@@ -60,13 +90,23 @@ img {
       0 0 75px #52B788;
     -webkit-text-stroke: .5px black;
     white-space: normal;
+    z-index: 1;
 }
+
 
 h2 {
     position: absolute;
     font-size: 2.5vw;
     color: #B7E4C7;
     padding-top: 27.2em;
+    z-index: 1;
+}
+
+
+@media (min-width: 991px) {
+    h2:hover ~ #head-img-alt {
+        opacity: 1;
+    }
 }
 
 .joinmail {
@@ -143,5 +183,10 @@ h2 {
     .btn {
         font-size: 5vw;
         padding-top: 1vh;
+    }
+
+    .btn:hover {
+        font-size: 5vw;
+        padding-top: 1vh; 
     }
 }

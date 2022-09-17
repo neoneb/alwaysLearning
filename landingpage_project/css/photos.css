@@ -1,0 +1,88 @@
+img {
+   width: 100%;
+   height: auto;
+}
+
+
+
+.grid-container {
+   display: grid;
+   gap: 10px;
+   margin: 10px;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-areas:
+      "head head"
+      "vert img1"
+      "vert img5"
+      "vert img7"
+      "img6 img6"
+      "img4 img2"
+      "img9 img10"
+      "img12 img12"
+      "img11 img3"
+}
+
+#item1 {
+   grid-area: head;
+   justify-self: center;
+   align-content: center;
+   color: #2D6A4F;
+   font-size: 5vw;
+   
+}
+
+#item2 {
+   grid-area: img1;
+}
+
+#item2:hover {
+   grid-area: img1;
+}
+
+#item3 {
+   grid-area: img2;
+}
+
+#item4 {
+   grid-area: img3;
+}
+
+#item5 {
+   grid-area: img4;
+
+}
+
+#item6 {
+   grid-area: img5;
+   padding-top: .75em;
+   padding-bottom: .5em;
+}
+
+#item7 {
+   grid-area: img6;
+}
+
+#item8 {
+   grid-area: img7;
+   align-self: end;
+
+}
+
+#item9 {
+   grid-area: vert;
+}
+
+#item10 {
+   grid-area: img9;
+}
+
+#item11 {
+   grid-area: img10;
+}
+
+#item12 {
+   grid-area: img11;
+}
+#item13 {
+   grid-area: img12;
+}
