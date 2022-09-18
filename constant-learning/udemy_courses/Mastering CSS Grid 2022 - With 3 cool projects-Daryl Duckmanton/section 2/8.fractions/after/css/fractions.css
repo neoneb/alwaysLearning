@@ -1,0 +1,42 @@
+.container {
+    display: grid;
+    width: 600px;
+}
+
+.two-fraction-column-container {
+    grid-template-columns: 1fr 1fr;
+}
+
+.two-fraction-row-container {
+    height: 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.one-two-fraction-column-container {
+    grid-template-columns: 1fr 2fr;
+}
+
+.one-three-fraction-column-container {
+    grid-template-columns: 1fr 3fr;
+}
+
+.two-four-fraction-column-container {
+    grid-template-columns: 2fr 4fr;
+}
+
+.fixed-width-fraction-column-container {
+    grid-template-columns: 100px 1fr;
+}
+
+.pencentage-width-fraction-column-container {
+    grid-template-columns: 20% 1fr;
+}
+
+.fixed-width-one-two-fraction-column-container {
+    grid-template-columns: 100px 1fr 2fr;
+}
+
+.fixed-width-any-fraction-column-container {
+    grid-template-columns: 100px 100fr;
+}

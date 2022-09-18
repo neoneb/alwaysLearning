@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Animation</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/container-animations.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/item-animations.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/alignment-animations.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/custom-animations.css" />
+</head>
+<body>
+    <section>
+        <h2>Container Animations</h2>
+
+        <div id="container-animations-button-grid">
+            <button class="firefox-only" triggerAnimationClass="columns-animation">grid-template-columns</button>
+            <button class="firefox-only" triggerAnimationClass="rows-animation">grid-template-rows</button>
+            <button triggerAnimationClass="areas-animation">grid-template-areas</button>
+            <button triggerAnimationClass="auto-flow-animation">grid-auto-flow</button>
+            <button triggerAnimationClass="auto-columns-animation">grid-auto-columns</button>
+            <button triggerAnimationClass="auto-rows-animation">grid-auto-rows</button>
+            <button class="continuous" triggerAnimationClass="row-gap-animation">grid-row-gap</button>
+            <button class="continuous" triggerAnimationClass="column-gap-animation">grid-column-gap</button>
+            <button class="continuous" triggerAnimationClass="gap-animation">grid-gap</button>
+        </div>
+
+        <div id="grid-container" class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Item Animations</h2>
+
+        <div id="item-animations-button-grid">
+            <button triggerAnimationClass="column-start-animation">grid-column-start</button>
+            <button triggerAnimationClass="column-end-animation">grid-column-end</button>
+            <button triggerAnimationClass="row-start-animation">grid-row-start</button>
+            <button triggerAnimationClass="row-end-animation">grid-row-end</button>
+            <button triggerAnimationClass="column-animation">grid-column</button>
+            <button triggerAnimationClass="row-animation">grid-row</button>
+            <button triggerAnimationClass="grid-area-non-responsive-animation">grid-area (Non responsive)</button>
+            <button triggerAnimationClass="grid-area-responsive-animation">grid-area (Responsive)</button>
+        </div>
+
+        <div id="item-container" class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Alignment Animations</h2>
+
+        <div id="alignment-animations-button-grid">
+            <button triggerAnimationClass="align-content-animation">align-content</button>
+            <button triggerAnimationClass="align-items-animation">align-items</button>
+            <button triggerAnimationClass="align-self-animation">align-self</button>
+            <button triggerAnimationClass="justify-content-animation">justify-content</button>
+            <button triggerAnimationClass="justify-items-animation">justify-items</button>
+            <button triggerAnimationClass="justify-self-animation">justify-self</button>
+            <button triggerAnimationClass="place-content-animation">place-content</button>
+            <button triggerAnimationClass="place-items-animation">place-items</button>
+            <button triggerAnimationClass="place-self-animation">place-self</button>
+        </div>
+
+        <div id="alignment-container" class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Custom Animations</h2>
+
+        <div id="custom-animations-button-grid">
+            <button class="firefox-only" triggerAnimationClass="resizing-tracks-animation">resizing tracks</button>
+            <button class="continuous" triggerAnimationClass="slide-out-animation">slide out animation</button>
+            <button class="continuous" triggerAnimationClass="slide-in-animation">slide in animation</button>
+            <button class="continuous" triggerAnimationClass="slide-up-animation">slide up animation</button>
+            <button class="continuous" triggerAnimationClass="slide-down-animation">slide down animation</button>
+        </div>
+
+        <div id="custom-animation-container" class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+    </section>
+
+    <script>
+        const wireAnimationButtons = (animationButtonGridId, containerId) => {
+            const animationButtonGrid = document.querySelector(animationButtonGridId);
+            const animationClassElements = animationButtonGrid.querySelectorAll('[triggerAnimationClass]');
+            
+            animationClassElements.forEach(animationClassElement => {
+                const animationClass = animationClassElement.getAttribute('triggerAnimationClass');
+
+                animationClassElement.addEventListener('click', () => {
+                    const currentGridContainer = document.querySelector(containerId);
+                    const newGridContainer = currentGridContainer.cloneNode(true);
+
+                    newGridContainer.className = 'container';
+                    currentGridContainer.parentNode.replaceChild(newGridContainer, currentGridContainer);
+
+                    newGridContainer.classList.add(animationClass);
+                });
+            });
+        };
+
+        wireAnimationButtons('#container-animations-button-grid', '#grid-container');
+        wireAnimationButtons('#item-animations-button-grid', '#item-container');
+        wireAnimationButtons('#alignment-animations-button-grid', '#alignment-container');
+        wireAnimationButtons('#custom-animations-button-grid', '#custom-animation-container');
+    </script>
+</body>
+</html>

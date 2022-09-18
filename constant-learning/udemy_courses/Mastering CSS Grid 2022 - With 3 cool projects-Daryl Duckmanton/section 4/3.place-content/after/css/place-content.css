@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    width: 800px;
+    height: 600px;
+}
+
+.end-center-container {
+    place-content: end center;
+}
+
+.start-end-container {
+    place-content: start end;
+}
+
+.center-center-container {
+    place-content: center center;
+}
+
+.end-start-container {
+    place-content: end start;
+}
+
+.two-auto-start-stretch-container,
+.two-auto-stretch-center-container {
+    grid-template-columns: auto 200px auto;
+    grid-template-rows: auto 200px;
+}
+
+.two-auto-start-stretch-container {
+    place-content: start stretch;
+}
+
+.two-auto-stretch-center-container {
+    place-content: stretch center;
+}

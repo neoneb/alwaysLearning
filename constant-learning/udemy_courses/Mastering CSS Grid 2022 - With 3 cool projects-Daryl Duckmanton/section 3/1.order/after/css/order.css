@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.default-container > .item:nth-of-type(3) {
+    order: 0;
+}
+
+.item-one-to-last-spot-container > .item:first-of-type {
+    order: 1;
+}
+
+.last-item-to-first-spot-container > .item:last-of-type {
+    order: -1;
+}
+
+.all-even-items-first-container > .item:nth-of-type(even) {
+    order: -1;
+}
+
+.jumbled-container > .item:first-of-type {
+    order: 0;
+}
+
+.jumbled-container > .item:nth-of-type(2) {
+    order: -10;
+}
+
+.jumbled-container > .item:nth-of-type(3) {
+    order: 50;
+}
+
+.jumbled-container > .item:last-of-type {
+    order: -100;
+}

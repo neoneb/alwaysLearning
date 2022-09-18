@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+}
+
+.auto-flow-row-property-container .item:nth-of-type(10),
+.auto-flow-row-dense-property-container .item:nth-of-type(10) {
+    grid-column: 3;
+}
+
+.auto-flow-column-property-container .item:nth-of-type(8),
+.auto-flow-column-dense-property-container .item:nth-of-type(8) {
+    grid-row: 3;
+}
+
+.auto-flow-row-property-container {
+    grid: auto-flow 200px / repeat(4, 1fr);
+}
+
+.auto-flow-row-dense-property-container {
+    grid: auto-flow dense 200px / repeat(4, 1fr);
+}
+
+.auto-flow-column-property-container {
+    grid: repeat(3, 200px) / auto-flow 1fr;
+}
+
+.auto-flow-column-dense-property-container {
+    grid: repeat(3, 200px) / auto-flow dense 1fr;
+}
+
+.auto-flow-row-with-same-size-templated-rows-container {
+    grid: auto-flow 100px / repeat(3, 1fr);
+}
+
+.auto-flow-row-with-different-size-templated-rows-container {
+    grid: auto-flow 100px / repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}

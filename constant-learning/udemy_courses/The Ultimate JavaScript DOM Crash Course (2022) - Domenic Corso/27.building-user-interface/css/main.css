@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+body,
+body * {
+	font-family: 'Radio Canada';
+}
+
+.header {
+	padding: 16px;
+	background: #eeeeee;
+	border-bottom: 2px solid #dddddd;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.add-note {
+	padding: 0.5em 0.75em;
+	font-size: 14px;
+	border-radius: 4px;
+	border: none;
+	background: #0A75AD;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.add-note:active {
+	background: #086191;
+}
+
+.notes-container {
+	flex-grow: 1;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-auto-rows: 250px;
+	gap: 16px;
+	padding: 16px;
+	overflow-y: auto;
+	background: #444444;
+}
+
+.note {
+	background: #fff740;
+	box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+}
+
+.note-title {
+	background: rgba(0, 0, 0, 0.1);
+	border: none;
+	outline: none;
+	padding: 16px;
+	font-size: 16px;
+	font-weight: 600;
+	box-sizing: border-box;
+}
+
+.note-body {
+	background: none;
+	border: none;
+	outline: none;
+	width: 100%;
+	flex-grow: 1;
+	box-sizing: border-box;
+	padding: 16px;
+	font-size: 14px;
+	line-height: 1.4;
+	resize: none;
+}
+
+.note-title::placeholder,
+.note-body::placeholder {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.note-style-1 {
+	background: #fff740;
+}
+
+.note-style-2 {
+	background: #ff7eb9;
+}
+
+.note-style-3 {
+	background: #7afcff;
+}

@@ -1,0 +1,37 @@
+.container { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 70px);
+}
+
+.item-one-to-second-column-container > .item:first-of-type {
+    grid-column-start: 2;
+}
+
+.item-one-to-third-column-container > .item:first-of-type {
+    grid-column-start: 3;
+}
+
+.item-one-to-fourth-column-container > .item:first-of-type {
+    grid-column-end: 5;
+}
+
+.item-three-to-first-column-container > .item:nth-of-type(3) {
+    grid-column-start: 1;
+}
+
+/* .item-three-to-first-column-container > .item:first-of-type {
+    grid-column-start: 3;
+} */
+
+.item-four-to-second-column-container > .item:nth-of-type(4) {
+    grid-column-start: 2;
+}
+
+.item-one-to-last-column-using-negatives > .item:first-of-type {
+    grid-column-end: -1;
+}
+
+.item-two-to-first-place-using-negatives > .item:nth-of-type(2) {
+    grid-column-start: -5;
+}

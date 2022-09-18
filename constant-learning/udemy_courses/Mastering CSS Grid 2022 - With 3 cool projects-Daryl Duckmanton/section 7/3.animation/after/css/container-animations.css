@@ -1,0 +1,167 @@
+#grid-container {
+    display: grid;
+}
+
+.columns-animation {
+    animation: gridTemplateColumns 2s forwards;
+}
+
+.rows-animation {
+    animation: gridTemplateRows 2s forwards;
+}
+
+.areas-animation {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    animation: gridTemplateAreas 6s forwards;
+}
+
+.auto-flow-animation {
+    animation: gridAutoFlow 4s forwards;
+}
+
+.auto-columns-animation {
+    animation: gridAutoColumns 2s forwards;
+}
+
+.auto-rows-animation {
+    animation: gridAutoRows 2s forwards;
+}
+
+.row-gap-animation {
+    animation: gridRowGap 2s forwards;
+}
+
+.column-gap-animation {
+    grid-template-columns: repeat(2, 1fr);
+    animation: gridColumnGap 2s forwards;
+}
+
+.gap-animation {
+    grid-template-columns: repeat(2, 1fr);
+    animation: gridGap 2s forwards;
+}
+
+.areas-animation > .item:first-of-type {
+    grid-area: a;
+}
+
+.areas-animation > .item:nth-of-type(2) {
+    grid-area: b;
+}
+
+.areas-animation > .item:nth-of-type(3) {
+    grid-area: c;
+}
+
+.areas-animation > .item:last-of-type {
+    grid-area: d;
+}
+
+@keyframes gridTemplateColumns {
+    0% {
+        grid-template-columns: repeat(2, 20%);
+    }
+    50% {
+        grid-template-columns: repeat(2, 30%);
+    }
+    100% {
+        grid-template-columns: repeat(2, 50%);
+    }   
+}
+
+@keyframes gridTemplateRows {
+    0% {
+        grid-template-rows: repeat(2, 70px);
+    }
+    50% {
+        grid-template-rows: repeat(2, 150px);
+    }
+    100% {
+        grid-template-rows: repeat(2, 200px);
+    }   
+}
+
+@keyframes gridTemplateAreas {
+    0% {
+        grid-template-areas:
+            'd b'
+            'c a';
+    }
+    50% {
+        grid-template-areas:
+            'c b'
+            'a d';
+    }
+    100% {
+        grid-template-areas:
+            'd c'
+            'b a';
+    }   
+}
+
+@keyframes gridAutoFlow {
+    100% {
+        grid-auto-flow: column;
+    }   
+}
+
+@keyframes gridAutoColumns {
+    0% {
+        grid-auto-columns: 100px;
+    }
+    50% {
+        grid-auto-columns: 150px;
+    }
+    100% {
+        grid-auto-columns: 200px;
+    }   
+}
+
+@keyframes gridAutoRows {
+    0% {
+        grid-auto-rows: 80px;
+    }
+    50% {
+        grid-auto-rows: 120px;
+    }
+    100% {
+        grid-auto-rows: 150px;
+    }   
+}
+
+@keyframes gridRowGap {
+    0% {
+        grid-row-gap: 0;
+    }
+    50% {
+        grid-row-gap: 15px;
+    }
+    100% {
+        grid-row-gap: 30px;
+    }   
+}
+
+@keyframes gridColumnGap {
+    0% {
+        grid-column-gap: 0;
+    }
+    50% {
+        grid-column-gap: 15px;
+    }
+    100% {
+        grid-column-gap: 30px;
+    }   
+}
+
+@keyframes gridGap {
+    0% {
+        grid-gap: 0;
+    }
+    50% {
+        grid-gap: 15px;
+    }
+    100% {
+        grid-gap: 30px;
+    }   
+}

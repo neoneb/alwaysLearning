@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Max-Content and Min-Content</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/min-max-content.css" />
+</head>
+<body>
+    <div class="container min-content-container">
+        <div class="item">
+            This is reasonably long text, and as you can see, the cell is not that big and the text collapses. 
+            This is because we are utilizing the min-content value.
+        </div>
+        <div class="item"></div>
+    </div>
+
+    <div class="container min-content-min-content-container">
+        <div class="item">
+            This is reasonably long text, and as you can see, the cell is not that big and the text collapses. 
+            This is because we are utilizing the min-content value.
+        </div>
+        <div class="item"></div>
+    </div>
+
+    <div class="container max-content-container">
+        <div class="item">
+            This is reasonably long text, and as you can see it makes this cell really big. 
+            This is because we are using the max-content value.
+        </div>
+        <div class="item"></div>
+    </div>
+
+    <div class="container max-content-max-content-container">
+        <div class="item">
+            This is reasonably long text, and as you can see it makes this cell really big. 
+            This is because we are using the max-content value.
+        </div>
+        <div class="item"></div>
+    </div>
+
+    <div class="container min-max-content-container">
+        <div class="item">
+            This is reasonably long text, that based on the width of you window can go from being really small in width with text collaped, to
+            a size that will allow this entire sentence to fit. .This is because we are using minmax(min-content, max-content)
+        </div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

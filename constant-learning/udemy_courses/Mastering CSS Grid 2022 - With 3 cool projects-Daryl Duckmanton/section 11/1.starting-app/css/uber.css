@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+html {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    background: #FFF;
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #262;
+}

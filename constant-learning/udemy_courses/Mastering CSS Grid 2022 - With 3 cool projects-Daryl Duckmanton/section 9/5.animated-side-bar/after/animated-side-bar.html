@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>The Animated Side Bar</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/animated-side-bar.css" />
+</head>
+<body>
+    <main>
+        <aside>
+            <a id="hamburger-menu" href="#">&#9776;</a>
+            <a id="close-menu" href="#">X</a>
+        </aside>
+        <section>
+            <h1>Chapter 1</h1>
+            <p>This is the content of chapter 1.</p>
+            <p>This is just some extra page content</p>
+        </section>
+    </main>
+    <script>
+        const mainElement = document.querySelector('main');
+        const hamburgerMenu = document.querySelector('#hamburger-menu');
+        const closeMenu = document.querySelector('#close-menu');
+        const toggleNavBar = () => {
+            mainElement.classList.toggle('opened-nav');
+        };
+        
+        hamburgerMenu.addEventListener('click', toggleNavBar, false);
+        closeMenu.addEventListener('click', toggleNavBar, false);
+    </script>
+</body>
+</html> 

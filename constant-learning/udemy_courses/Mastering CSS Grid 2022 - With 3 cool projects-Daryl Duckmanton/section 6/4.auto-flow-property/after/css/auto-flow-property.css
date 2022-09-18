@@ -1,0 +1,60 @@
+.container {
+    display: grid;
+}
+
+.auto-flow-row-property-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    grid-auto-flow: row;
+}
+
+.auto-flow-column-property-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-flow: column;
+}
+
+.auto-columns-property-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-flow: column;
+    grid-auto-columns: 100px;
+}
+
+.spanned-item-row-flow-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-flow: row;
+}
+
+.spanned-item-row-flow-container > .item:nth-of-type(3) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.spanned-item-column-flow-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-flow: column;
+}
+
+.spanned-item-column-flow-container > .item:nth-of-type(2) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.positioned-row-flow-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.positioned-column-flow-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-flow: column;
+}
+
+.positioned-item {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+}

@@ -1,0 +1,8 @@
+<svg class="facebook-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" data-reactid="140">
+    <style>
+        .facebook-logo {
+            fill: #007340;
+        }
+    </style>
+    <path d="M36.463 60h-10.5V32h-7v-9.625h7v-5.6C25.963 8.725 28.063 4 37.338 4h7.7v9.625h-4.9c-3.675 0-3.85 1.4-3.85 3.85v4.9h8.75L44.163 32h-7.7v28z" data-reactid="141"></path>
+</svg>

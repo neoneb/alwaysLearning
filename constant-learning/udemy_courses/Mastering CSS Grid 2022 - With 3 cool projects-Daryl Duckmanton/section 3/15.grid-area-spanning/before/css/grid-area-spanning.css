@@ -1,0 +1,59 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+}
+
+.item-one-to-span-two-columns-container > .item:first-of-type {
+    grid-area: auto / 1 / auto / 3;
+}
+
+.item-one-to-span-three-columns-container > .item:first-of-type {
+    grid-column-start: span 3;
+}
+
+.item-one-to-span-four-columns-container > .item:first-of-type {
+    grid-column-end: span 4;
+}
+
+.item-one-to-span-two-rows-container > .item:first-of-type {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item-one-to-span-three-rows-container > .item:first-of-type {
+    grid-row-start: span 3;
+}
+
+.item-one-to-span-four-rows-container > .item:first-of-type {
+    grid-row-end: span 4;
+}
+
+.item-one-to-span-two-rows-two-columns-container > .item:first-of-type {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item-one-to-span-three-rows-two-columns-container > .item:first-of-type {
+    grid-row-end: span 3;
+    grid-column-end: span 2;
+}
+
+.item-one-to-span-three-rows-three-columns-container > .item:first-of-type {
+    grid-row-start: span 3;
+    grid-column-start: span 3;
+}
+
+.item-one-to-span-all-rows-and-all-columns-container {
+    grid-template-columns: [leftLine] repeat(4, 1fr) [rightLine];
+    grid-template-rows: [topLine] repeat(4, 100px) [bottomLine];
+}
+
+.item-one-to-span-all-rows-and-all-columns-container > .item:first-of-type {
+    grid-row-start: topLine;
+    grid-row-end: bottomLine;
+    grid-column-start: leftLine;
+    grid-column-end: rightLine;
+}

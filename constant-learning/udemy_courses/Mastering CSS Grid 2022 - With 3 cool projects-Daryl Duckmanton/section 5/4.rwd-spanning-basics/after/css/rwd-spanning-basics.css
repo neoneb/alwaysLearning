@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: max-content 480px max-content 1fr max-content;
+    grid-template-areas:
+        'header header'
+        'video-player related-videos'
+        'video-title related-videos'
+        'comments related-videos'
+        'footer footer';
+}
+
+body > header {
+    grid-area: header;
+}
+
+body > footer {
+    grid-area: footer;
+}
+
+#video-player-section {
+    grid-area: video-player;
+}
+
+#video-title-section {
+    grid-area: video-title;
+}
+
+#video-comments-section {
+    grid-area: comments;
+}
+
+#related-videos-section {
+    grid-area: related-videos;
+}

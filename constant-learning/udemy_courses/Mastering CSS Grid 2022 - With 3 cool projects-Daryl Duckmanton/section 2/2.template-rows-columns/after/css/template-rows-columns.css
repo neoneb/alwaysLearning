@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+}
+
+.two-column-container {
+    grid-template-columns: 200px 200px;
+}
+
+.just-rows-container {
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
+.two-by-two-container {
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 100px 100px;
+}
+
+.four-by-one-container {
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 100px;
+}
+
+.just-columns-container {
+    grid-template-columns: 200px 200px 200px 200px;
+}
+
+.unnecessary-columns-container {
+    grid-template-columns: 200px 200px 200px 200px 200px;
+}
+
+.unnecessary-rows-container {
+    height: 500px;
+    margin-bottom: 150px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+}

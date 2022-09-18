@@ -1,0 +1,22 @@
+.container {
+    display: grid;
+}
+
+.two-fixed-column-container {
+    grid-template-columns: 200px 300px;
+}
+
+.two-fixed-row-container {
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 100px 200px;
+}
+
+.two-percentage-column-container {
+    grid-template-columns: 40% 50%;
+}
+
+.two-percentage-row-container {
+    height: 600px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 30% 50%;
+}

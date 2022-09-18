@@ -1,0 +1,72 @@
+.container {
+    display: grid;
+}
+
+.item-1 {
+    grid-area: item-1;
+}
+
+.item-2 {
+    grid-area: item-2;
+}
+
+.item-3 {
+    grid-area: item-3;
+}
+
+.item-4 {
+    grid-area: item-4;
+}
+
+.item-5 {
+    grid-area: item-5;
+}
+
+.item-6 {
+    grid-area: item-6;
+}
+
+.item-7 {
+    grid-area: item-7;
+}
+
+.item-8 {
+    grid-area: item-8;
+}
+
+.item-9 {
+    grid-area: item-9;
+}
+
+.valid-property-value-container {
+    grid: 
+        'item-1 item-2 item-3' 100px
+        'item-4 item-5 item-6' 100px
+        'item-7 item-8 item-9' 100px
+        / 1fr 1fr 1fr;
+}
+
+.valid-named-lines-property-value-container {
+    grid: 
+        [row1] 'item-1 item-2 item-3' 100px
+        'item-4 item-5 item-6' 100px
+        [row3] 'item-7 item-8 item-9' 100px
+        [end] / [col1] 1fr 1fr [col3] 1fr;
+}
+
+.valid-named-lines-property-value-container .item-10 {
+    grid-row: row1 / end;
+    grid-column: col1;
+}
+
+.valid-named-lines-property-value-container .item-11 {
+    grid-row: row3;
+    grid-column: col1 / col3;
+}
+
+.invalid-property-value-container {
+    grid: 
+        'item-1 item-2' 100px
+        'item-3 item-4' 100px
+        / repeat(2, 1fr);
+}

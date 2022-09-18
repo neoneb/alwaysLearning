@@ -1,0 +1,82 @@
+/* Default Sizing differences */
+#flex-default-sizing-container,
+#grid-default-sizing-container {
+    height: 200px;
+}
+
+#flex-default-sizing-container {
+    display: flex;
+}
+
+#grid-default-sizing-container {
+    display: grid;
+}
+
+/* Sizing issues */
+img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.scrubber {
+    align-self: center;
+}
+
+#flex-player {
+    display: flex;
+}
+
+#flex-player > * {
+    flex: 0 0 auto;
+    margin: 5px;
+}
+
+#flex-player-scrubber {
+    flex: 1 0 0;
+}
+
+#grid-player {
+    display: grid;
+    grid-template-columns: repeat(2, max-content) 1fr max-content;
+    grid-gap: 10px;
+    padding: 5px;
+}
+
+/* Flex containers can reverse flow */
+#items-row-reversed-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#items-column-reversed-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* Flexbox wraps items way better */
+#flexbox-can-wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#flexbox-can-wrap-container > .item {
+    width: 20%;
+    box-sizing: border-box;
+}
+
+#flexbox-can-wrap-container > .item:nth-of-type(2) {
+    width: 70%;
+}
+
+#grid-can-not-wrap-container {
+    display: grid;
+    grid-template-columns: 20% 70% 20%;
+}
+
+#grid-can-only-auto-fit-container {
+    display: grid;
+
+    /* auto-fit and auto-fill don't work with percentages well */
+    grid-template-columns: repeat(auto-fit, minmax(20%, 70%));
+}

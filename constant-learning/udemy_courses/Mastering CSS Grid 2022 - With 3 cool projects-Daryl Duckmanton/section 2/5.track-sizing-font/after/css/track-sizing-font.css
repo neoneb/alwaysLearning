@@ -1,0 +1,26 @@
+html {
+    font-size: 10px;
+}
+
+.container {
+    display: grid;
+    font-size: 20px;
+}
+
+.two-em-column-container {
+    grid-template-columns: 10em 5em;
+}
+
+.two-em-row-container {
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 5em 6em;
+}
+
+.two-rem-column-container {
+    grid-template-columns: 10rem 20rem;
+}
+
+.two-rem-row-container {
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 8rem 12rem;
+}

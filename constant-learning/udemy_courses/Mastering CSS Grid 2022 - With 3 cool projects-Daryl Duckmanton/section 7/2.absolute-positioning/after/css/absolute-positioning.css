@@ -1,0 +1,54 @@
+.normal-parent-div {
+    position: relative;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    position: relative;
+}
+
+.positioned-item {
+    background: #F00; 
+    position: absolute; 
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    bottom: 10%;
+}
+
+.column-based-container > .positioned-item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.row-based-container > .positioned-item {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.cell-based-container > .positioned-item {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.multi-column-based-container > .positioned-item {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.multi-row-based-container > .positioned-item {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.area-based-container > .positioned-item {
+    /* grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-area: 1 / 1 / 3 / 3;
+}

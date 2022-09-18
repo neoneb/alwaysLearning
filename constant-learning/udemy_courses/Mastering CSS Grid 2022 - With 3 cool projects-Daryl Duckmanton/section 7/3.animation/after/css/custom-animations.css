@@ -1,0 +1,76 @@
+#custom-animation-container {
+    display: grid;
+}
+
+.resizing-tracks-animation {
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    animation: resizeTracks 3s forwards;
+}
+
+.slide-out-animation {
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 0%;
+    animation: slideOut 2s forwards;
+}
+
+.slide-in-animation {
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 80%;
+    animation: slideIn 2s forwards;
+}
+
+.slide-up-animation {
+    height: 600px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 0%;
+    animation: slideUp 2s forwards;
+}
+
+.slide-down-animation {
+    height: 600px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 80%;
+    animation: slideDown 2s forwards;
+}
+
+@keyframes resizeTracks {
+    33% {
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(2, 200px);
+    }
+    67% {
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(2, 300px);
+    }
+    100% {
+        grid-template-rows: repeat(2, 300px);
+        grid-template-columns: repeat(2, 300px);
+    }   
+}
+
+@keyframes slideOut {
+    100% {
+        grid-column-gap: 80%;
+    }   
+}
+
+@keyframes slideIn {
+    100% {
+        grid-column-gap: 0%;
+    }   
+}
+
+@keyframes slideDown {
+    100% {
+        grid-row-gap: 0%;
+    }   
+}
+
+@keyframes slideUp {
+    100% {
+        grid-row-gap: 80%;
+    }   
+}

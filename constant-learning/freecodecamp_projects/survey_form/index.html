@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <link rel="stylesheet" type="text/css" href="index.css" media="screen">
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+       <meta http-equiv="X-UA Compatible" content="ie=edge">
+       <title>Gamer Survey</title> 
+    </head>
+
+ <body>
+    <h1 id="title">Gamer Survey</h1>
+
+    <p>Tell us about your gaming habits</p>
+
+    <form id="survey-form">
+      <label id="name" for="name">Name:
+      <input type="text" id="name-label" name="name" placeholder="John Doe">
+      </label>
+
+      <label id="number" for="age">Age:
+      <input type="number" id="number-label" name="age" min="1" max="150" placeholder="47">
+      </label>
+
+      <label id="email">Email:
+      <input type="email" id="email-label" name="email" placeholder="john@gmail.com">
+      </label>
+
+       <label id="dropdown">Preferred Gaming Platform:
+          <input list="platform_choice" name="platform_choice" placeholder="Choose one">
+          <datalist id="platform_choice">
+             <option value="Playstation">
+             <option value="Xbox">
+             <option value="Nintendo">
+             <option value="PC">
+             <option value="Mobile Phone">
+             <option value="Other">
+          </datalist>
+       </label>
+
+    <p>How many hours do you game per week on average?</p>
+
+       <div id="hours_played">
+          <input type="radio" id="1-4" name="hours" value="1-4" checked>
+          <label for="1-4">1-4 hours</label>
+
+          <input type="radio" id="4-8" name="hours" value="4-8">
+          <label for="4-8">4-8 hours</label>
+
+          <input type="radio" id="8-15" name="hours" value="8-15">
+          <label for="8-15">8-15 hours</label>
+
+          <input type="radio" id="15-20" name="hours" value="15-20">
+          <label for="15-20">15-20 hours</label>
+
+          <input type="radio" id="Over 20" name="hours" value="Over 20">
+          <label for="Over 20">Over 20 hours</label>
+       </div>
+
+    <p>What types of games do you play?</p>
+       <div id="game_types">
+          <input type="checkbox" id="fps" name="types" value="fps">
+          <label for="fps">First Person Shooters (FPS)</label>
+
+          <input type="checkbox" id="rpg" name="types" value="rpg">
+          <label for="rpg">Role-Playing Games (RPG)</label>
+
+          <input type="checkbox" id="action-adventure" name="types" value="action-adventure">
+          <label for="action-adventure">Action-Adventure</label>
+
+          <input type="checkbox" id="mmo" name="types" value="mmo">
+          <label for="mmo">Massively Multiplayer Online (MMO)</label>
+
+          <input type="checkbox" id="moba" name="types" value="moba">
+          <label for="mmo">Multiplayer Online Battle Arena (MOBA)</label>
+
+          <input type="checkbox" id="sports" name="types" value="sports">
+          <label for="sports">Sports Games</label>
+
+          <input type="checkbox" id="puzzle" name="types" value="puzzle">
+          <label for="puzzle">Puzzle Games</label>
+
+          <input type="checkbox" id="vr" name="types" value="vr">
+          <label for="vr">Virtual Reality</label>
+
+          <input type="checkbox" id="platformers" name="types" value="platformers">
+          <label for="platformers">Platformers (eg. Super Mario)</label>
+
+          <input type="checkbox" id="fighting" name="types" value="fighting">
+          <label for="fighting">Fighting Games </label>
+
+          <input type="checkbox" id="horror-survival" name="types" value="horror-survival">
+          <label for="horror-survival">Horror or Survival</label>
+
+          <input type="checkbox" id="rhythm" name="types" value="rhythm">
+          <label for="rhythm">Rhythm Games (eg. Beat Saber, Guitar Hero, DDR)</label>
+       </div>
+   
+    <p>Tell us how you feel about newly released games that you have played. Do you enjoy them? What would you like to see improved?</p>
+       <div id="feedback">
+          <input type="text">
+       </div>
+
+       <button type="submit" id="submit">Submit Survey</button>
+
+    </form>
+ </body>
+</html>

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 10px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+body {
+    display: grid;
+    grid: 48px 1fr / 1fr;
+}
+
+body > header {
+    display: grid;
+    grid: 1fr / 32px 1fr 28px 28px;
+    grid-column-gap: 12px;
+    align-items: center;
+    padding: 0 8px;
+    background: #1a599c;
+    color: #fff;
+}
+
+body > header > a {
+    width: 32px;
+    height: 32px;
+}
+
+#search-videos-icon,
+#settings-icon {
+    padding-left: 4px;
+    width: 28px;
+}
+
+main {
+    display: grid;
+    grid:
+        'video-thumbnail' max-content
+        'video-details' max-content
+        'related-videos' max-content
+        'video-comments' max-content
+        / 1fr;
+}
+
+#video-thumbnail {
+    grid-area: video-thumbnail;
+}
+
+#video-details {
+    grid-area: video-details;
+}
+
+#related-videos {
+    grid-area: related-videos;
+}
+
+#video-comments {
+    grid-area: video-comments;
+}

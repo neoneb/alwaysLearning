@@ -1,0 +1,133 @@
+#alignment-container {
+    display: grid;
+}
+
+.align-content-animation {
+    height: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    animation: alignContent 2s forwards;
+}
+
+.align-content-animation {
+    height: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    animation: alignContent 2s forwards;
+}
+
+.align-items-animation {
+    height: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    animation: alignItems 2s forwards;
+}
+
+.align-self-animation {
+    height: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.align-self-animation > .item:first-of-type {
+    animation: alignSelf 2s forwards;
+}
+
+.justify-content-animation {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 100px);
+    animation: justifyContent 2s forwards;
+}
+
+.justify-items-animation {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    animation: justifyItems 2s forwards;
+}
+
+.justify-self-animation {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.justify-self-animation > .item:first-of-type {
+    animation: justifySelf 2s forwards;
+}
+
+.place-content-animation {
+    height: 300px;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 100px);
+    animation: placeContent 2s forwards;
+}
+
+.place-items-animation {
+    height: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    animation: placeItems 2s forwards;
+}
+
+.place-self-animation {
+    height: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.place-self-animation > .item:first-of-type {
+    animation: placeSelf 2s forwards;
+}
+
+@keyframes alignContent {
+    100% {
+        align-content: center;
+    }
+}
+
+@keyframes alignItems {
+    100% {
+        align-items: center;
+    }
+}
+
+@keyframes alignSelf {
+    100% {
+        align-self: center;
+    }
+}
+
+@keyframes justifyContent {
+    100% {
+        justify-content: center;
+    }
+}
+
+@keyframes justifyItems {
+    100% {
+        justify-items: center;
+    }
+}
+
+@keyframes justifySelf {
+    100% {
+        justify-self: center;
+    }
+}
+
+@keyframes placeContent {
+    100% {
+        place-content: center center;
+    }
+}
+
+@keyframes placeItems {
+    100% {
+        place-items: center center;
+    }
+}
+
+@keyframes placeSelf {
+    100% {
+        place-self: center center;
+    }
+}

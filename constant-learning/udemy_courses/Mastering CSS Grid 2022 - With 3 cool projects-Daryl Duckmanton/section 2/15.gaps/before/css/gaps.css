@@ -1,0 +1,59 @@
+body {
+    font-size: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item {
+    border: 1px solid #F00;
+}
+
+.column-gap-container {
+    column-gap: 10px;
+}
+
+.row-gap-container {
+    row-gap: 10px
+}
+
+.both-gap-container {
+    column-gap: 10px;
+    row-gap: 10px
+}
+
+.combined-gap-container {
+    gap: 10px
+}
+
+.percentage-gap-container {
+    gap: 10%;
+}
+
+.vw-gap-container {
+    gap: 20vw;
+}
+
+.vh-gap-container {
+    gap: 20vh;
+}
+
+.vmax-gap-container {
+    gap: 20vmax;
+}
+
+.vmin-gap-container {
+    gap: 20vmin;
+
+}
+
+.em-gap-container {
+    font-size: 20px;
+    gap: 4em;
+}
+
+.rem-gap-container {
+    gap: 4rem;
+}

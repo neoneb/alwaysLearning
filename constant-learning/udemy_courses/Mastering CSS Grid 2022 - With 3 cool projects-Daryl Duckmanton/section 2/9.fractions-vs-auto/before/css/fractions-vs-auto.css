@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    width: 600px;
+}
+
+.fixed-fraction-container {
+    grid-template-columns: 200px 1fr;
+}
+
+.fixed-auto-container {
+    grid-template-columns: 200px auto;
+}
+
+.two-fraction-container {
+    grid-template-columns: 1fr 1fr;
+}
+
+.two-auto-container {
+    grid-template-columns: auto auto;
+}
+
+.auto-fraction-container {
+    grid-template-columns: auto 1fr;
+}
+
+.auto-fraction-auto-container {
+    grid-template-columns: auto 1fr auto;
+}

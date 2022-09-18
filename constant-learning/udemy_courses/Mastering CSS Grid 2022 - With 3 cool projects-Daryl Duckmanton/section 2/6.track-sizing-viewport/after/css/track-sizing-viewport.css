@@ -1,0 +1,43 @@
+.container {
+    display: grid;
+}
+
+.two-vw-column-container {
+    grid-template-columns: 10vw 30vw;
+}
+
+.two-vw-row-container {
+    height: 50vw;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 10vw 30vw;
+}
+
+.two-vh-column-container {
+    grid-template-columns: 10vh 30vh;
+}
+
+.two-vh-row-container {
+    height: 50vh;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 10vh 30vh;
+}
+
+.two-vmax-column-container {
+    grid-template-columns: 10vmax 30vmax;
+}
+
+.two-vmax-row-container {
+    height: 50vmax;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 10vmax 30vmax;
+}
+
+.two-vmin-column-container {
+    grid-template-columns: 10vmin 30vmin;
+}
+
+.two-vmin-row-container {
+    height: 50vmin;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 10vmin 30vmin;
+}

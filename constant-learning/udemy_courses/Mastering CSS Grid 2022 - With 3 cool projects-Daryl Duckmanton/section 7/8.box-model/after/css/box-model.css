@@ -1,0 +1,100 @@
+.container {
+    display: grid;
+}
+
+.item-width-container,
+.item-min-width-container,
+.item-max-width-container,
+.item-wide-padding-container {
+    grid-auto-columns: 300px;
+}
+
+
+.item-width-container .item {
+    width: 100px;
+}
+
+.item-min-width-container .item {
+    min-width: 600px;
+}
+
+.item-max-width-container .item {
+    max-width: 80%;
+    box-sizing: border-box;
+}
+
+.item-wide-padding-container .item {
+    padding-left: 175px;
+    padding-right: 175px;
+}
+
+.item-height-container,
+.item-min-height-container,
+.item-max-height-container,
+.item-high-padding-container {
+    grid-auto-rows: 300px;
+}
+
+.item-max-height-container {
+    margin-top: 170px;
+}
+
+.item-height-container .item {
+    height: 100px;
+}
+
+.item-min-height-container .item {
+    min-height: 400px;
+}
+
+.item-max-height-container .item {
+    max-height: 200px;
+}
+
+.item-high-padding-container .item {
+    padding-top: 175px;
+    padding-bottom: 175px;
+}
+
+.item-margin-container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 80px;
+}
+
+.item-margin-container > .item:nth-of-type(5) {
+    margin: 10px;
+}
+
+.item-margin-container > .item:first-of-type {
+    grid-column: span 2;
+    margin: 15px;
+}
+
+.item-margin-container > .item:nth-of-type(3) {
+    grid-row: span 3;
+    margin: 20px;
+}
+
+.parent-div > .item:first-of-type {
+    margin-bottom: 20px;
+}
+
+.parent-div > .item:last-of-type {
+    margin-top: 20px;
+}
+
+.no-margin-collapse-container > .item:first-of-type {
+    margin-bottom: 20px;
+}
+
+.no-margin-collapse-container > .item:last-of-type {
+    margin-top: 20px;
+}
+
+.center-grid-item-container {
+    grid-auto-rows: 100px;
+}
+
+.center-grid-item-container > .item:first-of-type {
+    margin: 0 auto;
+}

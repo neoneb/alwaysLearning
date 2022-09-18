@@ -1,0 +1,43 @@
+/* SIZING ALL FLEX ITEMS */
+.item {
+    box-sizing: border-box;
+}
+
+/* SPAN MULTIPLE ROWS EXAMPLE */
+#span-multiple-items-layout {
+    display: flex;
+}
+
+#span-row-item {
+    flex: 0 0 300px;
+}
+
+#other-items-container {
+    flex: 1 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#other-items-container > .item {
+    flex: 0 0 50%;
+}
+
+/* RESPONSIVE BOOTSTRAP FLUID EXAMPLE */
+#bootstrap-fluid-layout > .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-12 {
+    flex: 0 0 100%;
+} 
+
+@media (min-width: 768px) {
+    .medium-4 {
+        flex: 0 0 33.333333333334%;
+    }
+
+    .medium-6 {
+        flex: 0 0 50%;
+    }
+}

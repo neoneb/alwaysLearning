@@ -1,0 +1,67 @@
+.container {
+    display: grid;
+}
+
+.automatic-area-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 100px);
+}
+
+.automatic-area-container > .item {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 1;
+    grid-column-end: span 1;
+}
+
+.spanned-item-row-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+}
+
+.spanned-item-row-container > .item:nth-of-type(3n) {
+    grid-column: span 2;
+}
+
+.spanned-item-row-container > .item:nth-of-type(6) {
+    grid-row: span 2;
+}
+
+.spanned-item-column-container {
+    grid-auto-columns: 1fr;
+    grid-template-rows: repeat(3, 100px);
+    grid-auto-flow: column;
+}
+
+.spanned-item-column-container > .item:nth-of-type(3n) {
+    grid-row: span 2;
+}
+
+.spanned-item-column-container > .item:nth-of-type(6) {
+    grid-column: span 2;
+}
+
+.explicit-item-span-out-of-bounds-row-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+}
+
+.explicit-item-span-out-of-bounds-row-container .item:nth-of-type(6) {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: span 2;
+    grid-column-end: span 2;
+}
+
+.explicit-item-span-out-of-bounds-column-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-auto-flow: column;
+}
+
+.explicit-item-span-out-of-bounds-column-container .item:nth-of-type(6) {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-end: span 2;
+    grid-column-end: span 2;
+}

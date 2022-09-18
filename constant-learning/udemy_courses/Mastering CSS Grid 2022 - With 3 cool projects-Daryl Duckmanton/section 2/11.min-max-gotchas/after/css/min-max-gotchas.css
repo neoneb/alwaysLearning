@@ -1,0 +1,36 @@
+body {
+    font-size: 10px;
+}
+
+.container {
+    display: grid;
+}
+
+.percentage-fixed-min-max-container {
+    grid-template-columns: minmax(80%, 300px) 20%;
+}
+
+.viewport-fixed-min-max-container {
+    grid-template-columns: minmax(40vw, 200px) 20vw;
+}
+
+.em-fixed-min-max-container {
+    font-size: 20px;
+    grid-template-columns: minmax(10em, 300px) 100px;
+}
+
+.rem-fixed-min-max-container {
+    grid-template-columns: minmax(15rem, 200px) 100px;
+}
+
+.fraction-fixed-min-max-container {
+    grid-template-columns: minmax(1fr, 200px) 1fr;
+}
+
+.two-fractions-container {
+    grid-template-columns: minmax(1fr, 2fr) 1fr;
+}
+
+.inner-min-max-container {
+    grid-template-columns: minmax(100px, minmax(200px, 1fr)) 1fr;
+}

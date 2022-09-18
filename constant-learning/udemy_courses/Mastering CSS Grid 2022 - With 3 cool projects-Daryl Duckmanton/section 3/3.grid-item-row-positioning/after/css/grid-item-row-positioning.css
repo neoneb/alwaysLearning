@@ -1,0 +1,44 @@
+.container { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, max-content);
+}
+
+.item-one-to-last-row-container > .item:first-of-type {
+    grid-row-start: 2;
+}
+
+.item-seven-to-first-row-container > .item:nth-of-type(7) {
+    grid-row-end: 2;
+}
+
+.item-three-to-second-row-container > .item:nth-of-type(3) {
+    grid-row-end: -1;
+}
+
+.item-six-to-first-row-container > .item:nth-of-type(6) {
+    grid-row-start: -3;
+}
+
+.item-multiple-items-to-last-row > .item:first-of-type,
+.item-multiple-items-to-last-row > .item:nth-of-type(2) {
+    grid-row-start: 2;
+}
+
+.item-multiple-items-to-first-row > .item:nth-of-type(7),
+.item-multiple-items-to-first-row > .item:nth-of-type(8) {
+    grid-row-start: 1;
+}
+
+.item-multiple-items-to-first-row-reordered > .item:nth-of-type(7),
+.item-multiple-items-to-first-row-reordered > .item:nth-of-type(8) {
+    grid-row-start: 1;
+}
+
+.item-multiple-items-to-first-row-reordered > .item:nth-of-type(8) {
+    order: -1;
+}
+
+.item-multiple-items-to-first-row-reordered > .item:first-of-type {
+    order: -2;
+}

@@ -1,0 +1,22 @@
+/* TWO ROW THREE ITEM WRAPPED EXAMPLE */
+#two-row-three-item-wrapped-layout {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 150px);
+}
+
+/* TWO COLUMN THREE ITEM EXAMPLE */
+#two-column-three-item-layout {
+    height: 800px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 90px 1fr 70px;
+}
+
+/* GUTTER LAYOUT */
+#gutter-layout {
+    margin-bottom: 30px;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+}

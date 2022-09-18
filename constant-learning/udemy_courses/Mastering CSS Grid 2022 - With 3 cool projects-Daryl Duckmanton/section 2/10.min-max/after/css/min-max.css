@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+}
+
+.fixed-min-max-column-container {
+    grid-template-columns: minmax(200px, 400px) 100px;
+}
+
+.fixed-min-max-row-container {
+    height: 50vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(200px, 400px) 100px;
+}
+
+.fixed-percentage-min-max-column-container {
+    grid-template-columns: minmax(100px, 50%) 100px;
+}
+
+.fixed-fraction-min-max-column-container {
+    grid-template-columns: minmax(150px, 1fr) 100px;
+}
+
+.fixed-auto-min-max-column-container {
+    grid-template-columns: minmax(130px, auto) 100px;
+}
+
+.auto-fixed-min-max-column-container {
+    grid-template-columns: minmax(auto, 300px) 100px;
+}
+
+.multiple-min-max-column-container {
+    grid-template-columns: minmax(200px, 1fr) minmax(100px, 1fr);
+}

@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+}
+
+.min-content-pixel-min-max-container {
+    grid-template-columns: minmax(min-content, 300px) 1fr;
+}
+
+.fixed-fit-content-container {
+    grid-template-columns: fit-content(300px) 1fr;
+}
+
+.percentage-fit-content-container {
+    grid-template-columns: fit-content(50%) 1fr;
+}
+
+.auto-fit-content-container {
+    grid-template-columns: fit-content(auto) 1fr;
+}
+
+.fraction-fit-content-container {
+    grid-template-columns: fit-content(1fr) 1fr;
+}

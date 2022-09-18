@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #afccdb;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+p {
+    margin-bottom: 2.0rem;
+}
+
+body > header {
+    display: grid;
+    place-items: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background: #FFF;
+    border-bottom: 3px solid rgba(0,0,0,0.05);
+}
+
+body > main {
+    display: grid;
+    grid: 'feed' max-content / 85vw;
+    justify-content: center;
+    grid-gap: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 46px;
+}
+
+.tile {
+    padding: 10px 12px;
+    background: #FFF;
+}
+
+#profile-tile {
+    display: none;
+}
+
+#feed-tile {
+    grid-area: feed;
+}
+
+#trending-tile {
+    display: none;
+}
+
+#notice-tile {
+    display: none;
+}
+
+#follow-tile {
+    display: none;
+}
+
+#links-tile {
+    display: none;
+}
+
+@media (min-width: 910px) {
+    body > main {
+        grid: 
+            'profile feed' 214px
+            'notice feed' 360px
+            'follow feed' 455px
+            'trending feed' 488px
+            'links feed' 163px
+            '. feed' max-content
+            / 290px 588px;
+    }
+
+    #profile-tile {
+        display: block;
+        grid-area: profile;
+    }
+    
+    #trending-tile {
+        display: block;
+        grid-area: trending;
+    }
+    
+    #notice-tile {
+        display: block;
+        grid-area: notice;
+    }
+    
+    #follow-tile {
+        display: block;
+        grid-area: follow;
+    }
+    
+    #links-tile {
+        display: block;
+        grid-area: links;
+    }
+}
+
+@media (min-width: 1238px) {
+    body > main {
+        grid: 
+            'profile feed notice' 214px
+            'trending feed notice' 136px
+            'trending feed follow' 342px
+            '. feed follow' 103px
+            '. feed links' 163px
+            '. feed .' max-content
+            / 290px 588px 300px;
+    }
+}

@@ -1,0 +1,72 @@
+/* 
+ * Start off with the mobile based css first
+ * this is referred to as mobile first.
+ */
+ ul {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+li {
+    background: #0048AA;
+    color: #FFF;
+    margin-top: 40px;
+}
+
+/*
+ * Run this CSS only when the minimal width
+ * of the window is 768 pixels wide.
+ */
+@media (min-width: 768px) {
+    ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    li {
+        flex: 0 0 48%;
+    }
+}
+
+/*
+ * Run this CSS only when the minimal width
+ * of the window is 1024 pixels wide.
+ */
+@media (min-width: 1024px) {
+    li {
+        flex: 0 0 31%;
+    }
+}
+
+/* 
+ * Run this CSS when explicitly set to screen,
+ * the minimum width of the window is 800 pixels
+ * and the maximum width of the window is 900 pixels
+ *
+ */
+@media screen and (min-width: 800px) and (max-width: 900px) {
+    li {
+        background: #F00;
+    }
+}
+
+/*
+ * Run this CSS when running the page in 
+ * landscape mode 
+ */
+@media (orientation: landscape) {
+    li {
+        background: #0F0;
+    }
+}
+
+/*
+ * Run this CSS when running the page in 
+ * portrait mode and the minimum width of 
+ * the window is 1000 pixels
+ */
+@media (orientation: portrait) and (min-width: 1000px) {
+    li {
+        color: #FF0;
+    }
+}

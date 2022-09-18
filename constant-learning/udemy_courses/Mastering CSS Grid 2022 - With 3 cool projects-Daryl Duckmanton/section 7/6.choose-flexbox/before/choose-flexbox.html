@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>When to use Flexbox over CSS Grid</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/choose-flexbox.css" />
+</head>
+<body>
+    <main>
+        <section>
+            <h1>When to Use Flexbox instead of CSS Grid</h1>
+            
+            <section>
+                <h2>General</h2>
+    
+                <ul>
+                    <li>Better browser support</li>
+                    <li>
+                        If the items inside of a single parent element needs to flow 
+                        in just one single direction only.
+                    </li>
+                    <li>
+                        If the children of the single parent element is just content, 
+                        <strong>(content-first)</strong>. CSS Grid should be reserved primary for adjusting
+                        layouts over 2 dimensions <strong>(layout-first)</strong>.
+                    </li>
+                    <li>
+                        You want to give your items complete control over their sizing. CSS Grid by
+                        default forces items to fit an individual cell by default.
+                    </li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>Other Reasons</h2>
+
+                <section>
+                    <h3>Default Item Sizing</h3>
+            
+                    <div id="flex-default-sizing-container" class="container">
+                        <div class="item">Flex Item</div>
+                    </div>
+                
+                    <div id="grid-default-sizing-container" class="container">
+                        <div class="item">Grid Item</div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Flexibility</h3>
+            
+                    <div id="flex-player" class="container">
+                        <img src="images/stop-button.svg" />
+                        <img src="images/play-button.svg" />
+                        <!-- <img src="images/skip-back-button.svg" />
+                        <img src="images/skip-forward-button.svg" /> -->
+                        <div id="flex-player-scrubber" class="scrubber"></div>
+                        <img src="images/volume-button.svg" />
+                    </div>
+                
+                    <div id="grid-player" class="container">
+                        <img src="images/stop-button.svg" />
+                        <img src="images/play-button.svg" />
+                        <!-- <img src="images/skip-back-button.svg" />
+                        <img src="images/skip-forward-button.svg" /> -->
+                        <div class="scrubber"></div>
+                        <img src="images/volume-button.svg" />
+                    </div>
+                </section>
+        
+                <section>
+                    <h3>Reversing the flow of items</h3>
+            
+                    <div id="items-row-reversed-container" class="container">
+                        <div class="item">1</div>
+                        <div class="item">2</div>
+                        <div class="item">3</div>
+                        <div class="item">4</div>
+                        <div class="item">5</div>
+                        <div class="item">6</div>
+                    </div>
+                
+                    <div id="items-column-reversed-container" class="container">
+                        <div class="item">1</div>
+                        <div class="item">2</div>
+                        <div class="item">3</div>
+                        <div class="item">4</div>
+                        <div class="item">5</div>
+                        <div class="item">6</div>
+                    </div>
+                </section>
+            
+                <section>
+                    <h3>Flexbox can wrap. Grids can't unless we use auto-fit or auto-fill, and even that won't save us sometimes.</h3>
+            
+                    <div id="flexbox-can-wrap-container" class="container">
+                        <div class="item">1</div>
+                        <div class="item">2</div>
+                        <div class="item">3</div>
+                    </div>
+                
+                    <div id="grid-can-not-wrap-container" class="container">
+                        <div class="item">1</div>
+                        <div class="item">2</div>
+                        <div class="item">3</div>
+                    </div>
+
+                    <div id="grid-can-only-auto-fit-container" class="container">
+                        <div class="item">1</div>
+                        <div class="item">2</div>
+                        <div class="item">3</div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Fit-Content Function</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/fit-content.css" />
+</head>
+<body>
+    <div class="container min-content-pixel-min-max-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+
+    <div class="container fixed-fit-content-container">
+        <div class="item">
+            1
+            <!-- This content will go a max of 300 pixels -->
+            <!-- A little bit of text -->
+        </div>
+        <div class="item">2</div>
+    </div>
+
+    <div class="container percentage-fit-content-container">
+        <div class="item">
+            1
+            <!-- This content will go a max of 50% of the container. 
+                 Once it's gone that far then it will 
+                 collapse like this. -->
+        </div>
+        <div class="item">2</div>
+    </div>
+
+    <div class="container auto-fit-content-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+
+    <div class="container fraction-fit-content-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+</body>
+</html>

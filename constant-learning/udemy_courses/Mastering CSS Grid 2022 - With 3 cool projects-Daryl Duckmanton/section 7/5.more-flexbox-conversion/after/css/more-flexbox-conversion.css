@@ -1,0 +1,31 @@
+/* SPAN MULTIPLE ROWS EXAMPLE */
+#span-multiple-items-layout {
+    display: grid;
+    grid-template-columns: 300px repeat(2, 1fr);
+}
+
+#span-row-item {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+/* RESPONSIVE BOOTSTRAP FLUID EXAMPLE */
+#bootstrap-fluid-layout {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.small-12 {
+    grid-column: span 6;
+} 
+
+@media (min-width: 768px) {
+    .medium-4 {
+        grid-column: span 2;
+    }
+
+    .medium-6 {
+        grid-column: span 3;
+    }
+}

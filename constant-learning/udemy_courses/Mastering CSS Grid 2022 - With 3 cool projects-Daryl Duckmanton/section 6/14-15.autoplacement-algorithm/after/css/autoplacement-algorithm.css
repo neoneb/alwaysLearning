@@ -1,0 +1,343 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    grid-auto-rows: 100px;
+    grid-auto-columns: 1fr;
+}
+
+.row-sparse-container > .item {
+    display: grid;
+    place-items: center center;
+}
+
+/* ROW FLOW - SPARSE PACKING */
+/* PROCESS EXPLICITLY POSITIONED ITEMS FIRST */
+.row-sparse-container > .item:nth-of-type(4) {
+    grid-row: 5;
+    grid-column: 4;
+}
+
+.row-sparse-container > .item:nth-of-type(13) {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.row-sparse-container > .item:nth-of-type(19) {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-end: span 2;
+    grid-column-end: span 2;
+}
+
+/* ADD ITEMS THAT ARE LOCKED TO ROW 1 */
+.row-sparse-container > .item:nth-of-type(7),
+.row-sparse-container > .item:nth-of-type(10),
+.row-sparse-container > .item:nth-of-type(22) {
+    grid-row: 1;
+}
+
+.row-sparse-container > .item:nth-of-type(22) {
+    grid-row-end: span 2;
+    grid-column: span 2;
+}
+
+/* ADD ITEMS THAT ARE LOCKED TO ROW 2 */
+.row-sparse-container > .item:nth-of-type(21) {
+    grid-row: 2;
+}
+
+/* ADD ITEMS THAT ARE LOCKED TO ROW 4 */
+.row-sparse-container > .item:nth-of-type(3),
+.row-sparse-container > .item:nth-of-type(18) {
+    grid-row: 4;
+}
+
+.row-sparse-container > .item:nth-of-type(3) {
+    order: 1;
+}
+
+/* ADD THE REMAINING ITEMS BY ORDER MODIFIED DOCUMENT ORDER */
+.row-sparse-container > .item:nth-of-type(2) {
+    order: -1;
+}
+
+.row-sparse-container > .item:nth-of-type(5) {
+    grid-column: 4;
+}
+
+.row-sparse-container > .item:nth-of-type(6) {
+    order: 1;
+}
+
+.row-sparse-container > .item:nth-of-type(15) {
+    grid-column: 2;
+}
+
+.row-sparse-container > .item:nth-of-type(20) {
+    grid-column: 3;
+}
+
+.row-sparse-container > .item:nth-of-type(23) {
+    grid-row: span 2;
+    grid-column: span 3;
+}
+
+/* COLUMN FLOW - SPARSE PACKING */
+.column-sparse-container {
+    grid-auto-flow: column;
+}
+
+.column-sparse-container > .item {
+    display: grid;
+    place-items: center center;
+}
+
+/* PROCESS EXPLICITLY POSITIONED ITEMS FIRST */
+.column-sparse-container > .item:nth-of-type(11) {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: span 2;
+    grid-column-end: span 2;
+}
+
+.column-sparse-container > .item:nth-of-type(14) {
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.column-sparse-container > .item:nth-of-type(25) {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+/* ADD ITEMS THAT ARE LOCKED TO COLUMN 1 */
+.column-sparse-container > .item:nth-of-type(18),
+.column-sparse-container > .item:nth-of-type(23),
+.column-sparse-container > .item:nth-of-type(24) {
+    grid-column: 1;
+}
+
+.column-sparse-container > .item:nth-of-type(24) {
+    order: -1;
+}
+
+.column-sparse-container > .item:nth-of-type(18) {
+    grid-column-end: span 2;
+}
+
+/* ADD ITEMS THAT ARE LOCKED TO COLUMN 3 */
+.column-sparse-container > .item:nth-of-type(7),
+.column-sparse-container > .item:nth-of-type(13) {
+    grid-column: 3;
+}
+
+/* ADD ITEMS THAT ARE LOCKED TO COLUMN 4 */
+.column-sparse-container > .item:nth-of-type(3),
+.column-sparse-container > .item:nth-of-type(5) {
+    grid-column: 4;
+}
+
+.column-sparse-container > .item:nth-of-type(3) {
+    order: 1;
+    grid-row: span 2;
+    grid-column-end: span 3;
+}
+
+/* ADD THE REMAINING ITEMS BY ORDER MODIFIED DOCUMENT ORDER */
+.column-sparse-container > .item:nth-of-type(22) {
+    order: -3;
+}
+
+.column-sparse-container > .item:nth-of-type(16) {
+    order: -2;
+}
+
+.column-sparse-container > .item:nth-of-type(15) {
+    order: -1;
+    grid-row: 5;
+}
+
+.column-sparse-container > .item:nth-of-type(6),
+.column-sparse-container > .item:nth-of-type(9) {
+    grid-row: 3;
+}
+
+.column-sparse-container > .item:nth-of-type(10) {
+    grid-row: span 2;
+    grid-column: span 3;
+}
+
+.column-sparse-container > .item:nth-of-type(12) {
+    grid-row: 2;
+}
+
+/* ROW FLOW - DENSE PACKING */
+.row-dense-container {
+    grid-auto-flow: row dense;
+}
+
+.row-dense-container > .item {
+    display: grid;
+    place-items: center center;
+}
+
+/* PROCESS EXPLICITLY POSITIONED ITEMS FIRST */
+.row-dense-container > .item:nth-of-type(7) {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.row-dense-container > .item:nth-of-type(9) {
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-row-end: span 2;
+    grid-column-end: span 2;
+}
+
+.row-dense-container > .item:nth-of-type(12) {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.row-dense-container > .item:nth-of-type(17) {
+    grid-row: 4;
+    grid-column: 5;
+}
+
+/* ADD ITEMS THAT ARE LOCKED TO ROW 1 */
+.row-dense-container > .item:nth-of-type(4),
+.row-dense-container > .item:nth-of-type(5),
+.row-dense-container > .item:nth-of-type(16),
+.row-dense-container > .item:nth-of-type(18),
+.row-dense-container > .item:nth-of-type(20) {
+    grid-row: 1;
+}
+
+.row-dense-container > .item:nth-of-type(18),
+.row-dense-container > .item:nth-of-type(20) {
+    order: -1;
+}
+
+/* ADD ITEMS THAT ARE LOCKED TO ROW 2 */
+.row-dense-container > .item:nth-of-type(21),
+.row-dense-container > .item:nth-of-type(22) {
+    grid-row: 2;
+}
+
+.row-dense-container > .item:nth-of-type(22) {
+    grid-column: span 3;
+}
+
+/* ADD ITEMS THAT ARE LOCKED TO ROW 4 */
+.row-dense-container > .item:nth-of-type(10),
+.row-dense-container > .item:nth-of-type(11),
+.row-dense-container > .item:nth-of-type(19) {
+    grid-row: 4;
+}
+
+/* ADD THE REMAINING ITEMS BY ORDER MODIFIED DOCUMENT ORDER */
+.row-dense-container > .item:nth-of-type(13),
+.row-dense-container > .item:nth-of-type(24) {
+    order: -1;
+}
+
+.row-dense-container > .item:nth-of-type(1),
+.row-dense-container > .item:nth-of-type(6) {
+    order: 1;
+}
+
+.row-dense-container > .item:nth-of-type(2),
+.row-dense-container > .item:nth-of-type(24) {
+    grid-column: 2;
+}
+
+.row-dense-container > .item:nth-of-type(8) {
+    grid-column: 4;
+}
+
+.row-dense-container > .item:nth-of-type(25) {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+/* COLUMN FLOW - DENSE PACKING */
+.column-dense-container {
+    grid-auto-flow: column dense;
+}
+
+.column-dense-container > .item {
+    display: grid;
+    place-items: center center;
+}
+
+/* PROCESS EXPLICITLY POSITIONED ITEMS FIRST */
+.column-dense-container > .item:first-of-type {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: span 3;
+    grid-column-end: span 3;
+}
+
+.column-dense-container > .item:nth-of-type(7) {
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-row-end: span 2;
+    grid-column-end: span 2;
+}
+
+/* ADD ITEMS THAT ARE LOCKED TO COLUMN 1 */
+.column-dense-container > .item:nth-of-type(9),
+.column-dense-container > .item:nth-of-type(13),
+.column-dense-container > .item:nth-of-type(19) {
+    grid-column: 1;
+}
+
+.column-dense-container > .item:nth-of-type(9) {
+    grid-column-end: span 2;
+    order: 1;
+}
+
+/* ADD ITEMS THAT ARE LOCKED TO COLUMN 3 */
+.column-dense-container > .item:nth-of-type(11),
+.column-dense-container > .item:nth-of-type(14) {
+    grid-column: 3;
+}
+
+/* ADD ITEMS THAT ARE LOCKED TO COLUMN 5 */
+.column-dense-container > .item:nth-of-type(8),
+.column-dense-container > .item:nth-of-type(10),
+.column-dense-container > .item:nth-of-type(12) {
+    grid-column: 5;
+}
+
+/* ADD THE REMAINING ITEMS BY ORDER MODIFIED DOCUMENT ORDER */
+.column-dense-container > .item:nth-of-type(3),
+.column-dense-container > .item:nth-of-type(17),
+.column-dense-container > .item:nth-of-type(25) {
+    order: -1;
+}
+
+.column-dense-container > .item:nth-of-type(2),
+.column-dense-container > .item:nth-of-type(5),
+.column-dense-container > .item:nth-of-type(16) {
+    order: 1;
+}
+
+.column-dense-container > .item:nth-of-type(4) {
+    grid-row-start: 4;
+    grid-row-end: span 2;
+}
+
+.column-dense-container > .item:nth-of-type(20) {
+    grid-row: 2;
+}
+
+.column-dense-container > .item:nth-of-type(24) {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.column-dense-container > .item:nth-of-type(5) {
+    grid-row: 4;
+}

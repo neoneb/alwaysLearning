@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+}
+
+.multiple-column-tracks-line-names-container {
+    grid: repeat(2, 100px) / [col1Start] 1fr 1fr [col2End] 1fr;
+}
+
+.multiple-column-tracks-line-names-container > .item:first-of-type {
+    grid-column: col1Start / col2End;
+}
+
+.multiple-row-tracks-line-names-container {
+    grid: [row1Start] 100px 100px [row2End] 100px / repeat(2, 1fr);
+}
+
+.multiple-row-tracks-line-names-container > .item:first-of-type {
+    grid-row: row1Start / row2End;
+}
+
+.row-span-line-names-container {
+    grid: [rowLineStart] repeat(3, 100px) [rowLineEnd] / repeat(2, 1fr);
+}
+
+.row-span-line-names-container > .item:first-of-type {
+    grid-row: rowLineStart / rowLineEnd;
+}
+
+.column-span-line-names-container {
+    grid: repeat(3, 100px) / [colLineStart] repeat(2, 1fr) [colLineEnd];
+}
+
+.column-span-line-names-container > .item:first-of-type {
+    grid-column: colLineStart / colLineEnd;
+}
+
+.span-both-line-names-container {
+    grid: 
+        [rowLineStart] repeat(3, 100px) [rowLineEnd] 
+        / [colLineStart] repeat(2, 1fr) [colLineEnd];
+}
+
+.span-both-line-names-container > .item:first-of-type {
+    grid-area: rowLineStart / colLineStart / rowLineEnd / colLineEnd;
+}

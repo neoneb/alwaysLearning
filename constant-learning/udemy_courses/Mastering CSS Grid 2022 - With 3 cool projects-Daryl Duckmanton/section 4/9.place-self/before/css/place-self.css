@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.center-start-container > .item:first-of-type {
+    place-self: center start;
+}
+
+.end-center-container > .item:first-of-type {
+    place-self: end center;
+}
+
+.center-center-container > .item:first-of-type {
+    place-self: center center;
+}
+
+.start-end-container > .item:first-of-type {
+    place-self: start end;
+}
+
+.multiple-cells-center-container > .item:first-of-type {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+    place-self: center center;
+}

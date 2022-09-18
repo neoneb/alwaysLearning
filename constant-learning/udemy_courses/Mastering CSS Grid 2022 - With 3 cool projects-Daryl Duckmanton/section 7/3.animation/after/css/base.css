@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    background: linear-gradient(to right, #57c1eb 0%,#246fa8 100%);
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px 50px;
+}
+
+h2 {
+    color: #FFF;
+    font-size: 3rem;
+    margin-bottom: 2.4rem;
+}
+
+#container-animations-button-grid,
+#item-animations-button-grid,
+#alignment-animations-button-grid,
+#custom-animations-button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 8px;
+}
+
+#container-animations-button-grid > button,
+#item-animations-button-grid > button,
+#alignment-animations-button-grid > button,
+#custom-animations-button-grid > button {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 1.6rem;
+    background: rgba(220, 220, 255, 0.5);
+    color: #0048AA;
+    border: 2px solid #FFF;
+    outline: none;
+    cursor: pointer;
+}
+
+#container-animations-button-grid > button.continuous,
+#item-animations-button-grid > button.continuous,
+#alignment-animations-button-grid > button.continuous,
+#custom-animations-button-grid > button.continuous {
+    background: rgba(220, 255, 220, 0.5);
+    color: #008848;
+    border: 2px solid #FFF;
+}
+
+#container-animations-button-grid > button.firefox-only,
+#item-animations-button-grid > button.firefox-only,
+#alignment-animations-button-grid > button.firefox-only,
+#custom-animations-button-grid > button.firefox-only {
+    background: #ffBB59;
+    color: #996632;
+    border: 2px solid #FFF;
+}
+
+.container {
+    background: #FFF;
+    margin: 30px 0;
+}
+
+.item {
+    font-size: 1.6rem;
+    padding: 20px;
+    background: #0048AA;
+    color: #FFF;
+    border: 2px solid #EEE;
+}

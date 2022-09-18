@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 10px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background: #2c2c2c;
+    color: #F2F1F3;
+}

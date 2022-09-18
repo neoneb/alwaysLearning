@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #afccdb;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+p {
+    margin-bottom: 2.0rem;
+}
+
+body > header {
+    background: #FFF;
+    border-bottom: 3px solid rgba(0,0,0,0.05);
+}
+
+body > main {
+    width: 100%;
+    padding: 10px;
+    margin-top: 46px;
+}
+
+.tile {
+    padding: 10px 12px;
+    background: #FFF;
+}
+
+@media (min-width: 910px) {
+
+}
+
+@media (min-width: 1238px) {
+    
+}

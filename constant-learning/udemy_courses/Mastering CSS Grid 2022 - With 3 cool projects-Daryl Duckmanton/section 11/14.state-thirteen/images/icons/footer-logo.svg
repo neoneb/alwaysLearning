@@ -1,0 +1,41 @@
+<svg id="footer-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.38 12.9">
+    <style>
+        #footer-logo {
+            fill: #007340;
+            font-size: 13px;
+            width: 180px;
+            height: 30px;
+            font-family: ArialRoundedMTBold, Arial Rounded MT Bold;
+        }
+
+        .no-letter-spacing {
+            letter-spacing: 0em;
+        }
+
+        .small-negative-letter-spacing {
+            letter-spacing: -0.01em;
+        }
+
+        .medium-negative-letter-spacing {
+            letter-spacing: -0.03em;
+        }
+
+        .large-negative-letter-spacing {
+            letter-spacing: -0.09em;
+        }
+    </style>
+    <text transform="translate(0 10.37)">
+        <tspan class="small-negative-letter-spacing">A</tspan>
+        <tspan class="no-letter-spacing" x="8.49" y="0">u</tspan>
+        <tspan class="small-negative-letter-spacing" x="15.71" y="0">s</tspan>
+        <tspan class="small-negative-letter-spacing" x="22.15" y="0">s</tspan>
+        <tspan class="small-negative-letter-spacing" x="28.55" y="0">i</tspan>
+        <tspan x="31.72" y="0">e </tspan>
+        <tspan class="large-negative-letter-spacing" x="41.85" y="0">T</tspan>
+        <tspan class="no-letter-spacing" x="48.33" y="0">u</tspan>
+        <tspan class="small-negative-letter-spacing" x="55.53" y="0">c</tspan>
+        <tspan class="medium-negative-letter-spacing" x="62.49" y="0">k</tspan>
+        <tspan class="no-letter-spacing" x="69.05" y="0">e</tspan>
+        <tspan x="76.13" y="0">r</tspan>
+    </text>
+</svg>

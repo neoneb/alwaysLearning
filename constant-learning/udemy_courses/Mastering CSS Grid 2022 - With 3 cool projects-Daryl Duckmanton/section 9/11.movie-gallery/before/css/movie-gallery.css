@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 10px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background: #2c2c2c;
+    color: #F2F1F3;
+}
+
+body {
+    display: flex;
+}
+
+body > header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 14vw;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #FFF;
+    padding-top: 4vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 6vw;
+    margin-bottom: 4vw;
+}
+
+body > main {
+    flex: 1 0 0;
+    background: #111;
+    display: flex;
+    padding: 0 4vw;
+    margin-top: 14vw;
+    overflow: hidden;
+}
+
+#gallery {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 92vw;
+    align-items: center;
+    grid-gap: 8vw;
+    padding: 4vw 0;
+    overflow-x: scroll;
+}
+
+#gallery > article {
+    display: grid;
+    align-items: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 92vw;
+    height: 100%;
+}
+
+.details {
+    height: 30vw;
+    padding: 2vw 2vw;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#gallery > article h2 {
+    margin-bottom: 1vw;
+    font-size: 10vw;
+}
+
+#gallery > article p {
+    font-size: 4vw;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (orientation: landscape) {
+    body > header {
+        padding-top: 3vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        height: 10vh;
+    }
+
+    h1 {
+        font-size: 4vh;
+        margin-bottom: 3vh;
+    }
+
+    body > main {
+        margin-top: 10vh;
+        padding: 0 2vw;
+    }
+
+    #gallery {
+        padding: 4vh 0;
+    }
+
+    #gallery > article {
+        background-size: 70vh 92vh;
+        background-position: left top;
+    }
+
+    .details {
+        margin-left: 75vh;
+        height: 100%;
+        padding: 2vh 2vh;
+        padding-top: 0;
+        background: transparent;
+    }
+
+    #gallery > article h2 {
+        margin-bottom: 2vh;
+        font-size: 7vh;
+    }
+
+    #gallery > article p {
+        font-size: 4vh;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    body > header {
+        padding-top: 3vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    h1 {
+        font-size: 4vw;
+        margin-bottom: 3vw;
+    }
+
+    .details {
+        padding: 2vw 2vw;
+        height: 20vw;
+    }
+
+    #gallery > article h2 {
+        font-size: 5vw;
+    }
+
+    #gallery > article p {
+        font-size: 3vw;
+    }
+}

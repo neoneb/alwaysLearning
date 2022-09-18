@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+}
+
+.span-both-line-names-container > .item:first-of-type {
+    grid-area: rowLineStart / colLineStart / rowLineEnd / colLineEnd;
+}
+
+.rwd-example-container .item:first-of-type {
+    grid-area: item-1;
+}
+
+.rwd-example-container .item:nth-of-type(2) {
+    grid-area: item-2;
+}
+
+.rwd-example-container .item:nth-of-type(3) {
+    grid-area: item-3;
+}
+
+.rwd-example-container .item:last-of-type {
+    grid-area: item-4;
+}
+
+.basic-container {
+    grid-template: repeat(2, 100px) / repeat(2, 200px);
+}
+
+.span-both-line-names-container {
+    grid-template:
+        [rowLineStart] repeat(3, 100px) [rowLineEnd] /
+        [colLineStart] repeat(2, 1fr) [colLineEnd];
+}
+
+.rwd-example-container {
+    grid-template: 
+        'item-1 item-2' 100px
+        'item-3 item-4' 100px
+        / 1fr 1fr;
+}
+
+.auto-flow-row-property-container {
+    grid: auto-flow 200px / repeat(4, 1fr);
+}

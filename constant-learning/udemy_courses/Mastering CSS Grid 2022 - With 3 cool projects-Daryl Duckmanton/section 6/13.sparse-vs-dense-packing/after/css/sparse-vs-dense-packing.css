@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.auto-flow-row-sparse-packing-container .item:nth-of-type(10),
+.auto-flow-row-dense-packing-container .item:nth-of-type(10) {
+    grid-column: 3;
+}
+
+.auto-flow-row-sparse-packing-container {
+    grid-auto-flow: row;
+}
+
+.auto-flow-row-dense-packing-container {
+    grid-auto-flow: row dense;
+}
+
+.auto-flow-column-sparse-packing-container .item:nth-of-type(8),
+.auto-flow-column-dense-packing-container .item:nth-of-type(8) {
+    grid-row: 3;
+}
+
+.auto-flow-column-sparse-packing-container {
+    grid-auto-flow: column;
+}
+
+.auto-flow-column-dense-packing-container {
+    grid-auto-flow: column dense;
+}

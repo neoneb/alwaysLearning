@@ -1,0 +1,58 @@
+body {
+    font-size: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item {
+    border: 1px solid #F00;
+}
+
+.column-gap-container {
+    grid-column-gap: 10px;
+}
+
+.row-gap-container {
+    grid-row-gap: 10px;
+}
+
+.both-gap-container {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.combined-gap-container {
+    grid-gap: 10px;
+}
+
+.percentage-gap-container {
+    grid-gap: 10%;
+}
+
+.vw-gap-container {
+    grid-gap: 20vw;
+}
+
+.vh-gap-container {
+    grid-gap: 20vh;
+}
+
+.vmax-gap-container {
+    grid-gap: 20vmax;
+}
+
+.vmin-gap-container {
+    grid-gap: 20vmin;
+}
+
+.em-gap-container {
+    font-size: 20px;
+    grid-gap: 4em;
+}
+
+.rem-gap-container {
+    grid-gap: 4rem;
+}

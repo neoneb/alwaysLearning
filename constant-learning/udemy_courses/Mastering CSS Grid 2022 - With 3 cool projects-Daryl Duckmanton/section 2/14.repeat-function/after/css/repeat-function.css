@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+}
+
+.repeat-fixed-container {
+    grid-template-columns: repeat(2, 200px);
+}
+
+.repeat-percentage-container {
+    grid-template-columns: repeat(3, 25%);
+}
+
+.repeat-fraction-container {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.repeat-minmax-container {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+}
+
+.repeat-multiple-columns-container {
+    grid-template-columns: repeat(2, 200px 1fr 200px);
+}
+
+.both-set-and-repeat-columns-container {
+    grid-template-columns: 200px repeat(2, 1fr) 200px;
+}

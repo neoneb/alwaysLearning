@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+}
+
+.first-item-col1-to-col2-container {
+    grid-template-columns: [line1] 1fr 1fr [three] 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.first-item-col1-to-col2-container > .item:first-of-type {
+    grid-column-start: line1;
+    grid-column-end: three;
+}
+
+.last-item-span-last-column-container {
+    grid-template-columns: 1fr 1fr 1fr [fourth] 1fr;
+    grid-template-rows: [row1] 100px 100px 100px [end];
+}
+
+.last-item-span-last-column-container > .item:last-of-type {
+    grid-row-start: row1;
+    grid-row-end: end;
+    grid-column-start: fourth;
+}
+
+.first-item-spans-two-rows-and-two-columns {
+    grid-template-columns: [col1] 1fr 1fr [col3] 1fr 1fr;
+    grid-template-rows: [row1] 100px 100px [row3] 100px; 
+}
+
+.first-item-spans-two-rows-and-two-columns .item:first-of-type {
+    grid-column-start: col1;
+    grid-column-end: col3;
+    grid-row-start: row1;
+    grid-row-end: row3;
+}
+
+.using-spans-container {
+    grid-template-columns: [first] 1fr 1fr 1fr [fourth] 1fr;
+    grid-template-rows: [firstRow] 100px 100px [thirdRow] 100px;
+}
+
+.using-spans-container > .item:first-of-type {
+    grid-column-start: first;
+    grid-column-end: span fourth;
+    grid-row-start: firstRow;
+    grid-row-end: span thirdRow;
+}
