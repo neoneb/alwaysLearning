@@ -25,9 +25,8 @@ img:hover {
       "img4 img2"
       "img9 img10"
       "img12 img12"
-      "img11 img3"
+      "img11 img3";
 }
-
 #item1 {
    grid-area: head;
    justify-self: center;
