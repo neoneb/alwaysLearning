@@ -1,6 +1,6 @@
 View completed projects here:
 
-https://neoneb.github.io/zerotomastery_projects/landingpage_project/index.html
+https://neoneb.github.io/neoneb-main/constant-learning/zerotomastery_coursework/landingpage_project/index.html
 
 
 
