@@ -47,10 +47,17 @@ body > main {
     display: flex;
     padding: 0 4vw;
     margin-top: 14vw;
+    overflow: hidden;
 }
 
 #gallery {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 92vw;
+    align-items: center;
+    gap: 8vw;
     padding: 4vw 0;
+    overflow-x: scroll;
 }
 
 #gallery > article {
@@ -77,4 +84,79 @@ body > main {
 
 #gallery > article p {
     font-size: 4vw;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (orientation: landscape) {
+    body > header {
+        padding-top: 3vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        height: 10vh;
+    }
+
+    h1 {
+        font-size: 4vh;
+        margin-bottom: 3vh;
+    }
+
+    body > main {
+        margin-top: 10vh;
+        padding: 0 2vw;
+    }
+
+    #gallery {
+        padding: 4vh 0;
+    }
+
+    #gallery > article {
+        background-size: 70vh 92vh;
+        background-position: left top;
+    }
+
+    .details {
+        margin-left: 75vh;
+        height: 100%;
+        padding: 2vh 2vh;
+        padding-top: 0;
+        background: transparent;
+    }
+
+    #gallery > article h2 {
+        margin-bottom: 2vh;
+        font-size: 7vh;
+    }
+
+    #gallery > article p {
+        font-size: 4vh;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    body > header {
+        padding-top: 3vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    h1 {
+        font-size: 4vw;
+        margin-bottom: 3vw;
+    }
+
+    .details {
+        padding: 2vw 2vw;
+        height: 20vw;
+    }
+
+    #gallery > article h2 {
+        font-size: 5vw;
+    }
+
+    #gallery > article p {
+        font-size: 3vw;
+    }
 }

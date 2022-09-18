@@ -160,3 +160,52 @@ body > main {
         font-size: 3vw;
     }
 }
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    h1 {
+        font-size: 3vh;
+    }
+
+    #gallery {
+        grid-auto-columns: 22.5vw;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2vh;
+        padding: 4vh 0;
+    }
+
+    #gallery > article {
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .details {
+        margin-left: 0;
+        padding-top: 2vh;
+        height: 14vh;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    #gallery > article h2 {
+        margin-bottom: 1vh;
+        font-size: 2.7vh;
+    }
+
+    #gallery > article p {
+        font-size: 1.4vh;
+    }
+
+    #gallery > article.main-movie {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: span 2;
+        grid-column-end: span 2;
+
+    }
+
+    #gallery > article.feature-movie {
+        grid-column: span 2;
+        background-position: center center;
+    }
+}
