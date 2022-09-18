@@ -55,21 +55,14 @@ html, body {
     transition: all 0.7s ease;
 }
 
-.move-img {
-    margin-top: 10.9em;
-}
-
-@media (max-width: 991px) { 
 #head-img-alt.touch-toggle {
     opacity: 1;
 }
-}
 
-@media (min-width: 991px) {
 #head-img-alt:hover {
     opacity: 1;
 }
-}
+
 
 .title {
     font-size: 8vw;
@@ -98,11 +91,9 @@ h2 {
     z-index: 1;
 }
 
-@media (min-width: 991px) {
     h2:hover ~ #head-img-alt {
         opacity: 1;
     }
-}
 
 .joinmail {
     position: relative;
