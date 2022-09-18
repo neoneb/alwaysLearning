@@ -1,6 +1,8 @@
 Hi there!
 
-I am currently working on this github to make it more viewer friendly. Please check back soon for those updates!
+Welcome to my Github.
+
+I am currently a self taught developer teaching myself the skills necessary to land my first development job. At this time I spend around 30-40 hrs per week learning. I will be getting a portfolio website up ASAP, so please check back for that.
 
 Projects to view currently:
 
@@ -18,6 +20,20 @@ https://neoneb.github.io/neoneb-main/constant-learning/zerotomastery_coursework/
 
 Satoshi Nakamoto Tribute Page --
 https://neoneb.github.io/neoneb-main/constant-learning/freecodecamp_projects/tribute_page/index.html
+
+
+-----------------Other Links---------------------
+
+LinkedIn -- https://www.linkedin.com/in/chris-cormier-22814324b
+
+Twitter -- https://twitter.com/neonebcode
+
+Discord -- NΞ◎NΞ₿.#4410
+
+email -- chrisjcormier1@gmail.com
+
+
+
 
 
 
