@@ -25,8 +25,8 @@ https://neoneb.github.io/neoneb-main/constant-learning/zerotomastery_coursework/
 **Gradient Backgrond Generator** --<br/>
 *This was an exercise in which I had to use JS DOM manipulation to complete the following tasks:*
 <br/>
-*1. Write code so that the colour inputs match the background generated on the first page load. *
-*2. Display the initial CSS linear gradient property on page load.*
+*1. Write code so that the colour inputs match the background generated on the first page load.*<br/>
+*2. Display the initial CSS linear gradient property on page load.*<br/>
 *3. BONUS: Add a random button which generates two random numbers for the colour inputs.*<br/><br/>
 
 https://neoneb.github.io/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/js/ex11.background-generator/index.html
@@ -57,8 +57,8 @@ https://neoneb.github.io/neoneb-main/constant-learning/udemy_courses/Mastering%2
 *This was my first exercise in DOM Manipulation. It's not very pretty but I do plan to come back and add style at a later point. The required tasks included:*
 <br/>
 
-*1. If you click on the list item, it toggles the .done class on and off.*
-*2. Add buttons next to each list item to delete the item when clicked on its corresponding delete button.*
+*1. If you click on the list item, it toggles the .done class on and off.*<br/>
+*2. Add buttons next to each list item to delete the item when clicked on its corresponding delete button.*<br/>
 *3. BONUS: When adding a new list item, it automatically adds the 3. delete button next to it (hint: be sure to check if new items are clickable too!)*
  <br/><br/>
 
