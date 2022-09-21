@@ -56,7 +56,6 @@ https://neoneb.github.io/neoneb-main/constant-learning/udemy_courses/Mastering%2
 **Todo List** --<br/>
 *This was my first exercise in DOM Manipulation. It's not very pretty but I do plan to come back and add style at a later point. The required tasks included:*
 <br/>
-
 *1. If you click on the list item, it toggles the .done class on and off.*<br/>
 *2. Add buttons next to each list item to delete the item when clicked on its corresponding delete button.*<br/>
 *3. BONUS: When adding a new list item, it automatically adds the 3. delete button next to it (hint: be sure to check if new items are clickable too!)*
