@@ -27,7 +27,7 @@ This was an exercise in which I had to use JS DOM manipulation to complete the f
 <br/>
 1. Write code so that the colour inputs match the background generated on the first page load. 
 2. Display the initial CSS linear gradient property on page load.
-3. BONUS: Add a random button which generates two random numbers for the colour inputs. <br/>
+3. BONUS: Add a random button which generates two random numbers for the colour inputs. <br/><br/>
 https://neoneb.github.io/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/js/ex11.background-generator/index.html
 <br/><br/>
 
