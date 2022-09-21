@@ -5,10 +5,10 @@ Welcome to my Github.
 I am currently a self taught developer teaching myself the skills necessary to land my first development job. At this time I spend around 30-40 hrs per week learning. I will be getting a portfolio website up ASAP, so please check back for that.
 
 ----------------------Contact----------------------
-LinkedIn -- https://www.linkedin.com/in/chris-cormier-22814324b
-Twitter -- https://twitter.com/neonebcode
-Discord -- NΞ◎NΞ₿.#4410
-email -- chrisjcormier1@gmail.com
+LinkedIn -- https://www.linkedin.com/in/chris-cormier-22814324b <br>
+Twitter -- https://twitter.com/neonebcode <br>
+Discord -- NΞ◎NΞ₿.#4410 <br>
+email -- chrisjcormier1@gmail.com <br>
 ---------------------------------------------------
 
 Projects to view currently:
