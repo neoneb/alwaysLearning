@@ -28,13 +28,12 @@ This was an exercise in which I had to use JS DOM manipulation to complete the f
 1. Write code so that the colour inputs match the background generated on the first page load. 
 2. Display the initial CSS linear gradient property on page load.
 3. BONUS: Add a random button which generates two random numbers for the colour inputs. 
-<br/>
 https://neoneb.github.io/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/js/ex11.background-generator/index.html
 <br/><br/>
 
 Uber Eats Clone -- <br/>
 This was a project I buillt to get a better understanding of CSS Grid.
-<br/>
+<br/><br/>
 https://neoneb.github.io/neoneb-main/constant-learning/udemy_courses/Mastering%20CSS%20Grid%202022%20-%20With%203%20cool%20projects-Daryl%20Duckmanton/section%2011/1.starting-app/index.html
 <br/><br/>
 
