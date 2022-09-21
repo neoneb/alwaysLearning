@@ -4,16 +4,18 @@ Welcome to my Github.
 
 I am currently a self taught developer teaching myself the skills necessary to land my first development job. At this time I spend around 30-40 hrs per week learning. I will be getting a portfolio website up ASAP, so please check back for that.
 
-----------------------Contact----------------------
-LinkedIn -- https://www.linkedin.com/in/chris-cormier-22814324b <br>
-Twitter -- https://twitter.com/neonebcode <br>
-Discord -- NΞ◎NΞ₿.#4410 <br>
-email -- chrisjcormier1@gmail.com <br>
----------------------------------------------------
+Contact
+----------------------------------------------------
+LinkedIn -- https://www.linkedin.com/in/chris-cormier-22814324b 
+Twitter -- https://twitter.com/neonebcode 
+Discord -- NΞ◎NΞ₿.#4410 
+email -- chrisjcormier1@gmail.com 
+----------------------------------------------------
 
 Projects to view currently:
 
----------------------ShowCase----------------------
+ShowCase
+----------------------------------------------------
 
 Clouded Leopard Landing Page --
 This started as just a simple landing page but as I have learned more, I have applied new methods to the build. Currently utilizes HTML, CSS, JS and Bootstrap.
@@ -34,7 +36,8 @@ This was a project I buillt to get a better understanding of CSS Grid.
 
 https://neoneb.github.io/neoneb-main/constant-learning/udemy_courses/Mastering%20CSS%20Grid%202022%20-%20With%203%20cool%20projects-Daryl%20Duckmanton/section%2011/1.starting-app/index.html
 
----------------------Other---------------------
+Other
+----------------------------------------------------
 
 Sticky Note Web App --
 This Project was built for further practice with JS DOM manipulation. You can add new sticky notes, edit the text fields within them and double click them to delete them.
