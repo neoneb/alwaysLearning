@@ -32,6 +32,7 @@ This was an exercise in which I had to use JS DOM manipulation to complete the f
 <br/><br/>
 https://neoneb.github.io/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/js/ex11.background-generator/index.html
 <br/><br/>
+
 Uber Eats Clone -- <br/>
 This was a project I buillt to get a better understanding of CSS Grid.
 <br/><br/>
