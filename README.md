@@ -6,10 +6,10 @@ I am currently a self taught developer teaching myself the skills necessary to l
 
 Contact
 ----------------------------------------------------
-LinkedIn -- https://www.linkedin.com/in/chris-cormier-22814324b 
-Twitter -- https://twitter.com/neonebcode 
-Discord -- NΞ◎NΞ₿.#4410 
-email -- chrisjcormier1@gmail.com 
+LinkedIn -- https://www.linkedin.com/in/chris-cormier-22814324b <br/>
+Twitter -- https://twitter.com/neonebcode <br/>
+Discord -- NΞ◎NΞ₿.#4410 <br/>
+email -- chrisjcormier1@gmail.com <br/>
 ----------------------------------------------------
 
 Projects to view currently:
