@@ -1,0 +1,14 @@
+{
+  "name": "ex11.background-generator",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "build": "browserify script.js > bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
