@@ -20,6 +20,7 @@ body {
     place-items: center center;
 }
 
+/* main container */
 #chat-container {
     display: grid;
     grid:
@@ -36,6 +37,7 @@ body {
     border-radius: 10px;
 }
 
+/* search container */
 #search-container,
 #conversation-list,
 #new-message-container {
@@ -72,6 +74,7 @@ body {
     font-weight: bold;
 }
 
+/* conversation list */
 #conversation-list {
     grid-area: conversation-list;
     overflow-y: scroll;
@@ -126,6 +129,7 @@ body {
     text-overflow: ellipsis;
 }
 
+/* new message container */
 #new-message-container {
     display: grid;
     grid: 40px / 40px;
@@ -146,6 +150,7 @@ body {
     font-size: 3.6rem;
 }
 
+/* chat header */
 #chat-title,
 #chat-form {
     background: #eee;
@@ -170,6 +175,7 @@ body {
     cursor: pointer;
 }
 
+/* main chat window */
 #chat-message-list {
     grid-area: chat-message-list;
     display: flex;
@@ -235,6 +241,7 @@ body {
     border-radius: 14px 14px 14px 0;
 }
 
+/* message input */
 #chat-form {
     display: grid;
     grid: 51px / 32px 1fr;

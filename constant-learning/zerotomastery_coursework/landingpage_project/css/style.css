@@ -3,6 +3,7 @@ html, body {
     background-color: #B7E4C7;
     margin: 0;
 }
+/* Navbar */
 
 .navbar {
     background-color: #D8F3DC;
@@ -33,7 +34,8 @@ html, body {
 #homebtn:hover {
     color: #74C69D;
 }
-    
+/* header*/
+
 .page-header {
     display: flex;
     width: 100%;
@@ -94,6 +96,7 @@ h2 {
     h2:hover ~ #head-img-alt {
         opacity: 1;
     }
+/* Join mailing list */
 
 .joinmail {
     position: relative;

@@ -3,10 +3,12 @@
 // <textarea class="note-body" placeholder="Enter note body..."></textarea>
 // </div>
 
+//selectors
 const btnAddNote = document.querySelector(".add-note");
 const notesContainer = document.querySelector(".notes-container");
 const notesCountLabel = document.querySelector(".note-count");
 
+//Add sticky note
 function createNoteElement() {
    const note = document.createElement("div");
    const title = document.createElement("input");
@@ -26,6 +28,8 @@ function createNoteElement() {
 
    return note;
 }
+
+//update note count
 function updateNotesCount() {
    const notesCount = notesContainer.children.length;
 
@@ -33,6 +37,7 @@ function updateNotesCount() {
 
 }
 
+//randomize sticky note style
 function getRandomNoteStyle () {
    const styles = [1, 2, 3];
    const randomStyle = styles[Math.floor(Math.random() * styles.length)];
@@ -40,6 +45,7 @@ function getRandomNoteStyle () {
    return `note-style-${randomStyle}`;
 }
 
+//double click delete sticky notes
 btnAddNote.addEventListener ("click" , () => {
       const note = createNoteElement();
 
