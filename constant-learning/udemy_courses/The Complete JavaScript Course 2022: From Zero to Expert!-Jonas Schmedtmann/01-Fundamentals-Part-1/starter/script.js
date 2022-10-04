@@ -178,40 +178,69 @@
 //    console.log(`someone else should drive`);
 // }
 
-const day = 'Saturday';
+// const day = 'Saturday';
 
-switch(day) {
-   case 'Monday': // day === 'Monday'
-      console.log('Plan course structure');
-      console.log('Go to coding meetup');
-      break;
-   case 'Tuesday':
-      console.log(`Prepare theory videos`);
-      break;
-   case 'Wednesday':
-   case 'Thursday':
-      console.log(`Write code examples`);
-      break;
-   case 'Friday':
-      console.log(`Record Videos`);
-      break;
-   case 'Saturday':
-   case 'Sunday':
-      console.log('Enjoy the weekend!!!!!');
-      break;
-   default:
-      console.log('Not a valid day!');
-}
+// switch(day) {
+//    case 'Monday': // day === 'Monday'
+//       console.log('Plan course structure');
+//       console.log('Go to coding meetup');
+//       break;
+//    case 'Tuesday':
+//       console.log(`Prepare theory videos`);
+//       break;
+//    case 'Wednesday':
+//    case 'Thursday':
+//       console.log(`Write code examples`);
+//       break;
+//    case 'Friday':
+//       console.log(`Record Videos`);
+//       break;
+//    case 'Saturday':
+//    case 'Sunday':
+//       console.log('Enjoy the weekend!!!!!');
+//       break;
+//    default:
+//       console.log('Not a valid day!');
+// }
 
-if(day === 'Monday') {
-   console.log('Plan course structure');
-   console.log('Go to coding meetup');
-} else if(day === 'Tuesday') {
-   console.log(`Prepare theory videos`);
-} else if(day === 'Wednesday' || day === 'Thursday') {
-   console.log(`Write code examples`);
-} else if(day === 'Saturday' || day === 'Sunday') {
-   console.log('Enjoy the weekend!!!!!');
+// if(day === 'Monday') {
+//    console.log('Plan course structure');
+//    console.log('Go to coding meetup');
+// } else if(day === 'Tuesday') {
+//    console.log(`Prepare theory videos`);
+// } else if(day === 'Wednesday' || day === 'Thursday') {
+//    console.log(`Write code examples`);
+// } else if(day === 'Saturday' || day === 'Sunday') {
+//    console.log('Enjoy the weekend!!!!!');
+// } else {
+//    console.log('Not a valid day!');
+// }
+
+// // EXPRESSIONS
+// 3 + 4
+// 1991
+// true && false && !false
+
+// // STATEMENTS
+// if (23 > 10) {
+//    const str = '23 is bigger';
+// }
+
+const age = 23;
+age >= 18 ? console.log(`I like to drink wine`) : console.log(`I like to drink water`);
+
+const age = 23;
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+let drink2;
+
+if(age >= 18) {
+   drink2 = 'wine';
 } else {
-   console.log('Not a valid day!');
+   drink2 = 'water'
 }
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`)
+

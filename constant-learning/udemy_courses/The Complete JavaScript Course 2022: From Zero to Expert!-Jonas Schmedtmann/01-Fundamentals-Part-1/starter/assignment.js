@@ -95,12 +95,12 @@ if (numNeighbors === 1) {
 //1. ok!
 
 //2.
-const language = 'English;'
+const language = 'english'
 let population = 38000000;
 const isIsland = false;
 
 //3. 4.
-if(language && population < 50000000 && isIsland) {
+if(language === 'english' && population < 50000000 && !isIsland) {
    console.log(`Sarah would love to live in Canada`)
 } else {
    console.log(`You should live in Portugal`)
@@ -110,3 +110,36 @@ if(language && population < 50000000 && isIsland) {
 
 // LECTURE: The switch Statement
 //1.
+switch(language) {
+   case 'chinese':
+   case 'mandarin':
+   console.log(`MOST number of native speakers`);
+   break;
+   case 'spanish':
+      console.log(`2nd place in number of native speakers`);
+   break;
+   case 'english':
+      console.log(`3rd place`);
+   break;
+   case 'hindi':
+      console.log(`5th most spoken language`);
+   break;
+   case 'arabic':
+      console.log(`5th most spoken language`);
+   break;
+   default:
+      console.log(`Great language too :D`)
+}
+
+// LECTURE: The Conditional (Ternary) Operator
+// 1.
+let population = 38000000;
+const country = 'Canada';
+
+
+console.log(
+   `${country}'s population is ${population > 33000000 ? 'above' :
+   'below'} average`,
+   );
+
+// 2. k
