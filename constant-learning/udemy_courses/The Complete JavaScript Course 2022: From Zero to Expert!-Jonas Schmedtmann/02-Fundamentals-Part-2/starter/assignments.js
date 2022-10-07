@@ -111,4 +111,99 @@ neighbors[1] = `Big Boy Ireland`;
 console.log(neighbors);
 
 // LECTURE: Introduction to Objects
+// 1. 
+const myCountry = {
+   country: `Canada`,
+   capital: `Ottawa`,
+   language: `English`,
+   population: 38,
+   neighbors: [`USA!`, `USA!`, `USA!`]
+}
+
+console.log(myCountry);
+
+// LECTURE: Dot vs. Bracket Notation
 // 1.
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbors.length} neighboring countries and the capital is ${myCountry.capital}`)
+
+// 2.
+myCountry.population += 2;
+console.log(myCountry)
+
+myCountry[`population`] -= 2;
+console.log(myCountry)
+
+// LECTURE: Object Methods
+// 1. 3.
+const myCountry = {
+   country: `Canada`,
+   capital: `Ottawa`,
+   language: `English`,
+   population: 38,
+   neighbors: [],
+   describe: function() {
+      return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbors.length} neighboring countries and the capital is ${this.capital}`
+   },
+   checkIsland: function () {
+      this.isIsland = this.neighbors.length === 0 ? true : false; 
+      return this.isIsland;
+   }
+}
+// 2.
+console.log(myCountry.describe());
+
+// 3.
+console.log(myCountry.checkIsland());
+console.log(myCountry);
+
+// LECTURE: Iteration: The for Loop
+// 1.
+for (let voter = 1; voter <= 50; voter++) {
+   console.log(`Voter number ${voter} is currently voting`)
+}
+
+// LECTURE: Looping Arrays, Breaking and Continuing
+// 1.
+const populations = [38, 500, 15, 99];
+
+// 2.
+const percentages2= []
+for (let i = 0; i < populations.length; i++) {
+percentages2.push((populations[i] / 7900 * 100).toFixed(1) + '%')
+}
+console.log(percentages2);
+
+// 3. Confirmed matching
+
+// LECTURE: Looping Backwards and Loops in Loops
+// 1.
+const listOfNeighbors = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
+'Russia']];
+
+// 2.
+for(let i = 0; i < listOfNeighbors.length; i++)
+   for(let y = 0; y < listOfNeighbors[i].length; y++) 
+      console.log(`Neighbors: ${listOfNeighbors[i][y]}`);
+
+// 3. k
+
+// LECTURE: The while Loop
+// 1.
+const populations = [38, 500, 15, 99];
+let i = 0
+
+function percentageOfWorld1(population) {
+   return (population / 7900 * 100).toFixed(1) + '%'
+}
+
+const percentages3= []
+while (i < populations.length) {
+   const perc = percentageOfWorld1(populations[i]);
+   percentages3.push(perc);
+   i++;
+}
+
+console.log(percentages3);
+
+
+// 2. I believe I like the four loop more for this application because all the conditions are together instead of all separated out
