@@ -92,6 +92,15 @@ const restaurant = {
       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(
+      `Here is your delicious pasta with ${ing1}, ${ing2}, and ${ing3}`
+    );
+  },
+  orderPizza: function (mainIng, ...otherIng) {
+    console.log(mainIng);
+    console.log(otherIng);
+  },
 };
 restaurant.orderDelivery({
   time: '22:30',
@@ -117,25 +126,170 @@ const {
 console.log(restaurantName, hours, tags);
 
 // Default values
-const { menu = [], starterMenu: starters = [] } = restaurant;
+// const { menu = [], starterMenu: starters = [] } = restaurant;
 
-console.log(menu, starters);
-console.log(restaurant);
+// console.log(menu, starters);
+// console.log(restaurant);
 
 // Mutating variables
-let a = 111;
-let b = 999;
-const obj = {
-  a: 23,
-  b: 7,
-  c: 14,
-};
+// let a = 111;
+// let b = 999;
+// const obj = {
+//   a: 23,
+//   b: 7,
+//   c: 14,
+// };
 
-({ a, b } = obj);
-console.log(a, b);
+// ({ a, b } = obj);
+// console.log(a, b);
 
 // Nested objects
-const {
-  fri: { open, close },
-} = openingHours;
-console.log(open, close);
+// const {
+//   fri: { open, close },
+// } = openingHours;
+// console.log(open, close);
+
+// const arr = [7, 8, 9];
+// const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+// console.log(badNewArr);
+
+// const newArr = [1, 2, ...arr];
+// console.log(newArr);
+
+// console.log(...newArr);
+
+// const newMenu = [...restaurant.mainMenu, 'Gnocchi'];
+// console.log(newMenu);
+
+// // Copy array
+// const mainMenuCopy = [...restaurant.mainMenu];
+// const menu1 = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(menu1);
+
+// Iterables are: arrays, strings, maps, sets but NOT OBJECTS
+// const str1 = 'Jonas';
+// const letters = [...str1, ' ', 'S.'];
+// console.log(...str1);
+
+// Real-world Example
+// const ingredients = [
+//   prompt(`let's make pasta! ingredient 1?`),
+//   prompt(`Ingredient 2?`),
+//   prompt(`Ingredient 3?`),
+// ];
+// console.log(ingredients);
+
+// restaurant.orderPasta(...ingredients);
+
+// Objects
+// const newRestaurant = { foundedIn: 1998, ...restaurant, founder: 'George' };
+// console.log(newRestaurant);
+
+// const restaurantCopy = { ...restaurant };
+// restaurantCopy.name = 'KFC';
+// console.log(restaurantCopy.name);
+// console.log(restaurant.name1);
+
+// DESTRUCTURING
+
+// SPREAD, because on RIGHT side of =
+// const arr1 = [1, 2, ...[3, 4]];
+// console.log(arr1);
+
+// // REST, because on LEFT side of =
+// const [a, b, ...others] = [1, 2, 3, 4, 5, 6];
+// console.log(a, b, others);
+
+// const [pizza, , Risotto, ...otherFood] = [
+//   ...restaurant.mainMenu,
+//   ...restaurant.starterMenu,
+// ];
+// console.log(pizza, Risotto, otherFood);
+
+// // Objects
+// const { sat, ...weekDays } = restaurant.openingHours;
+// console.log(sat, weekDays);
+
+// // Functions
+// const add = function (...remaining) {
+//   let sum = 0;
+//   for (let i = 0; i < remaining.length; i++) sum += remaining[i];
+//   console.log(remaining);
+// };
+// add(2, 3);
+// add(5, 3, 7, 2);
+// add(8, 2, 6, 4, 5, 6, 2);
+
+// const x = [23, 5, 7];
+// add(...x);
+
+// restaurant.orderPizza('mushrooms', 'onions', 'beef, cheese');
+// restaurant.orderPizza('mushrooms');
+
+// Use ANY data type, return ANY data type, short-circuiting
+// OR OPERATOR
+// console.log('---------- OR ----------');
+// console.log(3 || 'Jonas');
+// console.log('' || 'Jonas');
+// console.log(true || 0);
+// console.log(undefined || null);
+// console.log(undefined || NaN || 0 || '' || 'Hello' || 23 || null);
+
+// restaurant.numGuests = 0;
+// const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+// console.log(guests1);
+
+// const guests2 = restaurant.numGuests || 10;
+// console.log(guests2);
+
+// AND OPERATOR
+// console.log('---------- AND ----------');
+// console.log(0 && 'Jonas');
+// console.log(7 && 'Jonas');
+// console.log(7 && 'Jonas');
+// console.log('Hello' && 23 && null && 'Jonas');
+
+// if (restaurant.orderPizza) {
+//   restaurant.orderPizza('mushrooms', 'spinach');
+// }
+
+// restaurant.orderPizza && restaurant.orderPizza('Beef', 'Cheese');
+
+// Nullish Coalescing Operator (??)
+// Nullish Values are null and undefined (NOT 0 or '')
+// restaurant.numGuests = 0;
+// const guests = restaurant.numGuests || 10;
+// console.log(guests);
+
+// const guestCorrect = restaurant.numGuests ?? 10;
+// console.log(guestCorrect);
+
+const rest1 = {
+  name: 'Capri',
+  // numGuests: 20,
+  numGuests: 0,
+};
+
+const rest2 = {
+  name: 'Lappi',
+  owner: 'Georgie',
+};
+
+// OR assignment operator
+// rest2.numGuests = rest1.numGuests || 10;
+// rest1.numGuests = rest2.numGuests || 10;
+// rest1.numGuests ||= 10;
+// rest2.numGuests ||= 10;
+
+// Nullish assignment operator
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+
+// AND assignment operator
+// rest1.owner = rest1.owner && '<ANONYMOUS>';
+// rest2.owner = rest2.owner && '<ANONYMOUS>';
+rest1.owner &&= '<ANONYMOUS>';
+rest2.owner &&= '<ANONYMOUS>';
+
+console.log(rest1);
+console.log(rest2);
