@@ -480,3 +480,20 @@ slider();
 // [...h1.parentElement.children].forEach(function (el) {
 //   if (el !== h1) el.style.transform = 'scale(0.5)';
 // });
+
+//////////////////////////
+// DOM LIFECYCLE EVENTS
+////////////////////////
+document.addEventListener('DOMContentLoaded', function (e) {
+  console.log('HTML parsed and DOM tree built1', e);
+});
+
+window.addEventListener('load', function (e) {
+  console.log('page fully loaded', e);
+});
+
+// window.addEventListener('beforeunload', function (e) {
+//   e.preventDefault();
+//   console.log(e);
+//   e.returnValue = ' ';
+// });
