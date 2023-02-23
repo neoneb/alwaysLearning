@@ -1,0 +1,23 @@
+{
+  "name": "forkify",
+  "browserslist": [
+    "last 3 Chrome versions"
+  ],
+  "version": "1.0.0",
+  "description": "Recipe App",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "build": "npx parcel build-index.html"
+  },
+  "author": "Chris Cormier",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.58.3"
+  },
+  "dependencies": {
+    "core-js": "^3.28.0",
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.13.11"
+  }
+}
