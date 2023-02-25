@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"68fTb":[function(require,module,exports) {
+})({"7eRrz":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -616,7 +616,8 @@ const controlServings = function(newServings) {
     // update the recipe servings (in state)
     _modelJs.updateServings(newServings);
     // Update the recipe view
-    (0, _recipeViewJsDefault.default).render(_modelJs.state.recipe);
+    // recipeView.render(model.state.recipe);
+    (0, _recipeViewJsDefault.default).update(_modelJs.state.recipe);
 };
 const init = function() {
     (0, _recipeViewJsDefault.default).addHandlerRender(controlRecipes);
@@ -626,7 +627,7 @@ const init = function() {
 };
 init();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ft0bI","regenerator-runtime/runtime":"dXNgZ","./model.js":"Y4A21","./views/recipeView.js":"l60JC","./views/searchView.js":"9OQAM","./views/resultsView.js":"cSbZE","./views/paginationView.js":"6z7bi"}],"ft0bI":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"cFcrl","regenerator-runtime/runtime":"dXNgZ","./model.js":"Y4A21","./views/recipeView.js":"l60JC","./views/searchView.js":"9OQAM","./views/resultsView.js":"cSbZE","./views/paginationView.js":"6z7bi"}],"cFcrl":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -1316,7 +1317,7 @@ const updateServings = function(newServings) {
     state.recipe.servings = newServings;
 };
 
-},{"regenerator-runtime":"dXNgZ","@parcel/transformer-js/src/esmodule-helpers.js":"ft0bI","./config.js":"k5Hzs","./helpers.js":"hGI1E"}],"k5Hzs":[function(require,module,exports) {
+},{"regenerator-runtime":"dXNgZ","@parcel/transformer-js/src/esmodule-helpers.js":"cFcrl","./config.js":"k5Hzs","./helpers.js":"hGI1E"}],"k5Hzs":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "API_URL", ()=>API_URL);
@@ -1326,7 +1327,7 @@ const API_URL = "https://forkify-api.herokuapp.com/api/v2/recipes/";
 const TIMEOUT_SEC = 10;
 const RES_PER_PAGE = 10;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ft0bI"}],"hGI1E":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"cFcrl"}],"hGI1E":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getJSON", ()=>getJSON);
@@ -1353,7 +1354,7 @@ const getJSON = async function(url) {
     }
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ft0bI","regenerator-runtime":"dXNgZ","./config":"k5Hzs"}],"l60JC":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"cFcrl","regenerator-runtime":"dXNgZ","./config":"k5Hzs"}],"l60JC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _viewJs = require("./view.js");
@@ -1475,10 +1476,10 @@ class RecipeView extends (0, _viewJsDefault.default) {
 }
 exports.default = new RecipeView();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ft0bI","../../img/icons.svg":"5l64F","fractional":"3SU56","./view.js":"bWlJ9"}],"5l64F":[function(require,module,exports) {
-module.exports = require("ab58f7d89518d780").getBundleURL("hWUTQ") + "icons.21bad73c.svg" + "?" + Date.now();
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"cFcrl","../../img/icons.svg":"5q1AZ","fractional":"3SU56","./view.js":"bWlJ9"}],"5q1AZ":[function(require,module,exports) {
+module.exports = require("c65a3696ec9243d7").getBundleURL("hWUTQ") + "icons.21bad73c.svg" + "?" + Date.now();
 
-},{"ab58f7d89518d780":"jDn1L"}],"jDn1L":[function(require,module,exports) {
+},{"c65a3696ec9243d7":"h9lBk"}],"h9lBk":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -1779,6 +1780,18 @@ class View {
         this._clear();
         this._parentElement.insertAdjacentHTML("afterbegin", markup);
     }
+    update(data) {
+        if (!data || Array.isArray(data) && data.length === 0) return this.renderError();
+        this._data = data;
+        const newMarkup = this._generateMarkup();
+        const newDOM = document.createRange().createContextualFragment(newMarkup);
+        const newElements = Array.from(newDOM.querySelectorAll("*"));
+        const curElements = Array.from(this._parentElement.querySelectorAll("*"));
+        newElements.forEach((newEl, i)=>{
+            const curEl = curElements[i];
+            console.log(curEl, newEl.isEqualNode(curEl));
+        });
+    }
     _clear() {
         this._parentElement.innerHTML = "";
     }
@@ -1821,7 +1834,7 @@ class View {
 }
 exports.default = View;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ft0bI","../../img/icons.svg":"5l64F"}],"9OQAM":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"cFcrl","../../img/icons.svg":"5q1AZ"}],"9OQAM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 class SearchView {
@@ -1843,7 +1856,7 @@ class SearchView {
 }
 exports.default = new SearchView();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ft0bI"}],"cSbZE":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"cFcrl"}],"cSbZE":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _viewJs = require("./view.js");
@@ -1876,7 +1889,7 @@ class ResultsView extends (0, _viewJsDefault.default) {
 }
 exports.default = new ResultsView();
 
-},{"./view.js":"bWlJ9","@parcel/transformer-js/src/esmodule-helpers.js":"ft0bI","../../img/icons.svg":"5l64F"}],"6z7bi":[function(require,module,exports) {
+},{"./view.js":"bWlJ9","@parcel/transformer-js/src/esmodule-helpers.js":"cFcrl","../../img/icons.svg":"5q1AZ"}],"6z7bi":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _viewJs = require("./view.js");
@@ -1937,6 +1950,6 @@ class PaginationView extends (0, _viewJsDefault.default) {
 }
 exports.default = new PaginationView();
 
-},{"./view.js":"bWlJ9","../../img/icons.svg":"5l64F","@parcel/transformer-js/src/esmodule-helpers.js":"ft0bI"}]},["68fTb","aenu9"], "aenu9", "parcelRequire3a11")
+},{"./view.js":"bWlJ9","../../img/icons.svg":"5q1AZ","@parcel/transformer-js/src/esmodule-helpers.js":"cFcrl"}]},["7eRrz","aenu9"], "aenu9", "parcelRequire3a11")
 
 //# sourceMappingURL=index.e37f48ea.js.map
