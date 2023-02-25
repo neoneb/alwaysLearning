@@ -4,8 +4,8 @@
   "description": "Recipe application",
   "default": "index.html",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html --dist-dir ./dist"
   },
   "author": "Jonas Schedtmann",
   "license": "ISC",
