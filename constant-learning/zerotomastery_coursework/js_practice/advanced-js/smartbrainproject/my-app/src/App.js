@@ -4,8 +4,8 @@ import ParticlesBg from 'particles-bg';
 import Clarifai from 'clarifai';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Navigation from './components/Navigation/Navigation';
-// // import Signin from './components/Signin/Signin';
-// import Register from './components/Register/Register';
+import SignIn from './components/SignIn/SignIn';
+import Register from './components/Register/Register';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 // import Rank from './components/Rank/Rank';
@@ -36,7 +36,7 @@ class App extends Component {
       input: '',
       imageUrl: '',
       box: {},
-      route: 'signin',
+      route: 'signIn',
       isSignedIn: false,
       user: {
         id: '',
@@ -137,7 +137,7 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className='App'>
-        <ParticlesBg type='fountain' bg={true} />
+        <ParticlesBg type='lines' bg={true} />
         <Navigation
           isSignedIn={isSignedIn}
           onRouteChange={this.onRouteChange}
@@ -145,18 +145,18 @@ class App extends Component {
         {route === 'home' ? (
           <div>
             <Logo />
-            <Rank
+            {/* <Rank
               name={this.state.user.name}
               entries={this.state.user.entries}
-            />
+            /> */}
             <ImageLinkForm
               onInputChange={this.onInputChange}
               onButtonSubmit={this.onButtonSubmit}
             />
             <FaceRecognition box={box} imageUrl={imageUrl} />
           </div>
-        ) : route === 'signin' ? (
-          <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
+        ) : route === 'signIn' ? (
+          <SignIn loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
         ) : (
           <Register
             loadUser={this.loadUser}
