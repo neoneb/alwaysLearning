@@ -1,3 +1,7 @@
+.particles-bg-canvas-self {
+  background: linear-gradient(to right, rgb(106, 194, 253), #68ffd9);
+}
+
 .App {
   text-align: center;
 }

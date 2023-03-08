@@ -99,7 +99,7 @@ class App extends Component {
         {
           id: 'face-detection',
           name: 'face-detection',
-          version: '6dc7e46bc9124c5c8824be4822abe105',
+          version: '2f4a7aadfb484d0fb1c3bb1c31dfd0d5',
           type: 'visual-detector',
         },
         this.state.input
@@ -137,7 +137,7 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className='App'>
-        <ParticlesBg type='lines' bg={true} />
+        <ParticlesBg type='cobweb' bg={true} />
         <Navigation
           isSignedIn={isSignedIn}
           onRouteChange={this.onRouteChange}
