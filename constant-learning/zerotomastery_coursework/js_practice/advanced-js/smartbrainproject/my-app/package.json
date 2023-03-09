@@ -9,7 +9,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-parallax-tilt": "^1.7.67",
-    "react-scripts": "^5.0.1",
     "tachyons": "^4.12.0"
   },
   "scripts": {
@@ -29,5 +28,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1"
+  },
+  "resolutions": {
+    "nth-check": "2.1.1"
   }
 }
