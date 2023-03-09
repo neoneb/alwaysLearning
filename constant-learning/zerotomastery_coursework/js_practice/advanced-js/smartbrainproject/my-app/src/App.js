@@ -100,7 +100,7 @@ class App extends Component {
         {
           id: 'face-detection',
           name: 'face-detection',
-          version: '2f4a7aadfb484d0fb1c3bb1c31dfd0d5',
+          version: '6dc7e46bc9124c5c8824be4822abe105',
           type: 'visual-detector',
         },
         this.state.input
@@ -108,7 +108,7 @@ class App extends Component {
       .then((response) => {
         console.log('hi', response);
         if (response) {
-          fetch('http://localhost:3000/image', {
+          fetch('http//localhost:3000/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

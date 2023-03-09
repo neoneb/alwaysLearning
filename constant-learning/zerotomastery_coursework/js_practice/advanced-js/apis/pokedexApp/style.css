@@ -1,0 +1,145 @@
+@font-face {
+  font-family: pokeHollow;
+  src: url(fonts/pokemon/Pokemon\ Hollow.ttf);
+}
+
+@font-face {
+  font-family: pokeSolid;
+  src: url(fonts/pokemon/Pokemon\ Solid.ttf);
+}
+
+@font-face {
+  font-family: cardFont;
+  src: url(fonts/early_gameboy/Early\ GameBoy.ttf);
+}
+
+body {
+  background-color: linear-gradient(
+    to right,
+    rgb(43, 207, 247),
+    rgb(0, 251, 255)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgb(66, 183, 255), rgb(92, 252, 255));
+}
+
+h1 {
+  text-align: center;
+  font-family: pokeSolid;
+  font-size: 2em;
+  color: #3c5aa6;
+  letter-spacing: 5px;
+}
+
+.main__header_img {
+  transform: scale(0.9);
+  width: 100%;
+}
+
+.search__bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #e5e5ff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 auto 2em auto;
+  margin-bottom: 2em;
+}
+
+.search__bar input {
+  flex: 1;
+  height: 100%;
+  padding: 0 20px;
+  border: none;
+  font-size: 1.2em;
+  font-family: pokeHollow;
+  color: #3c5aa6;
+  background: none;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+.search__bar button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 5em;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background-color: #3c5aa6;
+  color: #e5e5ff;
+  font-family: pokeSolid;
+  font-size: 1.2em;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.pokemon__card {
+  display: grid;
+  background: white;
+  outline: 2px solid black;
+  outline-offset: -2px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 2em;
+  gap: 0.5em;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    'name number'
+    'image type'
+    'image height'
+    'image weight';
+  background-color: #e5e5ff;
+  font-family: cardFont;
+  max-width: 30em;
+  font-size: 0.9em;
+}
+
+.pokemon__name {
+  grid-area: name;
+  text-align: center;
+  color: red;
+  font-size: 1.2em;
+  align-self: center;
+  justify-self: center;
+}
+
+.pokemon__number {
+  grid-area: number;
+  font-size: 1.2em;
+  align-self: center;
+  justify-self: center;
+}
+
+.pokemon__image {
+  grid-area: image;
+  transform: scale(1.6);
+  align-self: center;
+  justify-self: center;
+}
+
+.pokemon__type {
+  grid-area: type;
+  align-self: center;
+  justify-self: center;
+}
+
+.pokemon__height {
+  grid-area: height;
+  align-self: center;
+  justify-self: center;
+}
+
+.pokemon__weight {
+  grid-area: weight;
+  align-self: center;
+  justify-self: center;
+}
