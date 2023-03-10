@@ -45,13 +45,12 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 350px;
   height: 50px;
   border-radius: 25px;
   background-color: #e5e5ff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  margin: 0 auto 2em auto;
-  margin-bottom: 2em;
+  margin: 1em auto;
 }
 
 .search__bar input {
@@ -61,10 +60,12 @@ h1 {
   border: none;
   font-size: 1.2em;
   font-family: pokeHollow;
-  color: #3c5aa6;
+  color: #000000;
   background: none;
   outline: none;
   letter-spacing: 1px;
+  text-indent: 5px;
+  padding-top: 5px;
 }
 
 .search__bar button {
@@ -81,6 +82,7 @@ h1 {
   font-size: 1.2em;
   cursor: pointer;
   letter-spacing: 2px;
+  padding-top: 5px;
 }
 
 .pokemon__card {
@@ -88,27 +90,31 @@ h1 {
   background: white;
   outline: 2px solid black;
   outline-offset: -2px;
-  border-radius: 10px;
+  border-radius: 25px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  padding: 2em;
-  gap: 0.5em;
-  grid-template-columns: 1fr 2fr;
+  padding: 1em;
+  gap: 1em;
+  margin: 2em;
   grid-template-areas:
-    'name number'
-    'image type'
-    'image height'
-    'image weight';
+    'name'
+    'number'
+    'image'
+    'height'
+    'weight'
+    'type';
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   background-color: #e5e5ff;
   font-family: cardFont;
-  max-width: 30em;
   font-size: 0.9em;
+  max-width: 25em;
 }
 
 .pokemon__name {
   grid-area: name;
   text-align: center;
   color: red;
-  font-size: 1.2em;
+  font-size: 1.5em;
   align-self: center;
   justify-self: center;
 }
@@ -122,25 +128,29 @@ h1 {
 
 .pokemon__image {
   grid-area: image;
-  transform: scale(1.6);
   align-self: center;
   justify-self: center;
+  width: 50%;
+  height: auto;
 }
 
 .pokemon__type {
   grid-area: type;
   align-self: center;
   justify-self: center;
+  white-space: nowrap;
 }
 
 .pokemon__height {
   grid-area: height;
   align-self: center;
   justify-self: center;
+  white-space: nowrap;
 }
 
 .pokemon__weight {
   grid-area: weight;
   align-self: center;
   justify-self: center;
+  white-space: nowrap;
 }

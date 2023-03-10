@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script defer src="script.js"></script>
-    <title>Pokemon API</title>
+    <title>PokeDex</title>
   </head>
   <body>
     <header>
@@ -16,6 +16,7 @@
     <main>
       <form class="search__bar">
         <input
+          class="search__input"
           class="search__textfield"
           type="text"
           name="q"
@@ -23,18 +24,20 @@
         />
         <button type="submit" class="search__btn">Search</button>
       </form>
-      <container class="pokemon__card">
-        <div class="pokemon__name">Pikachu</div>
-        <div class="pokemon__number"># 25</div>
-        <img
-          class="pokemon__image"
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
-          alt="Pikachu"
-        />
-        <div class="pokemon__type">Type: Electric</div>
-        <div class="pokemon__height">Height: 4</div>
-        <div class="pokemon__weight">Weight: 60</div>
-      </container>
+      <div class="card__grid">
+        <!-- <container class="pokemon__card">
+          <div class="pokemon__name">Pikachu</div>
+          <div class="pokemon__number"># 25</div>
+          <img
+            class="pokemon__image"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+            alt="Pikachu"
+          />
+          <div class="pokemon__type">Type: Electric</div>
+          <div class="pokemon__height">Height: 4</div>
+          <div class="pokemon__weight">Weight: 60</div>
+        </container> -->
+      </div>
     </main>
     <footer></footer>
   </body>
