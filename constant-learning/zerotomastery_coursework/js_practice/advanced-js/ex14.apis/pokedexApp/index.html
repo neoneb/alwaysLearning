@@ -11,20 +11,25 @@
   <body>
     <header>
       <img class="main__header_img" src="./imgs/logo.svg" alt="Pokemon Logo" />
-      <h1>Search That Pokemon!</h1>
     </header>
     <main>
-      <form class="search__bar">
-        <input
-          class="search__input"
-          class="search__textfield"
-          type="text"
-          name="q"
-          placeholder="Search a Pokemon..."
-        />
-        <button type="submit" class="search__btn">Search</button>
-      </form>
-      <div class="card__grid">
+      <div>
+        <form class="search__bar">
+          <input
+            class="search__input"
+            class="search__textfield"
+            type="text"
+            name="q"
+            placeholder="Search a Pokemon..."
+          />
+          <button type="submit" class="search__btn">Search</button>
+        </form>
+        <button type="submit" class="random__btn">Random</button>
+        <h1>Search That Pokemon!</h1>
+        <div class="wrapper">
+          <div class="pokeball"></div>
+        </div>
+        <div class="card__grid"></div>
         <!-- <container class="pokemon__card">
           <div class="pokemon__name">Pikachu</div>
           <div class="pokemon__number"># 25</div>
