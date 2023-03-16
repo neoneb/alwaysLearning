@@ -8,7 +8,7 @@ import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
-// import Rank from './components/Rank/Rank';
+import Rank from './components/Rank/Rank';
 import './App.css';
 
 //You must add your own API key here from Clarifai.
@@ -48,6 +48,24 @@ class App extends Component {
       },
     };
   }
+
+  loadUser = (data) => {
+    this.setState({
+      user: {
+        id: data.id,
+        name: data.name,
+        email: data.email,
+        entries: data.entries,
+        joined: data.joined,
+      },
+    });
+  };
+
+  // componentDidMount() {
+  //   fetch('http://localhost:3000')
+  //     .then((response) => response.json())
+  //     .then(console.log);
+  // }
 
   loadUser = (data) => {
     this.setState({
@@ -108,7 +126,7 @@ class App extends Component {
       .then((response) => {
         console.log('hi', response);
         if (response) {
-          fetch('http//localhost:3000/image', {
+          fetch('http://localhost:3000/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -146,10 +164,10 @@ class App extends Component {
         {route === 'home' ? (
           <div>
             <Logo />
-            {/* <Rank
+            <Rank
               name={this.state.user.name}
               entries={this.state.user.entries}
-            /> */}
+            />
             <ImageLinkForm
               onInputChange={this.onInputChange}
               onButtonSubmit={this.onButtonSubmit}
