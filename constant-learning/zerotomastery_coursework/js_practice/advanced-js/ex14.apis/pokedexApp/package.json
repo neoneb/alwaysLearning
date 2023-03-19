@@ -2,12 +2,18 @@
   "name": "pokedex-app",
   "version": "1.1.1",
   "description": "",
-  "main": "index.html",
+  "default": "index.html",
   "scripts": {
-    "start": "live-server"
+    "start": "npx parcel /home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/index.html",
+    "build": "npx parcel build /home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/index.html --dist-dir ./dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "live-server": "^1.2.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
 }
