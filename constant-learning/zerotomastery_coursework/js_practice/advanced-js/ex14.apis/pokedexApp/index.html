@@ -4,20 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../pokedexApp/src/app.css" />
+    <script type="module" defer src="../pokedexApp/src/app.js"></script>
     <title>PokeDex</title>
   </head>
   <body>
     <header>
-      <img class="main__header_img" src="./imgs/logo.svg" alt="Pokemon Logo" />
+      <img
+        class="main__header_img"
+        src="../pokedexApp/src/imgs/logo.svg"
+        alt="Pokemon Logo"
+      />
     </header>
     <main>
       <div>
         <form class="search__bar">
           <input
-            class="search__input"
-            class="search__textfield"
+            class="search__input search__textfield"
+            id="search-input"
             type="text"
             name="q"
             placeholder="Search a Pokemon..."
@@ -25,7 +29,15 @@
           <button type="submit" class="search__btn">Search</button>
         </form>
         <button type="submit" class="random__btn">Random</button>
-        <h1>Search That Pokemon!</h1>
+        <h1>
+          Search That Pokemon!
+          <img
+            id="welcome__img"
+            src="../pokedexApp/src/imgs/welcome.png"
+            alt="starter pokemon"
+          />
+        </h1>
+
         <div class="wrapper">
           <div class="pokeball"></div>
         </div>

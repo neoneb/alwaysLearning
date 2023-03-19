@@ -1,0 +1,125 @@
+'use strict';
+// Query Selectors
+const searchBtn = getElement('.search__btn');
+const searchInput = getElement('.search__input');
+const pokemonContainer = getElement('.card__grid');
+const randomBtn = getElement('.random__btn');
+const loadingPokeball = getElement('.pokeball');
+const headerText = getElement('h1');
+let searchValue;
+let html;
+let state = {
+  pokemon: {},
+};
+
+// Helper Functions
+function getElement(selector) {
+  const element = document.querySelector(selector);
+  if (element === null) {
+    return null;
+  }
+  return element;
+}
+
+const loadHelper = (e, callback) => {
+  e.preventDefault();
+  headerText.style = 'display:none';
+  pokemonContainer.innerHTML = '';
+  searchValue = searchInput.value.toLowerCase();
+  callback();
+};
+
+function setDisplay(element, value) {
+  element.style.display = value;
+}
+
+function renderError() {
+  setDisplay(loadingPokeball, 'none');
+  pokemonContainer.innerHTML = `<h2>Not a Pokemon, try something else!</h2>
+  <img
+  id="error__img"
+  src="https://www.pngmart.com/files/22/Surprised-Pikachu-Transparent-PNG.png"
+  alt="pikachu meme"
+/>`;
+}
+
+// Call API
+const fetchPokemon = async function (searchValue) {
+  try {
+    loadingPokeball.style.display = 'block';
+    const response = await fetch(
+      `https://pokeapi.co/api/v2/pokemon/${searchValue}/`
+    );
+    const data = await response.json();
+    state.pokemon = data;
+    renderHtml();
+    setDisplay(loadingPokeball, 'none');
+  } catch (err) {
+    renderError();
+    console.log('error:', err);
+  }
+};
+
+// Search Pokemon
+const getPokemon = async function () {
+  const searchValue = searchInput.value.toLowerCase();
+  await fetchPokemon(searchValue);
+};
+
+// Random Pokemon
+const getRandomPokemon = async function () {
+  const randomId = Math.floor(Math.random() * 898) + 1;
+  await fetchPokemon(randomId);
+};
+
+// Render Pokemon Card
+const renderHtml = function () {
+  const { name, id, height, weight } = state.pokemon;
+  const typesArray = state.pokemon.types;
+  const pokemon = state.pokemon;
+  const types = typesArray.map((type) => type.type.name).join(', ');
+  const abilitiesArray = state.pokemon.abilities;
+  const abilities = abilitiesArray
+    .slice(0, 2)
+    .map((ability) => ability.ability.name)
+    .join(', ');
+  html = ` <container class="pokemon__card" style="display:none">
+  <div class="pokemon__name">${pokemon.name}</div>
+  <div class="pokemon__number"># ${pokemon.id}</div>
+  <img
+    class="pokemon__image"
+    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png"
+    alt="${state.pokemon.name}"
+  />
+  <div class="pokemon__type">Type: ${types}</div>
+  <div class="pokemon__height">Height: ${pokemon.height}</div>
+  <div class="pokemon__weight">Weight: ${pokemon.weight}</div>
+  <div class="pokemon__abilities">Abilities: ${abilities}</div>
+</container>`;
+  pokemonContainer.innerHTML = html;
+  const pokemonImage = getElement('.pokemon__image');
+
+  pokemonImage.addEventListener('load', (e) => {
+    const pokemonCard = getElement('.pokemon__card');
+    e.preventDefault();
+    setDisplay(headerText, 'none');
+    setDisplay(pokemonCard, 'block');
+    setDisplay(loadingPokeball, 'none');
+    searchInput.value = '';
+  });
+};
+
+// Event listens
+randomBtn.addEventListener('click', (e) => {
+  loadHelper(e, getRandomPokemon);
+});
+
+searchBtn.addEventListener('click', (e) => {
+  loadHelper(e, getPokemon);
+});
+
+searchInput.addEventListener('keydown', (e) => {
+  if (e.keyCode === 13) {
+    loadHelper(e, getPokemon);
+  }
+});

@@ -1,16 +1,16 @@
 @font-face {
   font-family: pokeHollow;
-  src: url(fonts/pokemon/Pokemon\ Hollow.ttf);
+  src: url(../src/fonts/pokemon/Pokemon\ Hollow.ttf);
 }
 
 @font-face {
   font-family: pokeSolid;
-  src: url(fonts/pokemon/Pokemon\ Solid.ttf);
+  src: url(../src/fonts/pokemon/Pokemon\ Solid.ttf);
 }
 
 @font-face {
   font-family: cardFont;
-  src: url(fonts/early_gameboy/Early\ GameBoy.ttf);
+  src: url(../src/fonts/early_gameboy/Early\ GameBoy.ttf);
 }
 
 * {
@@ -109,11 +109,37 @@ h1 {
   color: #3c5aa6;
   letter-spacing: 5px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  margin: auto;
-  top: 18em;
-  bottom: 0;
+  margin-top: 0.2em;
   left: 0;
   right: 0;
+}
+
+#welcome__img {
+  padding-top: 0.5em;
+  max-width: 75%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-family: pokeSolid;
+  color: #ff0000;
+  letter-spacing: 5px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-size: 1.8em;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+#error__img {
+  padding-top: 3em;
+  margin: 0 auto;
+  display: block;
+  max-width: 40%;
+  height: auto;
 }
 
 .wrapper {
