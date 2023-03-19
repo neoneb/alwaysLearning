@@ -101,6 +101,17 @@ body {
   margin-top: 1em;
 }
 
+#search-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+#search-input {
+  position: relative;
+}
+
 h1 {
   position: absolute;
   text-align: center;

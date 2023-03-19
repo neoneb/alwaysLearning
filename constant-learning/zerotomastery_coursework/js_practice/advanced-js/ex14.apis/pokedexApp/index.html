@@ -7,6 +7,11 @@
     <link rel="stylesheet" type="text/css" href="../pokedexApp/src/app.css" />
     <script type="module" defer src="../pokedexApp/src/app.js"></script>
     <title>PokeDex</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../pokedexApp/src/imgs/favicon.png"
+    />
   </head>
   <body>
     <header>
@@ -25,7 +30,10 @@
             type="text"
             name="q"
             placeholder="Search a Pokemon..."
+            list="search-suggestions"
+            autocomplete="off"
           />
+          <datalist id="search-suggestions"></datalist>
           <button type="submit" class="search__btn">Search</button>
         </form>
         <button type="submit" class="random__btn">Random</button>

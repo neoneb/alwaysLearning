@@ -26,6 +26,7 @@ const loadHelper = (e, callback) => {
   headerText.style = 'display:none';
   pokemonContainer.innerHTML = '';
   searchValue = searchInput.value.toLowerCase();
+  updateSuggestions(searchValue);
   callback();
 };
 
@@ -56,7 +57,29 @@ const fetchPokemon = async function (searchValue) {
     setDisplay(loadingPokeball, 'none');
   } catch (err) {
     renderError();
-    console.log('error:', err);
+    console.log('Pokemon not Found!', err);
+  }
+};
+
+// Search Suggestions
+const updateSuggestions = async function (searchValue) {
+  try {
+    if (searchValue !== '') {
+      const response = await fetch(
+        `https://pokeapi.co/api/v2/pokemon/?limit=1015`
+      );
+      const data = await response.json();
+      const suggestions = data.results
+        .filter((pokemon) => pokemon.name.startsWith(searchValue))
+        .map((pokemon) => pokemon.name);
+      const datalist = getElement('#search-suggestions');
+      datalist.innerHTML = suggestions
+        .map((suggestion) => `<option value="${suggestion}"></option>`)
+        .slice(0, 9)
+        .join('');
+    }
+  } catch (err) {
+    console.log('Error retrieving search suggestions!', err);
   }
 };
 
@@ -74,16 +97,17 @@ const getRandomPokemon = async function () {
 
 // Render Pokemon Card
 const renderHtml = function () {
-  const { name, id, height, weight } = state.pokemon;
-  const typesArray = state.pokemon.types;
-  const pokemon = state.pokemon;
-  const types = typesArray.map((type) => type.type.name).join(', ');
-  const abilitiesArray = state.pokemon.abilities;
-  const abilities = abilitiesArray
-    .slice(0, 2)
-    .map((ability) => ability.ability.name)
-    .join(', ');
-  html = ` <container class="pokemon__card" style="display:none">
+  try {
+    const { name, id, height, weight } = state.pokemon;
+    const typesArray = state.pokemon.types;
+    const pokemon = state.pokemon;
+    const types = typesArray.map((type) => type.type.name).join(', ');
+    const abilitiesArray = state.pokemon.abilities;
+    const abilities = abilitiesArray
+      .slice(0, 2)
+      .map((ability) => ability.ability.name)
+      .join(', ');
+    html = ` <container class="pokemon__card" style="display:none">
   <div class="pokemon__name">${pokemon.name}</div>
   <div class="pokemon__number"># ${pokemon.id}</div>
   <img
@@ -96,17 +120,22 @@ const renderHtml = function () {
   <div class="pokemon__weight">Weight: ${pokemon.weight}</div>
   <div class="pokemon__abilities">Abilities: ${abilities}</div>
 </container>`;
-  pokemonContainer.innerHTML = html;
-  const pokemonImage = getElement('.pokemon__image');
+    pokemonContainer.innerHTML = html;
+    const pokemonImage = getElement('.pokemon__image');
 
-  pokemonImage.addEventListener('load', (e) => {
-    const pokemonCard = getElement('.pokemon__card');
-    e.preventDefault();
-    setDisplay(headerText, 'none');
-    setDisplay(pokemonCard, 'block');
+    pokemonImage.addEventListener('load', (e) => {
+      const pokemonCard = getElement('.pokemon__card');
+      e.preventDefault();
+      setDisplay(headerText, 'none');
+      setDisplay(pokemonCard, 'block');
+      setDisplay(loadingPokeball, 'none');
+      searchInput.value = '';
+    });
+  } catch {
+    console.log('Error:', err);
     setDisplay(loadingPokeball, 'none');
-    searchInput.value = '';
-  });
+    pokemonContainer.innerHTML = '<h2>Error, please try again.</h2>';
+  }
 };
 
 // Event listens
@@ -122,4 +151,9 @@ searchInput.addEventListener('keydown', (e) => {
   if (e.keyCode === 13) {
     loadHelper(e, getPokemon);
   }
+});
+
+searchInput.addEventListener('input', (e) => {
+  const searchValue = e.target.value.toLowerCase();
+  updateSuggestions(searchValue);
 });
