@@ -32,8 +32,12 @@ body {
   background: linear-gradient(to right, rgb(66, 183, 255), rgb(92, 252, 255));
 }
 
+header {
+  display: inline-block;
+}
+
 .main__header_img {
-  transform: scale(0.8);
+  min-width: auto;
   width: 100%;
 }
 
@@ -99,17 +103,6 @@ body {
   letter-spacing: 2px;
   padding-top: 5px;
   margin-top: 1em;
-}
-
-#search-suggestions {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-}
-
-#search-input {
-  position: relative;
 }
 
 h1 {
@@ -291,4 +284,221 @@ h2 {
   justify-self: center;
   white-space: wrap;
   margin-top: 0.8em;
+}
+
+/* Styles for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  /* Styles for mobile devices */
+  h1 {
+    letter-spacing: 3px;
+    font-size: 1.8em;
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 2.2em;
+  }
+
+  #welcome__img {
+    padding-top: 1em;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .search__bar {
+    width: 310px;
+    height: 40px;
+    margin: 1em auto;
+  }
+
+  .search__bar input {
+    padding: 0 15px;
+    font-size: 1em;
+    text-indent: 5px;
+    padding-top: 5px;
+  }
+
+  .search__bar button {
+    height: 100%;
+    width: 5em;
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding-top: 5px;
+  }
+
+  .random__btn {
+    width: 5.5em;
+    font-size: 1.2em;
+    letter-spacing: 1.8px;
+  }
+
+  .pokemon__card {
+    max-width: 90%;
+    max-height: auto;
+    margin: 0 auto;
+  }
+
+  h2 {
+    padding-top: 1.5em;
+    color: #ff0000;
+    letter-spacing: 6px;
+    font-size: 2.1em;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  #error__img {
+    padding-top: 1em;
+    margin: 0 auto;
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+/* Styles for screens with a width between 769px and 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for tablets */
+  .main__header_img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  h1 {
+    letter-spacing: 3px;
+    font-size: 2.5em;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  #welcome__img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .search__bar {
+    margin-top: 2em;
+    width: 400px;
+    height: 50px;
+  }
+
+  .search__bar input {
+    padding: 0 30px;
+    font-size: 1.3em;
+    text-indent: 5px;
+    padding-top: 5px;
+  }
+
+  .search__bar button {
+    height: 100%;
+    width: 5em;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    padding-top: 5px;
+  }
+
+  .random__btn {
+    width: 7em;
+    font-size: 1.5em;
+    letter-spacing: 1.8px;
+  }
+
+  .pokemon__card {
+    max-width: 95%;
+    max-height: auto;
+    margin: 0 auto;
+    font-size: 0.95em;
+  }
+}
+h2 {
+  padding-top: 0.5em;
+  color: #ff0000;
+  letter-spacing: 8px;
+  font-size: 1.8em;
+  max-width: 50%;
+  max-height: auto;
+  margin: 0 auto;
+}
+
+#error__img {
+  padding-top: 1em;
+  margin: 0 auto;
+  max-width: 40%;
+  height: auto;
+}
+
+/* Styles for screens with a width greater than 1024px */
+@media screen and (min-width: 1025px) {
+  .main__header_img {
+    margin-bottom: 0;
+    width: 95%;
+  }
+
+  h1 {
+    letter-spacing: 8px;
+    font-size: 2em;
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 0.5em;
+  }
+
+  #welcome__img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .search__bar {
+    margin-top: 1em;
+    width: 400px;
+    height: 50px;
+  }
+
+  .search__bar input {
+    padding: 0 30px;
+    font-size: 1.3em;
+    text-indent: 5px;
+    padding-top: 5px;
+  }
+
+  .search__bar button {
+    height: 100%;
+    width: 5em;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    padding-top: 5px;
+  }
+
+  .random__btn {
+    width: 7em;
+    font-size: 1.5em;
+    letter-spacing: 1.8px;
+  }
+
+  .pokemon__card {
+    max-width: 95%;
+    max-height: auto;
+    margin: 0 auto;
+    font-size: 0.85em;
+  }
+
+  h2 {
+    padding-top: 0.5em;
+    color: #ff0000;
+    letter-spacing: 8px;
+    font-size: 1.8em;
+    max-width: 50%;
+    max-height: auto;
+    margin: 0 auto;
+  }
+
+  #error__img {
+    padding-top: 1em;
+    margin: 0 auto;
+    max-width: 40%;
+    height: auto;
+  }
 }
