@@ -20,15 +20,44 @@
 }
 
 body {
+  background-color: -webkit-linear-gradient(
+    to right,
+    rgb(43, 207, 247),
+    rgb(0, 251, 255)
+  );
+  background-color: -moz-linear-gradient(
+    to right,
+    rgb(43, 207, 247),
+    rgb(0, 251, 255)
+  );
   background-color: linear-gradient(
     to right,
     rgb(43, 207, 247),
     rgb(0, 251, 255)
   );
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(66, 183, 255),
+    rgb(92, 252, 255)
+  );
+  background: -moz-linear-gradient(
+    to right,
+    rgb(66, 183, 255),
+    rgb(92, 252, 255)
+  );
   background: linear-gradient(to right, rgb(66, 183, 255), rgb(92, 252, 255));
 }
 
@@ -50,13 +79,17 @@ header {
   height: 50px;
   border-radius: 25px;
   background-color: #e5e5ff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   margin: 1em auto;
 }
 
 .search__bar input {
-  flex: 1;
-  height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: fit-content;
+  height: fit-content;
   padding: 0 20px;
   border: none;
   font-size: 1.2em;
@@ -66,15 +99,14 @@ header {
   outline: none;
   letter-spacing: 1px;
   text-indent: 5px;
-  padding-top: 5px;
 }
 
 .search__bar button {
   position: absolute;
   right: 0;
   top: 0;
-  height: 100%;
-  width: 5em;
+  width: fit-content;
+  height: 50px;
   border: none;
   border-radius: 0 25px 25px 0;
   background-color: #3c5aa6;
@@ -83,7 +115,6 @@ header {
   font-size: 1.2em;
   cursor: pointer;
   letter-spacing: 2px;
-  padding-top: 5px;
 }
 
 .random__btn {
@@ -91,8 +122,8 @@ header {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 6.5em;
-  height: auto;
+  width: fit-content;
+  height: 50px;
   border: none;
   border-radius: 25px 25px 25px 25px;
   background-color: #3c5aa6;
@@ -101,7 +132,6 @@ header {
   font-size: 1.4em;
   cursor: pointer;
   letter-spacing: 2px;
-  padding-top: 5px;
   margin-top: 1em;
 }
 
@@ -163,8 +193,8 @@ h2 {
   border: 3px solid;
   animation: frames 0.8s linear 0s infinite;
   display: none;
-  margin-top: 14em;
   margin-left: 42%;
+  margin-top: 10em;
 }
 
 .pokeball:after {
@@ -209,8 +239,9 @@ h2 {
   outline: 2px solid black;
   outline-offset: -2px;
   border-radius: 25px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  padding: 1em;
+  padding: 0.5em;
   gap: 1em;
   grid-template-areas:
     'name'
@@ -286,6 +317,16 @@ h2 {
   margin-top: 0.8em;
 }
 
+/* footer {
+  background: white;
+  color: #3c5aa6;
+  padding: 2px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} */
+
 /* Styles for screens with a maximum width of 768px */
 @media screen and (max-width: 768px) {
   /* Styles for mobile devices */
@@ -312,22 +353,18 @@ h2 {
   }
 
   .search__bar input {
-    padding: 0 15px;
     font-size: 1em;
     text-indent: 5px;
-    padding-top: 5px;
   }
 
   .search__bar button {
-    height: 100%;
-    width: 5em;
+    height: 40px;
     font-size: 1em;
     letter-spacing: 2px;
-    padding-top: 5px;
   }
 
   .random__btn {
-    width: 5.5em;
+    height: 40px;
     font-size: 1.2em;
     letter-spacing: 1.8px;
   }
@@ -385,22 +422,16 @@ h2 {
   }
 
   .search__bar input {
-    padding: 0 30px;
     font-size: 1.3em;
     text-indent: 5px;
-    padding-top: 5px;
   }
 
   .search__bar button {
-    height: 100%;
-    width: 5em;
     font-size: 1.3em;
     letter-spacing: 2px;
-    padding-top: 5px;
   }
 
   .random__btn {
-    width: 7em;
     font-size: 1.5em;
     letter-spacing: 1.8px;
   }
@@ -458,22 +489,16 @@ h2 {
   }
 
   .search__bar input {
-    padding: 0 30px;
     font-size: 1.3em;
     text-indent: 5px;
-    padding-top: 5px;
   }
 
   .search__bar button {
-    height: 100%;
-    width: 5em;
     font-size: 1.3em;
     letter-spacing: 2px;
-    padding-top: 5px;
   }
 
   .random__btn {
-    width: 7em;
     font-size: 1.5em;
     letter-spacing: 1.8px;
   }

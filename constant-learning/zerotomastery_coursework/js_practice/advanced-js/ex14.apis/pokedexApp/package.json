@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "eslint": "^8.36.0",
