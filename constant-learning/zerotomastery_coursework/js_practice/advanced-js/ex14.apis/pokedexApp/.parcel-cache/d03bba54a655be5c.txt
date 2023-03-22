@@ -1,15 +1,13 @@
 7650
 129/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/.gitignore1679175122295404875 0
-144/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/favicon.138a193a.png1679425781229401776 0
-145/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.69031aef.js.map1679425781537402385 0
-146/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.1e5c9c1d.css.map1679425781537402385 0
-142/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.1e5c9c1d.css1679425781533402378 0
-150/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/Early GameBoy.61a60387.ttf1679425781145401609 0
-141/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.69031aef.js1679425781533402378 0
-134/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.html1679425781533402378 0
-141/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/logo.27c13a69.svg1679425781281401879 0
-123/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist1679425781537402385 1
-130/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/src/app.css1679424271436794743 0
+144/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/favicon.138a193a.png1679510354559917698 0
+145/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.69031aef.js.map1679510354867922376 0
+150/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/Early GameBoy.61a60387.ttf1679510354475916423 0
+141/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.69031aef.js1679510354863922315 0
+134/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.html1679510354863922315 0
+141/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/logo.27c13a69.svg1679510354623918671 0
+123/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist1679510354867922376 1
+130/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/src/app.css1679510227361950849 0
 129/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/src/app.js1679253344900138409 0
 127/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/src/imgs1679240085442341393 1
 154/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/src/fonts/pokemon/Pokemon Solid.ttf1171045248000000000 0
@@ -152,6 +150,7 @@
 158/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@trysound/sax/package.json1679250197844534586 0
 153/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@trysound/sax/LICENSE499162500000000000 0
 145/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@trysound/sax1679250197848534653 1
+142/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.c1b4eb5e.css1679510354863922315 0
 157/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/finalhandler/package.json1679249904047689927 0
 144/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/finalhandler1679249904047689927 1
 160/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/weak-lru-cache/tests/test.js499162500000000000 0
@@ -375,7 +374,7 @@
 153/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/nan/doc/converters.md499162500000000000 0
 149/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/nan/doc/errors.md499162500000000000 0
 150/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/nan/doc/buffers.md499162500000000000 0
-144/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/welcome.5d2674ba.png1679425781533402378 0
+144/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/welcome.5d2674ba.png1679510354863922315 0
 150/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/nan/doc/v8_misc.md499162500000000000 0
 154/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/nan/doc/maybe_types.md499162500000000000 0
 153/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/nan/doc/persistent.md499162500000000000 0
@@ -406,7 +405,6 @@
 165/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/lightningcss/node/targets.js.flow499162500000000000 0
 163/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/lightningcss/node/index.js.flow499162500000000000 0
 149/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/lightningcss/node1679250196856518323 1
-142/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.5d238c0e.css1679425781533402378 0
 154/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/lightningcss/README.md499162500000000000 0
 157/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/lightningcss/package.json1679250197928535970 0
 147/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/find-up/license499162500000000000 0
@@ -1136,7 +1134,7 @@
 160/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@humanwhocodes/object-schema1679253470926271577 1
 153/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/mdn-data/package.json1679250197928535970 0
 175/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@humanwhocodes/module-importer/CHANGELOG.md499162500000000000 0
-151/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/Pokemon Hollow.b1faf6ae.ttf1679425781145401609 0
+151/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/Pokemon Hollow.b1faf6ae.ttf1679510354467916301 0
 188/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@humanwhocodes/module-importer/dist/module-importer.d.ts499162500000000000 0
 172/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@humanwhocodes/module-importer/README.md499162500000000000 0
 166/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@humanwhocodes/module-importer/src1679253470578265668 1
@@ -1226,7 +1224,7 @@
 146/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/for-in/LICENSE1459090429000000000 0
 183/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/eslint/lib/rules/utils/unicode/is-surrogate-pair.js499162500000000000 0
 138/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/for-in1679249904315694356 1
-150/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/Pokemon Solid.66546939.ttf1679425781225401768 0
+150/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/Pokemon Solid.66546939.ttf1679510354555917638 0
 153/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/union-value/README.md499162500000000000 0
 156/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/union-value/package.json1679249904047689927 0
 151/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/union-value/LICENSE499162500000000000 0
@@ -1516,7 +1514,7 @@
 178/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@swc/helpers/src/_class_private_field_init.mjs1655364223000000000 0
 169/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@swc/helpers/src/_read_only_error.mjs1666071687000000000 0
 178/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@swc/helpers/src/_async_generator_delegate.mjs1655146850000000000 0
-136/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/src/normalize.css1679425658973159678 0
+136/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/src/normalize.css1679508932643654601 0
 166/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@swc/helpers/src/_to_primitive.mjs1655364223000000000 0
 188/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/js-sdsl/dist/cjs/container/TreeContainer/Base/index.d.ts1674185339000000000 0
 177/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@swc/helpers/src/_tagged_template_literal.mjs1655146850000000000 0
@@ -2146,7 +2144,7 @@
 144/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/pause-stream1679249904079690456 1
 162/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/cosmiconfig/dist/readFile.d.ts499162500000000000 0
 178/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/serve-index/public/icons/page_white_office.png1487574210000000000 0
-131/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/package.json1679425357796732406 0
+131/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/package.json1679425968341772286 0
 156/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/yaml/dist/test-events.js499162500000000000 0
 169/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@parcel/source-map/dist/utils.js.flow499162500000000000 0
 159/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/ajv/scripts/travis-gh-pages499162500000000000 0
@@ -2624,6 +2622,7 @@
 163/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/caniuse-lite/data/regions/TM.js499162500000000000 0
 161/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/fast-levenshtein/package.json1679253470926271577 0
 163/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/caniuse-lite/data/regions/CF.js499162500000000000 0
+146/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.5185e724.css.map1679510354867922376 0
 170/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/caniuse-lite/data/features/css-zoom.js499162500000000000 0
 168/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@parcel/transformer-svg/node_modules1679250197796533797 1
 148/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/terser/lib/utils1679250196908519179 1
@@ -2639,7 +2638,6 @@
 161/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/colors/lib/system/has-flag.js499162500000000000 0
 180/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/lmdb/dependencies/lmdb/libraries/liblmdb/mtest.c499162500000000000 0
 163/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/caniuse-lite/data/regions/CN.js499162500000000000 0
-146/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.5d238c0e.css.map1679425781537402385 0
 158/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/is-descriptor/package.json1679249904263693497 0
 156/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/to-regex-range/README.md1493300007000000000 0
 163/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/caniuse-lite/data/regions/UA.js499162500000000000 0
@@ -3548,7 +3546,7 @@
 208/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-browser/main.js499162500000000000 0
 155/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@parcel/source-map/dist1679250196892518915 1
 147/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/deep-is/example1679253470502264377 1
-118/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp1679425781141401601 1
+118/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp1679510354459916180 1
 159/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/ajv/lib/dot/definitions.def499162500000000000 0
 175/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/caniuse-lite/data/features/input-pattern.js499162500000000000 0
 177/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@jridgewell/source-map/dist/source-map.umd.js499162500000000000 0
@@ -4085,6 +4083,7 @@
 167/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@parcel/utils/src/parseCSSImport.js499162500000000000 0
 162/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@parcel/watcher/src/binding.cc499162500000000000 0
 181/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@parcel/codeframe/node_modules/chalk/package.json1679250197928535970 0
+142/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.5185e724.css1679510354863922315 0
 151/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/type-fest/readme.md499162500000000000 0
 163/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/caniuse-lite/data/regions/KI.js499162500000000000 0
 143/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/espree/dist1679253470502264377 1
@@ -4268,6 +4267,7 @@
 162/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@swc/helpers/src/_defaults.mjs1655146850000000000 0
 161/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@nodelib/fs.walk/package.json1679253470950271984 0
 175/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/caniuse-lite/data/features/tabindex-attr.js499162500000000000 0
+146/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/dist/index.c1b4eb5e.css.map1679510354867922376 0
 179/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/@parcel/transformer-json/lib/JSONTransformer.js499162500000000000 0
 167/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/yaml/browser/dist/legacy-exports.js499162500000000000 0
 171/home/neoneb/repos/neoneb-main/constant-learning/zerotomastery_coursework/js_practice/advanced-js/ex14.apis/pokedexApp/node_modules/caniuse-lite/data/features/es6-class.js499162500000000000 0

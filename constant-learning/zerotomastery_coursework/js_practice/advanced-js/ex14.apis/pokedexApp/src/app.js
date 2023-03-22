@@ -44,7 +44,7 @@ function renderError() {
 />`;
 }
 
-// Call API
+// Call API and render the searched pokemon or error
 const fetchPokemon = async function (searchValue) {
   try {
     loadingPokeball.style.display = 'block';
@@ -61,7 +61,7 @@ const fetchPokemon = async function (searchValue) {
   }
 };
 
-// Search Suggestions
+// Gives up to 10 search suggestions as user inputs letters
 const updateSuggestions = async function (searchValue) {
   try {
     if (searchValue !== '') {
@@ -83,19 +83,19 @@ const updateSuggestions = async function (searchValue) {
   }
 };
 
-// Search Pokemon
+// Search bar functionality
 const getPokemon = async function () {
   const searchValue = searchInput.value.toLowerCase();
   await fetchPokemon(searchValue);
 };
 
-// Random Pokemon
+// Random button functionality
 const getRandomPokemon = async function () {
   const randomId = Math.floor(Math.random() * 898) + 1;
   await fetchPokemon(randomId);
 };
 
-// Render Pokemon Card
+// Render Pokemon Card's html
 const renderHtml = function () {
   try {
     const { name, id, height, weight } = state.pokemon;
@@ -123,6 +123,7 @@ const renderHtml = function () {
     pokemonContainer.innerHTML = html;
     const pokemonImage = getElement('.pokemon__image');
 
+    // Waits for image to load before rest of the pokemon card is rendered
     pokemonImage.addEventListener('load', (e) => {
       const pokemonCard = getElement('.pokemon__card');
       e.preventDefault();
