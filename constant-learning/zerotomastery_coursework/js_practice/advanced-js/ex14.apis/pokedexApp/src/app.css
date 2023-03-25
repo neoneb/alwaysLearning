@@ -68,7 +68,7 @@ header {
 .main__header_img {
   min-width: auto;
   width: 100%;
-  margin-top: 1em;
+  margin-top: 2.2em;
 }
 
 .search__bar {
@@ -334,6 +334,14 @@ h2 {
 /* Styles for screens with a maximum width of 768px */
 @media screen and (max-width: 768px) {
   /* Styles for mobile devices */
+
+  .main__header_img {
+    margin: 0 auto;
+    display: block;
+    margin-top: 1em;
+    width: 95%;
+  }
+
   h1 {
     letter-spacing: 3px;
     font-size: 1.8em;
@@ -402,8 +410,9 @@ h2 {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* Styles for tablets */
   .main__header_img {
-    display: block;
     margin: 0 auto;
+    display: block;
+    margin-top: 1em;
     width: 80%;
   }
 
@@ -471,6 +480,7 @@ h2 {
   .main__header_img {
     margin-bottom: 0;
     width: 95%;
+    margin-top: 1em;
   }
 
   h1 {

@@ -70,6 +70,7 @@ const updateSuggestions = async function (searchValue) {
       );
       const data = await response.json();
       const suggestions = data.results
+        // don't return suggestion if searchInput === pokemon name
         .filter((pokemon) => {
           return (
             pokemon.name.startsWith(searchValue) &&
