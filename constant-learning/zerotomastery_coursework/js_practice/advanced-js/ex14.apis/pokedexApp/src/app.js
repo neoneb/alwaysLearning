@@ -70,7 +70,12 @@ const updateSuggestions = async function (searchValue) {
       );
       const data = await response.json();
       const suggestions = data.results
-        .filter((pokemon) => pokemon.name.startsWith(searchValue))
+        .filter((pokemon) => {
+          return (
+            pokemon.name.startsWith(searchValue) &&
+            pokemon.name.toLowerCase() !== searchValue.toLowerCase()
+          );
+        })
         .map((pokemon) => pokemon.name);
       const datalist = getElement('#search-suggestions');
       datalist.innerHTML = suggestions
