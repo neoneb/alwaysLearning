@@ -1,10 +1,11 @@
 body {
-  --color-bright: #f2f1c6;
+  --color-bright: #ecdbba;
 }
 
 #contact-info {
   justify-content: center;
   align-items: center;
+  margin-top: 1em;
   display: flex;
 }
 
@@ -31,7 +32,6 @@ body {
   height: 100%;
   border: 1px solid #0000;
   transition: all .3s;
-  position: absolute;
   top: 0;
   left: 0;
 }

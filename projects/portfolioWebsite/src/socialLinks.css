@@ -1,11 +1,12 @@
 body {
-  --color-bright: #f2f1c6;
+  --color-bright: #ecdbba;
 }
 
 #contact-info {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1em;
 }
 
 #contact-info .links {
@@ -28,7 +29,6 @@ body {
 }
 #contact-info .links a::after {
   content: '';
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;

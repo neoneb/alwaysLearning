@@ -1,34 +1,103 @@
 body {
-  --color-bright: #f2f1c6;
-  background-color: black;
-}
-.main {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
+  background-color: #161616;
+  font-family: 'Roboto Flex', sans-serif;
   height: 100vh;
-  width: 60%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0;
 }
 
-img {
-  height: auto;
-  width: 50%;
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
 }
+
 h1 {
-  color: #f2f1c6;
-}
-h2 {
-  color: #f2f1c6;
-  margin-top: 0;
+  color: #346751;
+  font-weight: 900;
+  font-size: 5rem;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
 }
 
 p {
-  color: #f2f1c6;
+  color: #ecdbba;
+  max-width: 50vw;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  line-height: 2rem;
 }
 
-#contact-info {
-  margin-top: 2em;
+.image {
+  height: auto;
+  width: 50vw;
+  /* border-radius: 50%; */
+  border: 5px solid #346751;
+  margin-bottom: 1rem;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.contactText {
+  align-self: center;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.email__btn {
+  background-color: #c84b31;
+  height: fit-content;
+  width: fit-content;
+  align-self: center;
+  color: #ecdbba;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 8px;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.email__btn:hover {
+  background-color: #ecdbba;
+  color: #346751;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.projects__btn {
+  background-color: #346751;
+  height: fit-content;
+  width: fit-content;
+  align-self: center;
+  color: #ecdbba;
+  border: none;
+  border-radius: 4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 8px;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.projects__btn:hover {
+  background-color: #ecdbba;
+  color: #346751;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
