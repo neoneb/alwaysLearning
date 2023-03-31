@@ -38,7 +38,7 @@
   </head>
   <body>
     <main id="mainContainer">
-      <h1>Welcome</h1>
+      <h1 class="welcome__header">Welcome</h1>
       <p class="description">
         Hi there, I'm Chris! I'm a Full Stack Developer based in BC, Canada. I'm
         passionate about solving complex problems with innovative solutions. My
@@ -50,7 +50,14 @@
       </p>
       <div class="contactContainer">
         <p class="contactText">Get in touch</p>
-        <button type="submit" class="email__btn">Email</button>
+        <button class="email__btn">
+          <a
+            target="_blank"
+            class="email__link"
+            href="mailto:chrisjcormier1@gmail.com"
+            >Email</a
+          >
+        </button>
       </div>
       <img
         class="image"
@@ -108,6 +115,17 @@
             </div>
           </a>
         </div>
+      </div>
+      <!-- Projects Container -->
+      <div class="projects__Container">
+        <btn type="submit" class="projects__btn back__button">Back</btn>
+        <h1 id="projects__header">Projects</h1>
+        <h2 id="project__1">project 1</h2>
+        <img id="image__1" />
+        <h2 id="project__2">project 2</h2>
+        <img id="image__2" />
+        <h2 id="project__3">project 3</h2>
+        <img id="image__3" />
       </div>
     </main>
   </body>

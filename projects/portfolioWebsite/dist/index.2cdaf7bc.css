@@ -6,21 +6,20 @@ body {
 }
 
 #mainContainer {
-  height: 100%;
+  height: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
   display: flex;
 }
 
-h1 {
+.welcome__header {
   color: #346751;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .5rem;
-  margin: 0;
-  font-size: 5rem;
+  margin: 5vh 0 0;
+  font-size: 4vw;
   font-weight: 900;
 }
 
@@ -28,28 +27,29 @@ p {
   color: #ecdbba;
   max-width: 50vw;
   text-align: center;
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  justify-content: center;
+  margin-top: 1.2rem;
+  font-size: 1.2em;
+  line-height: 1.5rem;
 }
 
 .image {
   height: auto;
   width: 50vw;
   border: 5px solid #346751;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .contactContainer {
   justify-content: center;
-  margin-bottom: 1em;
   display: flex;
 }
 
 .contactText {
   align-self: center;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .email__btn {
@@ -67,9 +67,14 @@ p {
   align-self: center;
   margin: 0 1rem;
   padding: 8px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   transition: all .3s ease-in-out;
+}
+
+.email__link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .email__btn:hover {
@@ -92,7 +97,7 @@ p {
   border: none;
   border-radius: 4rem;
   align-self: center;
-  margin: 0 1rem;
+  margin: .5rem 1rem;
   padding: 8px;
   font-size: 1.5rem;
   font-weight: 700;
@@ -104,6 +109,70 @@ p {
   background-color: #ecdbba;
   transform: translateY(-3px);
   box-shadow: 0 5px 10px #0000004d;
+}
+
+.projects__Container {
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #161616;
+  grid-template-rows: auto auto repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "button button"
+                       "header header"
+                       "project1 image1"
+                       "project2 image2"
+                       "project3 image3";
+  transition: bottom 1s ease-in-out;
+  display: grid;
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+}
+
+.projects__Container.show {
+  bottom: 0;
+}
+
+.back__button {
+  grid-area: button;
+  place-self: center end;
+}
+
+#projects__header {
+  color: #346751;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  grid-area: header;
+  place-self: center;
+  margin: 0;
+  font-size: 4vw;
+  font-weight: 900;
+}
+
+#project__1 {
+  grid-area: project1;
+}
+
+#project__2 {
+  grid-area: project2;
+}
+
+#project__3 {
+  grid-area: project3;
+}
+
+#image__1 {
+  grid-area: image1;
+}
+
+#image__2 {
+  grid-area: image2;
+}
+
+#image__3 {
+  grid-area: image3;
 }
 
 /*# sourceMappingURL=index.2cdaf7bc.css.map */
