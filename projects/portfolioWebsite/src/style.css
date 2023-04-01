@@ -119,15 +119,16 @@ body {
   background-color: #161616;
   z-index: 9999;
   transition: bottom 1s ease-in-out;
+  gap: 1.5em;
   grid-template-areas:
-    'button button button'
     'header header header'
     'project1 project1 image1'
     'project2 project2 image2'
     /* 'project3 project3 image3' */
-    'social social social';
+    'social social social'
+    'button button button';
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto repeat(4, 1fr);
+  grid-template-rows: auto repeat(2, 1fr), auto, auto;
 }
 
 .projects__Container.show {
@@ -136,7 +137,7 @@ body {
 
 .back__button {
   grid-area: button;
-  justify-self: end;
+  justify-self: center;
   align-self: center;
 }
 
@@ -151,8 +152,87 @@ body {
   letter-spacing: 0.5rem;
   align-self: center;
   justify-self: center;
+  margin-top: 5vh;
+  margin-bottom: 1.2em;
 }
 
+.project__subhead {
+  color: #346751;
+  font-size: 2em;
+  margin-top: 1.2rem;
+  line-height: 1.5rem;
+  margin-left: 3vw;
+}
+
+.project__description {
+  justify-content: center;
+  color: #ecdbba;
+  font-size: 1.2em;
+  margin-top: 1.2rem;
+  line-height: 1.5rem;
+  margin-left: 3vw;
+}
+
+.live__btn {
+  background-color: #c84b31;
+  height: fit-content;
+  width: fit-content;
+  align-self: center;
+  color: #ecdbba;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 3vw;
+}
+
+.live__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.live__btn:hover {
+  background-color: #ecdbba;
+  color: #346751;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.source__link {
+  text-decoration: none;
+  color: #ecdbba;
+  border-top: 1px solid #346751;
+  border-bottom: 1px solid #346751;
+  border-left: none;
+  border-right: none;
+  margin-left: 1em;
+  padding: 3px;
+}
+
+.project__image {
+  height: auto;
+  width: 25vw;
+  justify-self: start;
+  transition: all 0.3s ease;
+}
+
+.image__link {
+  align-self: center;
+}
+
+.round__corners {
+  border-radius: 10px;
+}
+
+.project__image:hover {
+  transform: scale(1.1);
+  filter: brightness(110%);
+}
 #project__1 {
   grid-area: project1;
 }
