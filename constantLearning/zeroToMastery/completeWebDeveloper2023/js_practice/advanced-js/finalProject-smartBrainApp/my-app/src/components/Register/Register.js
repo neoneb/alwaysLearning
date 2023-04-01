@@ -1,4 +1,5 @@
 import React from 'react';
+import './Register.css';
 
 class Register extends React.Component {
   constructor(props) {
@@ -42,8 +43,13 @@ class Register extends React.Component {
   };
 
   render() {
+    const { onRouteChange } = this.props;
+
     return (
-      <article className='br3 ba --black-10 mv4 w-100 w-50-m w-25-l mw6 center shadow-5'>
+      <article
+        className='br3 ba --black-10 mv4 w-100 w-50-m w-25-l mw6 center shadow-5'
+        id='main__register'
+      >
         <main className='pa4 black-80'>
           <div className='measure'>
             <fieldset id='sign_up' className='ba b--transparent ph0 mh0'>
@@ -92,6 +98,14 @@ class Register extends React.Component {
                 type='submit'
                 value='Register'
               />
+            </div>
+            <div className='lh-copy mt3'>
+              <p
+                onClick={() => onRouteChange('signIn')}
+                className='f6 link dim black db pointer'
+              >
+                Go Back
+              </p>
             </div>
           </div>
         </main>

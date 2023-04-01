@@ -1,9 +1,18 @@
+html,
+body {
+  min-height: 100%;
+}
+
 .particles-bg-canvas-self {
   background: linear-gradient(to right, rgb(106, 194, 253), #68ffd9);
+  position: absolute;
+  height: 100vh;
+  z-index: -1;
 }
 
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .center {

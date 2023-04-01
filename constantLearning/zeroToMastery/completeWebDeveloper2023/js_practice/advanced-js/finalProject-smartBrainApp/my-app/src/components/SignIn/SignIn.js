@@ -1,4 +1,5 @@
 import React from 'react';
+import './SignIn.css';
 
 class SignIn extends React.Component {
   constructor(props) {
@@ -37,8 +38,11 @@ class SignIn extends React.Component {
   render() {
     const { onRouteChange } = this.props;
     return (
-      <article className='br3 ba --black-10 mv4 w-100 w-50-m w-25-l mw6 center shadow-5'>
-        <main className='pa4 black-80'>
+      <article
+        className='br3 ba --black-10 mv4 w-100 w-50-m w-25-l mw6 center shadow-5'
+        id='main__landing'
+      >
+        <main className='pa4 black-80 '>
           <div className='measure'>
             <fieldset id='sign_up' className='ba b--transparent ph0 mh0'>
               <legend className='f1 fw6 ph0 mh0'>Sign In</legend>
