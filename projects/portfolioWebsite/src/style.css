@@ -24,7 +24,7 @@ body {
   letter-spacing: 0.5rem;
 }
 
-p {
+.main__description {
   justify-content: center;
   color: #ecdbba;
   max-width: 50vw;
@@ -32,6 +32,13 @@ p {
   font-size: 1.2em;
   margin-top: 1.2rem;
   line-height: 1.5rem;
+}
+
+.contactText {
+  color: #ecdbba;
+  align-self: center;
+  margin: 0;
+  font-size: 1.4rem;
 }
 
 .image {
@@ -46,12 +53,6 @@ p {
 .contactContainer {
   display: flex;
   justify-content: center;
-}
-
-.contactText {
-  align-self: center;
-  margin: 0;
-  font-size: 1.4rem;
 }
 
 .email__btn {
@@ -119,13 +120,14 @@ p {
   z-index: 9999;
   transition: bottom 1s ease-in-out;
   grid-template-areas:
-    'button button'
-    'header header'
-    'project1 image1'
-    'project2 image2'
-    'project3 image3';
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto repeat(3, 1fr);
+    'button button button'
+    'header header header'
+    'project1 project1 image1'
+    'project2 project2 image2'
+    /* 'project3 project3 image3' */
+    'social social social';
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto repeat(4, 1fr);
 }
 
 .projects__Container.show {
@@ -173,4 +175,8 @@ p {
 
 #image__3 {
   grid-area: image3;
+}
+
+#contact-info {
+  grid-area: social;
 }

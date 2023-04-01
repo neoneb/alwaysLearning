@@ -23,7 +23,7 @@ body {
   font-weight: 900;
 }
 
-p {
+.main__description {
   color: #ecdbba;
   max-width: 50vw;
   text-align: center;
@@ -31,6 +31,13 @@ p {
   margin-top: 1.2rem;
   font-size: 1.2em;
   line-height: 1.5rem;
+}
+
+.contactText {
+  color: #ecdbba;
+  align-self: center;
+  margin: 0;
+  font-size: 1.4rem;
 }
 
 .image {
@@ -44,12 +51,6 @@ p {
 .contactContainer {
   justify-content: center;
   display: flex;
-}
-
-.contactText {
-  align-self: center;
-  margin: 0;
-  font-size: 1.4rem;
 }
 
 .email__btn {
@@ -116,13 +117,13 @@ p {
   height: 100%;
   z-index: 9999;
   background-color: #161616;
-  grid-template-rows: auto auto repeat(3, 1fr);
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "button button"
-                       "header header"
-                       "project1 image1"
-                       "project2 image2"
-                       "project3 image3";
+  grid-template-rows: auto auto repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "button button button"
+                       "header header header"
+                       "project1 project1 image1"
+                       "project2 project2 image2"
+                       "social social social";
   transition: bottom 1s ease-in-out;
   display: grid;
   position: fixed;
@@ -173,6 +174,10 @@ p {
 
 #image__3 {
   grid-area: image3;
+}
+
+#contact-info {
+  grid-area: social;
 }
 
 /*# sourceMappingURL=index.2cdaf7bc.css.map */
