@@ -1,4 +1,3 @@
-import './normalize.css';
 import React, { Component } from 'react';
 import ParticlesBg from 'particles-bg';
 import Clarifai from 'clarifai';
