@@ -130,6 +130,7 @@ body {
   position: fixed;
   bottom: -100%;
   left: 0;
+  overflow-y: scroll;
 }
 
 .projects__Container.show {
@@ -214,7 +215,7 @@ body {
 
 .project__image {
   height: auto;
-  width: 25vw;
+  width: 30vw;
   justify-self: start;
   transition: all .3s;
 }
@@ -258,6 +259,116 @@ body {
 
 #contact-info {
   grid-area: social;
+}
+
+@media only screen and (max-width: 576px) {
+  .welcome__header {
+    font-size: 8vw;
+  }
+
+  .main__description {
+    max-width: 85vw;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 1.2em;
+    line-height: 1.4rem;
+  }
+
+  .contactText {
+    font-size: 1em;
+  }
+
+  .image {
+    width: 85vw;
+    border: 2.5px solid #346751;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .email__btn {
+    letter-spacing: .1rem;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .projects__btn {
+    letter-spacing: .1rem;
+    margin: .2rem .5rem;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  #contact-info {
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+
+  .projects__Container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "project1"
+                         "image1"
+                         "project2"
+                         "image2"
+                         "social"
+                         "button";
+    grid-template-rows: auto repeat(4, 1fr), auto, auto;
+    text-align: center;
+    gap: .5em;
+  }
+
+  #projects__header {
+    text-align: center;
+    font-size: 8vw;
+  }
+
+  .project__subhead {
+    margin: 0 auto;
+    padding: .1em;
+    font-size: 6vw;
+    line-height: 1.2rem;
+  }
+
+  .project__description {
+    color: #ecdbba;
+    width: 90vw;
+    margin: 0 auto;
+    padding: .8em;
+    font-size: 1em;
+    line-height: 1.2rem;
+  }
+
+  .live__btn {
+    margin: 0 auto;
+    padding: 8px;
+    font-size: .8rem;
+  }
+
+  .source__link {
+    margin-left: .5em;
+    padding: 3px;
+    font-size: 3.5vw;
+  }
+
+  .project__image {
+    height: auto;
+    width: 80vw;
+    justify-self: center;
+    margin: 0 auto;
+    padding: .5em;
+  }
+
+  .round__corners {
+    border-radius: 20px;
+  }
+
+  .back__button {
+    grid-area: button;
+    place-self: center;
+    padding: 5px;
+  }
 }
 
 /*# sourceMappingURL=index.2cdaf7bc.css.map */

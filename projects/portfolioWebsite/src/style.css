@@ -112,6 +112,7 @@ body {
 .projects__Container {
   display: grid;
   position: fixed;
+  overflow-y: scroll;
   bottom: -100%;
   left: 0;
   width: 100%;
@@ -216,7 +217,7 @@ body {
 
 .project__image {
   height: auto;
-  width: 25vw;
+  width: 30vw;
   justify-self: start;
   transition: all 0.3s ease;
 }
@@ -259,4 +260,133 @@ body {
 
 #contact-info {
   grid-area: social;
+}
+
+/* Small devices (portrait phones, 576px and below) */
+@media only screen and (max-width: 576px) {
+  .welcome__header {
+    font-size: 8vw;
+  }
+
+  .main__description {
+    justify-content: center;
+    max-width: 85vw;
+    font-size: 1.2em;
+    margin-top: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .contactText {
+    font-size: 1em;
+  }
+
+  .image {
+    width: 85vw;
+    /* border-radius: 50%; */
+    border: 2.5px solid #346751;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .email__btn {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 5px;
+    letter-spacing: 0.1rem;
+  }
+
+  .projects__btn {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 5px;
+    margin: 0.2rem 0.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+  #contact-info {
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+
+  .projects__Container {
+    gap: 0.5em;
+    grid-template-areas:
+      'header'
+      'project1'
+      'image1'
+      'project2'
+      'image2'
+      /* 'project3'
+      'image3' */
+      'social'
+      'button';
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(4, 1fr), auto, auto;
+    text-align: center;
+  }
+
+  #projects__header {
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  .project__subhead {
+    font-size: 6vw;
+    line-height: 1.2rem;
+    margin: 0 auto;
+    padding: 0.1em;
+  }
+
+  .project__description {
+    color: #ecdbba;
+    font-size: 1em;
+    margin-top: 0.8rem;
+    line-height: 1.2rem;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0.8em;
+  }
+
+  .live__btn {
+    font-size: 0.8rem;
+    padding: 8px;
+    margin: 0 auto;
+  }
+
+  .source__link {
+    margin-left: 0.5em;
+    padding: 3px;
+    font-size: 3.5vw;
+  }
+
+  .project__image {
+    height: auto;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0.5em;
+    justify-self: center;
+  }
+
+  .round__corners {
+    border-radius: 20px;
+  }
+
+  .back__button {
+    padding: 5px;
+    grid-area: button;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+/* Medium devices (landscape phones, 768px and below) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Large devices (tablets and desktops, 992px and below) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and below) */
+@media only screen and (max-width: 1200px) {
 }
