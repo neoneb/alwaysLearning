@@ -69,7 +69,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input });
-    fetch('https://smart--brain-app.herokuapp.com/imageurl', {
+    fetch('https://smart--brain-app.herokuapp.com/image', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',
