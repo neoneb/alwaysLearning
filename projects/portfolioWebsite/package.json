@@ -2,10 +2,10 @@
   "name": "portfolio-website",
   "version": "1.0.5",
   "description": "",
-  "main": "index.js",
+  "default": "index.html",
   "scripts": {
     "start": "npx parcel /home/neoneb/repos/neoneb-main/projects/portfolioWebsite/index.html",
-    "build": "npx parcel build /home/neoneb/repos/neoneb-main/projects/portfolioWebsite/index.html--dist-dir ./dist"
+    "build": "npx parcel build /home/neoneb/repos/neoneb-main/projects/portfolioWebsite/index.html --dist-dir ./dist"
   },
   "keywords": [],
   "author": "",

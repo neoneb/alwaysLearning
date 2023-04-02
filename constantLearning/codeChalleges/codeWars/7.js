@@ -20,6 +20,16 @@
 
 // https://www.codewars.com/kata/555de49a04b7d1c13c00000e/train/javascript
 
-function add() {
-  return 0;
+function add(...nums) {
+  if (nums.length === 0) return 0;
+
+  return Math.round(
+    nums.reduce((sum, num, index) => {
+      return sum + num / (index + 1);
+    }, 0)
+  );
 }
+
+console.log(add()); //=> 0
+console.log(add(1, 2, 3)); //=> 3
+console.log(add(1, 4, -6, 20)); //=> 6

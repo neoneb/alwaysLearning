@@ -348,15 +348,17 @@ body {
   }
 
   .live__btn {
+    display: block;
     font-size: 0.8rem;
     padding: 8px;
     margin: 0 auto;
   }
 
   .source__link {
-    margin-left: 0.5em;
     padding: 3px;
     font-size: 3.5vw;
+    line-height: 4em;
+    margin-left: 0;
   }
 
   .project__image {
