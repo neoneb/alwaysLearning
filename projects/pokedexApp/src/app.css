@@ -86,9 +86,6 @@ header {
 }
 
 .search__bar input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -97,7 +94,7 @@ header {
   padding: 0 20px;
   border: none;
   font-size: 1.2em;
-  font-family: pokeHollow;
+  font-family: 'Courier New', Courier, monospace;
   color: #000000;
   background: none;
   outline: none;
@@ -106,9 +103,6 @@ header {
 }
 
 .search__bar button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   right: 0;
   top: 0;
   width: fit-content;
@@ -117,7 +111,7 @@ header {
   border-radius: 0 25px 25px 0;
   background-color: #3c5aa6;
   color: #e5e5ff;
-  font-family: pokeSolid;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1.2em;
   cursor: pointer;
   letter-spacing: 2px;
@@ -134,7 +128,7 @@ header {
   border-radius: 25px 25px 25px 25px;
   background-color: #3c5aa6;
   color: #e5e5ff;
-  font-family: pokeSolid;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1.4em;
   cursor: pointer;
   letter-spacing: 2px;
@@ -384,7 +378,6 @@ h2 {
     height: 45px;
     font-size: 1.2em;
     letter-spacing: 1.8px;
-    padding-top: 6px;
   }
 
   .pokemon__card {
