@@ -67,6 +67,7 @@ header {
   padding: 0 20px;
   font-family: pokeHollow;
   font-size: 1.2em;
+  line-height: 0;
 }
 
 .search__bar button {
@@ -81,6 +82,7 @@ header {
   border-radius: 0 25px 25px 0;
   font-family: pokeSolid;
   font-size: 1.2em;
+  line-height: 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -99,6 +101,7 @@ header {
   margin-top: 1.5em;
   font-family: pokeSolid;
   font-size: 1.4em;
+  line-height: 0;
   position: relative;
   top: 50%;
   left: 50%;
