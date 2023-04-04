@@ -1,14 +1,18 @@
-7651
+7663
 60/home/neoneb/repos/neoneb-main/projects/pokedexApp/readme.md1679772941547505000 0
-76/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/welcome.5b5ec749.png1680579051892353856 0
-78/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.4a5519d3.css.map1680579232132757472 0
-83/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/Pokemon Hollow.63490e17.ttf1680579051884353646 0
-82/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/Early GameBoy.7eb73268.ttf1680579051892353856 0
-74/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.fe8261f8.css1680579051884353646 0
-74/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.4a5519d3.css1680579232132757472 0
-66/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.html1680579051884353646 0
-55/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist1680579232132757472 1
-62/home/neoneb/repos/neoneb-main/projects/pokedexApp/src/app.css1680579232124757289 0
+76/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/welcome.5b5ec749.png1680580970967504785 0
+78/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.4a5519d3.css.map1680580970963504698 0
+83/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/Pokemon Hollow.63490e17.ttf1680580970959504611 0
+82/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/Early GameBoy.7eb73268.ttf1680580970967504785 0
+82/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/Early GameBoy.61a60387.ttf1680580961127285911 0
+83/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/Pokemon Hollow.b1faf6ae.ttf1680580961111285547 0
+74/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.2b0a0dd9.css1680580961519294812 0
+74/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.fe8261f8.css1680580970959504611 0
+74/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.4a5519d3.css1680580970959504611 0
+66/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.html1680580970959504611 0
+82/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/Pokemon Solid.66546939.ttf1680580961211287818 0
+55/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist1680580970971504871 1
+62/home/neoneb/repos/neoneb-main/projects/pokedexApp/src/app.css1680580912626042218 0
 80/home/neoneb/repos/neoneb-main/projects/pokedexApp/src/imgs/surprisedPikachu.png1679179021879936587 0
 68/home/neoneb/repos/neoneb-main/projects/pokedexApp/src/imgs/logo.svg1677954088721580932 0
 71/home/neoneb/repos/neoneb-main/projects/pokedexApp/src/imgs/favicon.png1679240054693784669 0
@@ -111,6 +115,7 @@
 84/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/debug/src/browser.js1506086966000000000 0
 82/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/debug/src/debug.js1506086966000000000 0
 77/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/debug/node.js1497485783000000000 0
+73/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/logo.27c13a69.svg1680580961255288817 0
 82/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/debug/package.json1679249904211692637 0
 77/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/debug/LICENSE1497485783000000000 0
 84/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/cors/CONTRIBUTING.md499162500000000000 0
@@ -225,6 +230,7 @@
 77/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/fresh/LICENSE1487547749000000000 0
 69/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/fresh1679249904315694356 1
 82/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/encodeurl/index.js1516590249000000000 0
+73/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.3fb559d1.js1680580961519294812 0
 83/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/encodeurl/README.md1516588915000000000 0
 81/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/encodeurl/LICENSE1516588915000000000 0
 83/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/base-x/src/index.js499162500000000000 0
@@ -540,7 +546,7 @@
 79/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/find-up/license499162500000000000 0
 79/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/globals/license499162500000000000 0
 80/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/globals/index.js499162500000000000 0
-73/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.0641b553.js1680579051896353960 0
+73/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.0641b553.js1680580970967504785 0
 94/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/chrome-trace-event/LICENSE.txt499162500000000000 0
 93/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/chrome-trace-event/CHANGES.md499162500000000000 0
 106/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/chrome-trace-event/dist/trace-event.js.map499162500000000000 0
@@ -578,6 +584,7 @@
 121/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/js-sdsl/dist/cjs/container/SequentialContainer/Deque.d.ts1674185339000000000 0
 122/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/js-sdsl/dist/cjs/container/SequentialContainer/LinkList.js1674185339000000000 0
 126/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/js-sdsl/dist/cjs/container/SequentialContainer/LinkList.js.map1674185339000000000 0
+74/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.c1b4eb5e.css1680580961519294812 0
 120/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/js-sdsl/dist/cjs/container/SequentialContainer/Vector.js1674185339000000000 0
 137/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/js-sdsl/dist/cjs/container/SequentialContainer/Base/RandomIterator.js.map1674185339000000000 0
 135/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/js-sdsl/dist/cjs/container/SequentialContainer/Base/RandomIterator.d.ts1674185339000000000 0
@@ -586,6 +593,7 @@
 133/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/js-sdsl/dist/cjs/container/SequentialContainer/Base/RandomIterator.js1674185339000000000 0
 124/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/js-sdsl/dist/cjs/container/SequentialContainer/Base/index.js1674185339000000000 0
 126/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/js-sdsl/dist/cjs/container/SequentialContainer/Base/index.d.ts1674185339000000000 0
+76/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/favicon.138a193a.png1680580961215287910 0
 115/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/js-sdsl/dist/cjs/container/SequentialContainer/Base1679253470766268860 1
 128/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/unset-value/node_modules/has-value/node_modules/isobject/LICENSE1429583250000000000 0
 119/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/js-sdsl/dist/cjs/container/HashContainer/HashMap.js.map1674185339000000000 0
@@ -675,7 +683,7 @@
 74/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/safe-regex1679249904131691315 1
 86/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/deep-is/example/cmp.js499162500000000000 0
 84/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/deep-is/package.json1679253470926271577 0
-82/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/Pokemon Solid.d7b5d894.ttf1680579051884353646 0
+82/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/Pokemon Solid.d7b5d894.ttf1680580970955504523 0
 79/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/deep-is/LICENSE499162500000000000 0
 83/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/deep-is/test/NaN.js499162500000000000 0
 76/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/deep-is/test1679253470506264445 1
@@ -732,7 +740,7 @@
 100/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/eslint/lib/rules/arrow-body-style.js499162500000000000 0
 105/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/eslint/lib/rules/no-restricted-modules.js499162500000000000 0
 105/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/eslint/lib/rules/prefer-arrow-callback.js499162500000000000 0
-73/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/logo.727ff963.svg1680579051896353960 0
+73/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/logo.727ff963.svg1680580970971504871 0
 119/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.umd.js.map499162500000000000 0
 97/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/eslint/lib/rules/no-new-symbol.js499162500000000000 0
 106/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/eslint/lib/rules/no-useless-constructor.js499162500000000000 0
@@ -853,6 +861,7 @@
 99/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/eslint/lib/rules/no-implied-eval.js499162500000000000 0
 99/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/eslint/lib/rules/no-process-exit.js499162500000000000 0
 107/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/eslint/lib/rules/no-useless-computed-key.js499162500000000000 0
+78/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.2b0a0dd9.css.map1680580961519294812 0
 115/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/eslint/lib/rules/no-unused-private-class-members.js499162500000000000 0
 109/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/eslint/lib/rules/no-async-promise-executor.js499162500000000000 0
 101/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/eslint/lib/rules/init-declarations.js499162500000000000 0
@@ -1441,6 +1450,7 @@
 90/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/stream-combiner/.npmignore1386754438000000000 0
 93/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/stream-combiner/test/index.js1386754438000000000 0
 84/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/stream-combiner/test1679249903039673270 1
+78/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.c1b4eb5e.css.map1680580961519294812 0
 86/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/xxhash-wasm/LICENSE.md499162500000000000 0
 94/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/xxhash-wasm/umd/xxhash-wasm.js499162500000000000 0
 92/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/brace-expansion/package.json1679253470926271577 0
@@ -2441,6 +2451,7 @@
 84/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/stable/stable.min.js1524667296000000000 0
 91/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/domutils/lib/feeds.d.ts.map499162500000000000 0
 122/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/@parcel/transformer-json/node_modules/json5/lib/parse.d.ts499162500000000000 0
+77/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.3fb559d1.js.map1680580961519294812 0
 111/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/@parcel/transformer-json/lib/JSONTransformer.js499162500000000000 0
 87/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/browserslist/error.d.ts499162500000000000 0
 106/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/@parcel/core/test/fixtures/invalid-engines1679250197048521484 1
@@ -2580,6 +2591,7 @@
 111/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/snapdragon-node/node_modules/is-data-descriptor1679249904131691315 1
 95/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/caniuse-lite/data/regions/YE.js499162500000000000 0
 80/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/.bin/live-server1679249904495697332 0
+76/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/welcome.5d2674ba.png1680580961515294721 0
 95/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/caniuse-lite/data/regions/HK.js499162500000000000 0
 86/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/js-yaml/bin/js-yaml.js499162500000000000 0
 95/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/caniuse-lite/data/regions/YT.js499162500000000000 0
@@ -2599,7 +2611,7 @@
 125/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/@parcel/node-resolver-core/test/fixture/packages/source-alias1679250197056521616 1
 112/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/@babel/highlight/node_modules/chalk/package.json1679250197848534653 0
 99/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/type-fest/source/promise-value.d.ts499162500000000000 0
-78/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.fe8261f8.css.map1680579051888353750 0
+78/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.fe8261f8.css.map1680580970963504698 0
 91/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/terser/lib/equivalent-to.js499162500000000000 0
 111/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/@babel/highlight/node_modules/js-tokens/LICENSE1517139970000000000 0
 93/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/path-is-absolute/package.json1679249904179692108 0
@@ -3323,7 +3335,7 @@
 75/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/object.pick1679249904183692175 1
 102/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/caniuse-lite/data/features/wordwrap.js499162500000000000 0
 81/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/vary/package.json1679249904015689398 0
-76/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/favicon.2dbccd9b.png1680579051884353646 0
+76/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/favicon.2dbccd9b.png1680580970959504611 0
 78/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/fastq/queue.js499162500000000000 0
 77/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/lmdb/write.js499162500000000000 0
 129/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/aliased-file1679250197016520957 1
@@ -3363,7 +3375,7 @@
 95/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/caniuse-lite/data/regions/IM.js499162500000000000 0
 117/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/is-accessor-descriptor/node_modules/kind-of/README.md1494958295000000000 0
 85/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/resolve-url/.jshintrc1393185450000000000 0
-50/home/neoneb/repos/neoneb-main/projects/pokedexApp1680579051876353437 1
+50/home/neoneb/repos/neoneb-main/projects/pokedexApp1680580960767277712 1
 98/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/@parcel/graph/src/AdjacencyList.js499162500000000000 0
 123/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/@swc/helpers/lib/_class_static_private_field_destructure.js1668860406000000000 0
 98/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/@parcel/utils/test/urlJoin.test.js499162500000000000 0
@@ -5030,7 +5042,7 @@
 87/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/faye-websocket/lib/faye1679249902863670360 1
 118/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/@parcel/package-manager/src/validateModuleSpecifier.js499162500000000000 0
 107/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/@parcel/package-manager/src/NodeResolver.js499162500000000000 0
-63/home/neoneb/repos/neoneb-main/projects/pokedexApp/package.json1680578835970149216 0
+63/home/neoneb/repos/neoneb-main/projects/pokedexApp/package.json1680579615580694405 0
 87/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/react-error-overlay/lib1679250196712515953 1
 90/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/nth-check/lib/esm/parse.js499162500000000000 0
 100/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/msgpackr/dist/unpack-no-eval.cjs.map499162500000000000 0
@@ -6890,7 +6902,7 @@
 86/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/parent-module/index.js499162500000000000 0
 87/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/parent-module/readme.md499162500000000000 0
 97/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/faye-websocket/lib/faye/websocket1679249902847670095 1
-77/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.0641b553.js.map1680579051896353960 0
+77/home/neoneb/repos/neoneb-main/projects/pokedexApp/dist/index.0641b553.js.map1680580970971504871 0
 102/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/eslint/lib/rules/prefer-rest-params.js499162500000000000 0
 101/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/faye-websocket/lib/faye/websocket/api1679249902851670162 1
 125/home/neoneb/repos/neoneb-main/projects/pokedexApp/node_modules/define-property/node_modules/is-accessor-descriptor/README.md1451294530000000000 0

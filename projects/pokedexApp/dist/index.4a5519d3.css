@@ -47,9 +47,8 @@ header {
   border-radius: 25px;
   justify-content: center;
   align-items: center;
-  margin: 1em auto;
+  line-height: 0;
   display: flex;
-  position: relative;
   box-shadow: 0 2px 4px #00000040;
 }
 
@@ -64,10 +63,13 @@ header {
   border: none;
   outline: none;
   flex-grow: 1;
+  justify-content: center;
+  align-items: center;
   padding: 0 20px;
   font-family: pokeHollow;
   font-size: 1.2em;
   line-height: 0;
+  display: flex;
 }
 
 .search__bar button {
@@ -80,10 +82,12 @@ header {
   background-color: #3c5aa6;
   border: none;
   border-radius: 0 25px 25px 0;
+  justify-content: center;
+  align-items: center;
   font-family: pokeSolid;
   font-size: 1.2em;
   line-height: 0;
-  position: absolute;
+  display: flex;
   top: 0;
   right: 0;
 }
@@ -98,10 +102,13 @@ header {
   background-color: #3c5aa6;
   border: none;
   border-radius: 25px;
+  justify-content: center;
+  align-items: center;
   margin-top: 1.5em;
   font-family: pokeSolid;
   font-size: 1.4em;
   line-height: 0;
+  display: flex;
   position: relative;
   top: 50%;
   left: 50%;

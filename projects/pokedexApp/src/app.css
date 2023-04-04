@@ -72,7 +72,6 @@ header {
 }
 
 .search__bar {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,10 +81,13 @@ header {
   background-color: #e5e5ff;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  margin: 1em auto;
+  line-height: 0;
 }
 
 .search__bar input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -104,7 +106,9 @@ header {
 }
 
 .search__bar button {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   right: 0;
   top: 0;
   width: fit-content;
@@ -121,6 +125,9 @@ header {
 }
 
 .random__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   left: 50%;
   top: 50%;
