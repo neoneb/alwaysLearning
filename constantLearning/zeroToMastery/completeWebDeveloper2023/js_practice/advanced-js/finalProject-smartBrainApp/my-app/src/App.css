@@ -7,6 +7,7 @@ body {
   background: linear-gradient(to right, rgb(106, 194, 253), #68ffd9);
   position: absolute;
   height: 100vh;
+  min-height: 100%;
   z-index: -1;
 }
 

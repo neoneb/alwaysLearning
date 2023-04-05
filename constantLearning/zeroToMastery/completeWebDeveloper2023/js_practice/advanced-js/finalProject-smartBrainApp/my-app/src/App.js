@@ -22,6 +22,7 @@ const initialState = {
     email: '',
     entries: 0,
     joined: '',
+    type: 'cobweb',
   },
 };
 
@@ -112,11 +113,27 @@ class App extends Component {
     this.setState({ route: route });
   };
 
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
+  }
+
+  handleResize = () => {
+    const width = window.innerWidth;
+    const isSmallScreen = width < 576;
+    const type = isSmallScreen ? 'tadpole' : 'cobweb';
+    this.setState({ type });
+  };
+
   render() {
-    const { isSignedIn, imageUrl, route, boxes } = this.state;
+    const { isSignedIn, imageUrl, route, boxes, type } = this.state;
     return (
       <div className='App'>
-        <ParticlesBg type='cobweb' bg={true} />
+        <ParticlesBg type={type} bg={true} />
         <Navigation
           isSignedIn={isSignedIn}
           onRouteChange={this.onRouteChange}

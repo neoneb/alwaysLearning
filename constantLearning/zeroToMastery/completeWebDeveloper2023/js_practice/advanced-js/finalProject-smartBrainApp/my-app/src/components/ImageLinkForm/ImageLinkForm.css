@@ -10,16 +10,26 @@
   margin-bottom: 1em;
 }
 
+.form input {
+  width: 60vw;
+}
+
+.form button {
+  width: fit-content;
+}
+
 /* Extra small devices (phones, less than 576px) */
 @media only screen and (max-width: 575.98px) {
   /* CSS styles for extra small devices */
   .form__container {
-    display: flex;
-    flex-direction: column;
     width: 90vw;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+  }
+
+  div .form {
+    width: 100vw;
   }
 
   .form {
