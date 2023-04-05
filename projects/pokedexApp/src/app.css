@@ -94,12 +94,17 @@ header {
   padding: 0 20px;
   border: none;
   font-size: 1.2em;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   color: #000000;
   background: none;
   outline: none;
   letter-spacing: 1px;
   text-indent: 5px;
+}
+
+.search__bar:hover {
+  box-shadow: 0px 0px 10px #2a3e7c;
+  color: white;
 }
 
 .search__bar button {
@@ -111,10 +116,11 @@ header {
   border-radius: 0 25px 25px 0;
   background-color: #3c5aa6;
   color: #e5e5ff;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2em;
   cursor: pointer;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .random__btn {
@@ -123,16 +129,22 @@ header {
   top: 50%;
   transform: translate(-50%, -50%);
   width: fit-content;
-  height: 55px;
+  height: 50px;
   border: none;
   border-radius: 25px 25px 25px 25px;
   background-color: #3c5aa6;
   color: #e5e5ff;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4em;
   cursor: pointer;
   letter-spacing: 2px;
   margin-top: 1.5em;
+  font-weight: bolder;
+}
+
+.random__btn:hover {
+  box-shadow: 0px 0px 10px #2a3e7c;
+  color: white;
 }
 
 h1 {
