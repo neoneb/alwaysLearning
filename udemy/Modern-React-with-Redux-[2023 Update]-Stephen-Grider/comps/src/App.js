@@ -1,28 +1,30 @@
-import Button from './Button';
+import Accordion from './components/Accordion';
 
 function App() {
-  return (
-    <div>
-      <div>
-        <Button>Click here!!</Button>
-      </div>
-      <div>
-        <Button primary>Click here!!</Button>
-      </div>
-      <div>
-        <Button secondary>Buy Now!</Button>
-      </div>
-      <div>
-        <Button success>See Deal!</Button>
-      </div>
-      <div>
-        <Button warning>Hide Ads!</Button>
-      </div>
-      <div>
-        <Button danger>Something!</Button>
-      </div>
-    </div>
-  );
+  const items = [
+    {
+      id: 'sdfsdf',
+      label: 'can I use Python on a Project?',
+      content:
+        'you can use React on any Project you want. you can use React on any Project you want. you can use React on any Project you want. you can use React on any Project you want.',
+    },
+
+    {
+      id: 'sdf34663',
+      label: 'can I use JavaScript on a Project?',
+      content:
+        'you can use JavaScript on any Project you want. you can use JavaScript on any Project you want. you can use JavaScript on any Project you want. you can use JavaScript on any Project you want.',
+    },
+
+    {
+      id: 'sd3464df',
+      label: 'can I use Python on a Project?',
+      content:
+        'you can use Python on any Project you want. you can use Python on any Project you want. you can use Python on any Project you want. you can use Python on any Project you want.',
+    },
+  ];
+
+  return <Accordion items={items} />;
 }
 
 export default App;
