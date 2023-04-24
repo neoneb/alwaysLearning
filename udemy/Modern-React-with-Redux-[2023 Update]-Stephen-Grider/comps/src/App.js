@@ -1,30 +1,22 @@
-import Accordion from './components/Accordion';
+import { useState } from 'react';
+import Dropdown from './components/Dropdown';
 
 function App() {
-  const items = [
-    {
-      id: 'sdfsdf',
-      label: 'can I use Python on a Project?',
-      content:
-        'you can use React on any Project you want. you can use React on any Project you want. you can use React on any Project you want. you can use React on any Project you want.',
-    },
+  const [selection, setSelection] = useState(null);
 
-    {
-      id: 'sdf34663',
-      label: 'can I use JavaScript on a Project?',
-      content:
-        'you can use JavaScript on any Project you want. you can use JavaScript on any Project you want. you can use JavaScript on any Project you want. you can use JavaScript on any Project you want.',
-    },
+  const handleSelect = (option) => {
+    setSelection(option);
+  };
 
-    {
-      id: 'sd3464df',
-      label: 'can I use Python on a Project?',
-      content:
-        'you can use Python on any Project you want. you can use Python on any Project you want. you can use Python on any Project you want. you can use Python on any Project you want.',
-    },
+  const options = [
+    { label: 'Red', value: 'red' },
+    { label: 'Green', value: 'green' },
+    { label: 'Blue', value: 'blue' },
   ];
 
-  return <Accordion items={items} />;
+  return (
+    <Dropdown selection={selection} onSelect={handleSelect} options={options} />
+  );
 }
 
 export default App;
