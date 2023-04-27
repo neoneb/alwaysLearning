@@ -2,9 +2,7 @@ import { GoBell, GoCloudDownload, GoDatabase } from 'react-icons/go';
 import Button from '../components/Button';
 
 function ButtonPage() {
-  const handleClick = () => {
-    console.log('Clicked!');
-  };
+  const handleClick = () => {};
 
   return (
     <div>
