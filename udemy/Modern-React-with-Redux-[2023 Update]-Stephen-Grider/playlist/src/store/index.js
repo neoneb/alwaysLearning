@@ -19,4 +19,14 @@ const store = configureStore({
   },
 });
 
-console.log(store);
+const startingState = store.getState();
+console.log(JSON.stringify(startingState));
+
+store.dispatch({
+  type: 'song/addSong',
+  payload: 'New Song!!!',
+});
+
+const finalState = store.getState();
+
+console.log(JSON.stringify(finalState));
