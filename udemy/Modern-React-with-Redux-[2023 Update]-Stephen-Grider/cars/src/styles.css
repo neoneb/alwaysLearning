@@ -1,0 +1,79 @@
+.car-form {
+  margin-top: 15px;
+  padding: 15px;
+}
+.car-form .field-group {
+  display: flex;
+  margin-bottom: 0px;
+}
+.car-form form {
+  display: flex;
+  justify-content: space-between;
+}
+.car-form .field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+.car-form .field label.label {
+  margin-bottom: 0px;
+  width: 70px;
+}
+.car-form input {
+  width: 100%;
+}
+.car-form h4.subtitle.is-3 {
+  margin-bottom: 0.75rem;
+}
+
+.car-list .panel.bold {
+  font-weight: 600;
+}
+
+.car-list .panel {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-list p {
+  font-size: 1.5rem;
+}
+
+.car-list .note {
+  font-style: italic;
+  display: block;
+  margin: 40px 20px;
+}
+
+.car-value {
+  font-size: 2rem;
+  text-align: right;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+.list-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-header h3.title {
+  margin-bottom: 0px;
+}
+
+.list-header .search {
+  display: flex;
+  align-items: center;
+}
+.list-header .search .label {
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
