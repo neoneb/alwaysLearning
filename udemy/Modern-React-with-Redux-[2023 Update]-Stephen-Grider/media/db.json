@@ -23,9 +23,39 @@
   ],
   "albums": [
     {
-      "id": 10,
-      "title": "Hiking Trip",
-      "userId": 1
+      "userId": 1,
+      "title": "Refined Granite Gloves",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "title": "Ergonomic Cotton Shoes",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "title": "Fantastic Fresh Pants",
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "title": "Refined Soft Pizza",
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "title": "Recycled Concrete Computer",
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "title": "Practical Granite Hat",
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "title": "Generic Bronze Gloves",
+      "id": 19
     }
   ],
   "photos": []
